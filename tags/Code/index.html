@@ -139,7 +139,7 @@
 
 	
 	</div>
-  <a type="button" href="/2017/11/26/Recherche-Emmet/#more" class="btn btn-default more">阅读此文</a>
+  <a type="button" href="/2017/11/26/Recherche-Emmet/#more" class="btn btn-default more">閱讀本文</a>
 </div>
 
 	       
@@ -160,7 +160,7 @@
 		<h1 id="Code-python"><a href="#Code-python" class="headerlink" title="Code python"></a>Code python</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> kivy.properties <span class="keyword">import</span> ObjectProperty, StringProperty</span><br><span class="line"><span class="keyword">from</span> kivy.uix.boxlayout <span class="keyword">import</span> BoxLayout</span><br><span class="line"><span class="keyword">from</span> kivy.uix.textinput <span class="keyword">import</span> TextInput</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InputDialog</span><span class="params">(BoxLayout)</span>:</span></span><br><span class="line">    <span class="string">'''InputDialog is a widget with a TextInput, Cancel and Confirm button.</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    message = StringProperty(<span class="string">''</span>)</span><br><span class="line">    <span class="string">'''It is the message to be shown</span></span><br><span class="line"><span class="string">       :data:`message` is a :class:`~kivy.properties.StringProperty`</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    user_input = ObjectProperty()</span><br><span class="line">    <span class="string">'''Is the UserTextInput</span></span><br><span class="line"><span class="string">        :data:`user_input` is a</span></span><br><span class="line"><span class="string">        :class:`~designer.uix.input_dialog.UserTextInput`</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    btn_confirm = ObjectProperty()</span><br><span class="line">    <span class="string">'''Is the button to confirm the input</span></span><br><span class="line"><span class="string">        :data:`btn_confirm` is a :class:`~kivy.uix.button.Button`</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    lbl_error = ObjectProperty()</span><br><span class="line">    <span class="string">'''Is a Label to show errors</span></span><br><span class="line"><span class="string">        :data:`lbl_error` is a :class:`~kivy.uix.label.Label`</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    __events__ = (<span class="string">'on_confirm'</span>, <span class="string">'on_cancel'</span>,)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, message)</span>:</span></span><br><span class="line">        super(InputDialog, self).__init__()</span><br><span class="line">        self.message = message</span><br><span class="line">        self.user_input.bind(text=self.on_text)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">on_confirm</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">on_cancel</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_user_input</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        Returns the user input</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">        <span class="keyword">return</span> self.user_input.text</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">on_text</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        self.btn_confirm.disabled = len(args[<span class="number">1</span>]) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserTextInput</span><span class="params">(TextInput)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    TextInput used by InputDialog.</span></span><br><span class="line"><span class="string">    Used to filter the input and handle events</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, **kwargs)</span>:</span></span><br><span class="line">        super(UserTextInput, self).__init__(**kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">insert_text</span><span class="params">(self, substring, from_undo=False)</span>:</span></span><br></pre></td></tr></table></figure>
 	
 	</div>
-  <a type="button" href="/2017/11/26/Test-highlight-python/#more" class="btn btn-default more">阅读此文</a>
+  <a type="button" href="/2017/11/26/Test-highlight-python/#more" class="btn btn-default more">閱讀本文</a>
 </div>
 
 	       
@@ -182,7 +182,7 @@
 
 	
 	</div>
-  <a type="button" href="/2017/11/26/Bash-script-movie2folder/#more" class="btn btn-default more">阅读此文</a>
+  <a type="button" href="/2017/11/26/Bash-script-movie2folder/#more" class="btn btn-default more">閱讀本文</a>
 </div>
 
 	       
@@ -208,7 +208,7 @@
 			
   <div id="site_search">
    <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜尋" class="st-search-input st-default-search-input form-control"/>
    </div>  
   <div id="local-search-result"></div>
   </div>
@@ -236,7 +236,7 @@
 		
 			
 	<div class="widget">
-		<h4>分类</h4>
+		<h4>分類</h4>
 		<ul class="tag_box inline list-unstyled">
 		
 			<li><a href="/categories/Contents/">Contents<span>1</span></a></li>
@@ -255,7 +255,7 @@
 		
 			<li><a href="/categories/Nourritue/">Nourritue<span>1</span></a></li>
 		
-			<li><a href="/categories/Nourriture/">Nourriture<span>3</span></a></li>
+			<li><a href="/categories/Nourriture/">Nourriture<span>4</span></a></li>
 		
 			<li><a href="/categories/Programmation/">Programmation<span>0</span></a></li>
 		
@@ -285,51 +285,51 @@
 		
 			
 	<div class="widget">
-		<h4>标签云</h4>
+		<h4>標籤雲</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/Bash/">Bash<span>1</span></a></li>
-		
-			<li><a href="/tags/UI-Kit/">UI_Kit<span>1</span></a></li>
-		
-			<li><a href="/tags/Animated/">Animated<span>1</span></a></li>
-		
-			<li><a href="/tags/MongoDB/">MongoDB<span>1</span></a></li>
-		
-			<li><a href="/tags/GitHub/">GitHub<span>3</span></a></li>
+			<li><a href="/tags/Readme/">Readme<span>6</span></a></li>
 		
 			<li><a href="/tags/Presentation/">Présentation<span>1</span></a></li>
 		
-			<li><a href="/tags/Tags/">Tags<span>2</span></a></li>
+			<li><a href="/tags/Embedded/">Embedded<span>1</span></a></li>
 		
-			<li><a href="/tags/MarkItUp/">MarkItUp<span>1</span></a></li>
+			<li><a href="/tags/Utilities/">Utilities<span>2</span></a></li>
 		
-			<li><a href="/tags/Bower/">Bower<span>1</span></a></li>
+			<li><a href="/tags/Script/">Script<span>1</span></a></li>
 		
-			<li><a href="/tags/Python/">Python<span>1</span></a></li>
+			<li><a href="/tags/WebScrapper/">WebScrapper<span>1</span></a></li>
 		
-			<li><a href="/tags/Nicko/">Nicko<span>1</span></a></li>
+			<li><a href="/tags/Code/">Code<span>3</span></a></li>
 		
-			<li><a href="/tags/Gif/">Gif<span>2</span></a></li>
+			<li><a href="/tags/NoSQL/">NoSQL<span>1</span></a></li>
 		
-			<li><a href="/tags/iTransWarp/">iTransWarp<span>1</span></a></li>
+			<li><a href="/tags/Shortcut/">Shortcut<span>1</span></a></li>
 		
-			<li><a href="/tags/HexoTags/">HexoTags<span>1</span></a></li>
-		
-			<li><a href="/tags/MustHave/">MustHave<span>1</span></a></li>
-		
-			<li><a href="/tags/Example/">Example<span>2</span></a></li>
-		
-			<li><a href="/tags/Slides/">Slides<span>2</span></a></li>
-		
-			<li><a href="/tags/Test/">Test<span>1</span></a></li>
-		
-			<li><a href="/tags/Cuisine/">Cuisine<span>4</span></a></li>
+			<li><a href="/tags/Linux/">Linux<span>1</span></a></li>
 		
 			<li><a href="/tags/FontAwesome/">FontAwesome<span>1</span></a></li>
 		
+			<li><a href="/tags/Hexo/">Hexo<span>8</span></a></li>
 		
-		   <li><a href="/tags">...<span>98</span></a></li>
+			<li><a href="/tags/jQuery/">jQuery<span>1</span></a></li>
+		
+			<li><a href="/tags/D3js/">D3js<span>1</span></a></li>
+		
+			<li><a href="/tags/Bash/">Bash<span>1</span></a></li>
+		
+			<li><a href="/tags/Freemind/">Freemind<span>1</span></a></li>
+		
+			<li><a href="/tags/ffmpeg/">ffmpeg<span>1</span></a></li>
+		
+			<li><a href="/tags/简体/">简体<span>0</span></a></li>
+		
+			<li><a href="/tags/CSS/">CSS<span>2</span></a></li>
+		
+			<li><a href="/tags/QuickStart/">QuickStart<span>1</span></a></li>
+		
+		
+		   <li><a href="/tags">...<span>99</span></a></li>
 		 
 		</ul>
 	</div>
@@ -340,6 +340,10 @@
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2017/11/28/m-proteine-poulet/" ><i class="fa fa-file-o"></i>Nem proteine poulet</a>
+      </li>
     
       <li>
         <a href="/2017/11/27/euillete-Roule/" ><i class="fa fa-file-o"></i>Feuillete-Roule</a>
@@ -357,17 +361,13 @@
         <a href="/2017/11/27/chis-parmentier-irlandais/" ><i class="fa fa-file-o"></i>Hachis parmentier irlandais</a>
       </li>
     
-      <li>
-        <a href="/2017/11/27/st-recette-nicko-BANANA-BREAD/" ><i class="fa fa-file-o"></i>Recette Nicko BANANA BREAD</a>
-      </li>
-    
   </ul>
 </div>
 
 		
 			
 <div class="widget">
-	<h4>链接</h4>
+	<h4>鏈接</h4>
 	<ul class="blogroll list-unstyled">
 	
 		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>

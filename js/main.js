@@ -1,19 +1,19 @@
 $(document).ready(function() {
-	$(window).scroll(function(){  //只要窗口滚动,就触发下面代码 
-        var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度 
-        if(scrollt>200){  //判断滚动后高度超过200px
-            $("#gotop").fadeIn(400); //淡出
+	$(window).scroll(function(){  // Tant que la fenêtre défile, le code suivant est tiré
+        var scrollt = document.documentElement.scrollTop + document.body.scrollTop; // Obtenez la hauteur après le parchemin
+        if(scrollt>200){  // Juge la hauteur du parchemin après200px
+            $("#gotop").fadeIn(400); //Fondu
 			if($(window).width() >= 1200){
 				$(".navbar").stop().fadeTo(400, 0.2);
 			}
         }else{
-            $("#gotop").fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            $("#gotop").fadeOut(400); //Si retourné ou non, fondu en. Doit arrêter (arrêter) avant d'ajouter l'animation, sinon il va clignoter
             if($(window).width() >= 1200){
 				$(".navbar").stop().fadeTo(400, 1);
             }
         }
     });
-    $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部        
+    $("#gotop").click(function(){ //Lorsque vous cliquez sur l'onglet, utilisez animate pour basculer vers le haut dans les 200 millisecondes        
 		$("html,body").animate({scrollTop:"0px"},200);
     });
 	$(".navbar").mouseenter(function(){

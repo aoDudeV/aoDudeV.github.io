@@ -177,7 +177,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE `randoms`;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `randoms` (</span><br><span class="line">  `id` varchar(50) NOT NULL,</span><br><span class="line">  `name` varchar(50) NOT NULL,</span><br><span class="line">  `value` varchar(50) NOT NULL,</span><br><span class="line">  `expired_at` bigint(20) NOT NULL,</span><br><span class="line">  `created_at` bigint(20) NOT NULL,</span><br><span class="line">  `updated_at` bigint(20) NOT NULL,</span><br><span class="line">  `version` bigint(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`),</span><br><span class="line">  UNIQUE KEY `uni_rnd_value` (`value`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `adslots` (</span><br><span class="line">  `id` varchar(50) NOT NULL,</span><br><span class="line">  `alias` varchar(50) NOT NULL,</span><br><span class="line">  `name` varchar(100) NOT NULL,</span><br><span class="line">  `description` varchar(1000) NOT NULL,</span><br><span class="line">  `price` bigint(20) NOT NULL,</span><br><span class="line">  `width` bigint(20) NOT NULL,</span><br><span class="line">  `height` bigint(20) NOT NULL,</span><br><span class="line">  `num_slots` bigint(20) NOT NULL,</span><br><span class="line">  `num_auto_fill` bigint(20) NOT NULL,</span><br><span class="line">  `auto_fill` text NOT NULL,</span><br><span class="line">  `created_at` bigint(20) NOT NULL,</span><br><span class="line">  `updated_at` bigint(20) NOT NULL,</span><br><span class="line">  `version` bigint(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`),</span><br><span class="line">  UNIQUE KEY `uni_adslot_alias` (`alias`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `adperiods` (</span><br><span class="line">  `id` varchar(50) NOT NULL,</span><br><span class="line">  `user_id` varchar(50) NOT NULL,</span><br><span class="line">  `adslot_id` varchar(50) NOT NULL,</span><br><span class="line">  `display_order` bigint(20) NOT NULL,</span><br><span class="line">  `start_at` varchar(10) NOT NULL,</span><br><span class="line">  `end_at` varchar(10) NOT NULL,</span><br><span class="line">  `created_at` bigint(20) NOT NULL,</span><br><span class="line">  `updated_at` bigint(20) NOT NULL,</span><br><span class="line">  `version` bigint(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `admaterials` (</span><br><span class="line">  `id` varchar(50) NOT NULL,</span><br><span class="line">  `user_id` varchar(50) NOT NULL,</span><br><span class="line">  `adperiod_id` varchar(50) NOT NULL,</span><br><span class="line">  `cover_id` varchar(50) NOT NULL,</span><br><span class="line">  `weight` bigint(20) NOT NULL,</span><br><span class="line">  `start_at` varchar(10) NOT NULL,</span><br><span class="line">  `end_at` varchar(10) NOT NULL,</span><br><span class="line">  `geo` varchar(100) NOT NULL,</span><br><span class="line">  `keywords` varchar(100) NOT NULL,</span><br><span class="line">  `url` varchar(1000) NOT NULL,</span><br><span class="line">  `created_at` bigint(20) NOT NULL,</span><br><span class="line">  `updated_at` bigint(20) NOT NULL,</span><br><span class="line">  `version` bigint(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br></pre></td></tr></table></figure>
 	
 	</div>
-  <a type="button" href="/2017/11/13/itranswarpJS_CMS/#more" class="btn btn-default more">阅读此文</a>
+  <a type="button" href="/2017/11/13/itranswarpJS_CMS/#more" class="btn btn-default more">閱讀本文</a>
 </div>
 
 	       
@@ -203,7 +203,7 @@
 			
   <div id="site_search">
    <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜尋" class="st-search-input st-default-search-input form-control"/>
    </div>  
   <div id="local-search-result"></div>
   </div>
@@ -231,7 +231,7 @@
 		
 			
 	<div class="widget">
-		<h4>分类</h4>
+		<h4>分類</h4>
 		<ul class="tag_box inline list-unstyled">
 		
 			<li><a href="/categories/Contents/">Contents<span>1</span></a></li>
@@ -250,7 +250,7 @@
 		
 			<li><a href="/categories/Nourritue/">Nourritue<span>1</span></a></li>
 		
-			<li><a href="/categories/Nourriture/">Nourriture<span>3</span></a></li>
+			<li><a href="/categories/Nourriture/">Nourriture<span>4</span></a></li>
 		
 			<li><a href="/categories/Programmation/">Programmation<span>0</span></a></li>
 		
@@ -280,51 +280,51 @@
 		
 			
 	<div class="widget">
-		<h4>标签云</h4>
+		<h4>標籤雲</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/Script/">Script<span>1</span></a></li>
+			<li><a href="/tags/Gif/">Gif<span>2</span></a></li>
 		
-			<li><a href="/tags/Kivy/">Kivy<span>1</span></a></li>
-		
-			<li><a href="/tags/Theme/">Theme<span>3</span></a></li>
-		
-			<li><a href="/tags/Programming/">Programming<span>1</span></a></li>
-		
-			<li><a href="/tags/AngularJS/">AngularJS<span>1</span></a></li>
-		
-			<li><a href="/tags/Animated/">Animated<span>1</span></a></li>
-		
-			<li><a href="/tags/Youtube/">Youtube<span>10</span></a></li>
-		
-			<li><a href="/tags/Deploy/">Deploy<span>1</span></a></li>
-		
-			<li><a href="/tags/QuickStart/">QuickStart<span>1</span></a></li>
-		
-			<li><a href="/tags/WebScrapper/">WebScrapper<span>1</span></a></li>
+			<li><a href="/tags/Readme/">Readme<span>6</span></a></li>
 		
 			<li><a href="/tags/Python/">Python<span>1</span></a></li>
 		
-			<li><a href="/tags/Plugins/">Plugins<span>4</span></a></li>
+			<li><a href="/tags/Hexo/">Hexo<span>8</span></a></li>
 		
-			<li><a href="/tags/UI-Kit/">UI_Kit<span>1</span></a></li>
+			<li><a href="/tags/Images/">Images<span>2</span></a></li>
+		
+			<li><a href="/tags/MarkItUp/">MarkItUp<span>1</span></a></li>
+		
+			<li><a href="/tags/App/">App<span>1</span></a></li>
 		
 			<li><a href="/tags/jQuery/">jQuery<span>1</span></a></li>
 		
-			<li><a href="/tags/PHP/">PHP<span>1</span></a></li>
+			<li><a href="/tags/plugins/">plugins<span>1</span></a></li>
 		
-			<li><a href="/tags/Recherche/">Recherche<span>3</span></a></li>
+			<li><a href="/tags/Folder/">Folder<span>1</span></a></li>
 		
-			<li><a href="/tags/HexoTags/">HexoTags<span>1</span></a></li>
+			<li><a href="/tags/cheat-sheet/">cheat-sheet<span>1</span></a></li>
 		
-			<li><a href="/tags/Software/">Software<span>2</span></a></li>
+			<li><a href="/tags/MongoDB/">MongoDB<span>1</span></a></li>
 		
-			<li><a href="/tags/Usb-Boot/">Usb_Boot<span>1</span></a></li>
+			<li><a href="/tags/Slides/">Slides<span>2</span></a></li>
 		
-			<li><a href="/tags/BonAp/">BonAp<span>1</span></a></li>
+			<li><a href="/tags/Tags/">Tags<span>2</span></a></li>
+		
+			<li><a href="/tags/Animated/">Animated<span>1</span></a></li>
+		
+			<li><a href="/tags/GitHub/">GitHub<span>3</span></a></li>
+		
+			<li><a href="/tags/D3js/">D3js<span>1</span></a></li>
+		
+			<li><a href="/tags/Beautify/">Beautify<span>1</span></a></li>
+		
+			<li><a href="/tags/UI-Kit/">UI_Kit<span>1</span></a></li>
+		
+			<li><a href="/tags/Linux/">Linux<span>1</span></a></li>
 		
 		
-		   <li><a href="/tags">...<span>98</span></a></li>
+		   <li><a href="/tags">...<span>99</span></a></li>
 		 
 		</ul>
 	</div>
@@ -335,6 +335,10 @@
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2017/11/28/m-proteine-poulet/" ><i class="fa fa-file-o"></i>Nem proteine poulet</a>
+      </li>
     
       <li>
         <a href="/2017/11/27/euillete-Roule/" ><i class="fa fa-file-o"></i>Feuillete-Roule</a>
@@ -352,17 +356,13 @@
         <a href="/2017/11/27/chis-parmentier-irlandais/" ><i class="fa fa-file-o"></i>Hachis parmentier irlandais</a>
       </li>
     
-      <li>
-        <a href="/2017/11/27/st-recette-nicko-BANANA-BREAD/" ><i class="fa fa-file-o"></i>Recette Nicko BANANA BREAD</a>
-      </li>
-    
   </ul>
 </div>
 
 		
 			
 <div class="widget">
-	<h4>链接</h4>
+	<h4>鏈接</h4>
 	<ul class="blogroll list-unstyled">
 	
 		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
