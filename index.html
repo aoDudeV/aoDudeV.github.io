@@ -1,267 +1,199 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <title>my Hexo Site</title>
-  <meta name="author" content="John Doe">
-  
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
   <meta name="description" content="Beautiful site">
+<meta property="og:type" content="website">
+<meta property="og:title" content="my Hexo Site">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="my Hexo Site">
+<meta property="og:description" content="Beautiful site">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="my Hexo Site">
+<meta name="twitter:description" content="Beautiful site">
+  
+    <link rel="alternative" href="/atom.xml" title="my Hexo Site" type="application/atom+xml">
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
 
-  
-  <meta property="og:site_name" content="my Hexo Site"/>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
 
-  
-    <meta property="og:image" content=""/>
-  
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
 
-  
-  
-    <link href="/favicon.png" rel="icon">
-  
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/themes/cerulean.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight-default.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/comment.css" media="screen" type="text/css">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
-  <![endif]-->
-
-  <script src="/js/jquery-2.0.3.min.js"></script>
-  
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
-  
-  <!-- analytics -->
-  
-
-
-
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="/">my Hexo Site</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
   <div class="container">
-  	<div class="content">
-    	 <div class="page-header page-header-inverse ">
-  <h1 class="title title-inverse ">Beautiful site</h1>
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span>716-472-4484</span></li>
+	  <li><i class="fa fa-envelope-o"></i><span>ptsteadman@gmail.com</span></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="/login">Log In</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
 </div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">my Hexo Site</a>-->
 
-<div class="row page">
+    <a class="site-logo" href="/">
+      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
+    </a>
 
-	
-	<div class="col-md-9">
-	
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
-		<div class="slogan">
-      <i class="fa fa-heart"></i>
-      Yet another bootstrap theme.
-</div>    
-		<div id="top_search"></div>
-		<div class="mypage">
-		
-		<!-- title and entry -->
-        <!-- render top articles firstly -->
-        
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-			  
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
 	
-	<!-- display as entry -->	
-		<h3 class="title-top">
-			<div class="date"> 2014-03-15 </div>
-			<div class="article-title"><a href="/2014/03/15/lorem-ipsum/"  class="article-title-text">Lorem Ipsum</span></a><span class="badge">置頂</div>						
-		</h3>
+	<li class="active">
+	  <a  href="/">Home</a>
+	</li>
 	
-
-
-			  <div class="entry">
-  <div class="row">
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
 	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
 	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p><img src="/hexo-theme-freemind-blog/images/lorem-ipsum/lorem-ipsum.jpg" alt="Lorem Ipsum"></p>
+	<li class="">
+	  <a  href="/contact/">Contact</a>
+	</li>
 	
-	</div>
-  <a type="button" href="/2014/03/15/lorem-ipsum/#more" class="btn btn-default more">閱讀本文</a>
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
 </div>
+<!-- Header END -->
 
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-        
-        <!-- render other articles -->
-        
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-28 </div>
-			<div class="article-title"><a href="/2017/11/28/m-proteine-poulet/" >Nem proteine poulet</a></div>						
-		</h3>
-	
+  
+  <div class="container">
+    <ul class="breadcrumb">
+      <li class="active">Home</li>
+    </ul>
+  <div id="main">
+    <div class="row">
+
+<div class="col-xs-12 blog-posts">
 
 
-			  <div class="entry">
-  <div class="row">
+  <section class="archives-wrap">
+    <div class="archives">
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/28/m-proteine-poulet/">Nem proteine poulet</a>
+    </h2>
+
+
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-28T12:07:00.000Z" itemprop="datePublished">2017/11/28</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/28/m-proteine-poulet/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<img src="https://i.ytimg.com/vi/W84aMeUPFJs/maxresdefault.jpg">
+  
+    <a href="/tags/Video/" title="Video">Video</a>,
+  
+    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
+  
+    <a href="/tags/Recette/" title="Recette">Recette</a>,
+  
+    <a href="/tags/Cuisine/" title="Cuisine">Cuisine</a>,
+  
+    <a href="/tags/Poulet/" title="Poulet">Poulet</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<img src="https://i.ytimg.com/vi/W84aMeUPFJs/maxresdefault.jpg">
 <h2 id="Ingredients"><a href="#Ingredients" class="headerlink" title="Ingredients:"></a>Ingredients:</h2><h3 id="Sur-le-pan-de-travail-pour-4-portions"><a href="#Sur-le-pan-de-travail-pour-4-portions" class="headerlink" title="Sur le pan de travail (pour 4 portions) :"></a>Sur le pan de travail (pour 4 portions) :</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- 115 g de fromage frais</span><br><span class="line">- 80 g de tomates séchées, coupées en morceaux</span><br><span class="line">- 80 g d&apos;olives noires, coupées en morceaux</span><br><span class="line">- 1 c. à s. de persil</span><br><span class="line">- 4 blancs de poulet</span><br><span class="line">- 16 tranches de mozzarella</span><br><span class="line">- 16 tranches de bacon</span><br><span class="line">- miel</span><br><span class="line">- sauce BBQ</span><br></pre></td></tr></table></figure>
 <h2 id="Aux-fourneaux"><a href="#Aux-fourneaux" class="headerlink" title="Aux fourneaux !"></a>Aux fourneaux !</h2><p>1 - Dans un bol, mélangez le fromage frais, les tomates, les olives noires et le persil.</p>
 <p>2 - Coupez les blancs de poulet en deux (sans détacher entièrement les deux parties) et ouvrez-les comme un livre. Étalez une cuillère à soupe sur chaque blanc puis refermez-les et roulez-les. </p>
@@ -273,110 +205,220 @@
 <h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/W84aMeUPFJs" frameborder="0" allowfullscreen></iframe></div>
 <p><strong>src</strong> ==&gt;  <a href="https://youtu.be/W84aMeUPFJs" target="_blank" rel="external">https://youtu.be/W84aMeUPFJs</a></p>
 <h2 id="Thumbnail"><a href="#Thumbnail" class="headerlink" title="Thumbnail"></a>Thumbnail</h2><img src="http://img.youtube.com/vi/W84aMeUPFJs/default.jpg">
-	
-	</div>
-  <a type="button" href="/2017/11/28/m-proteine-poulet/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/28/m-proteine-poulet/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-27 </div>
-			<div class="article-title"><a href="/2017/11/27/euillete-Roule/" >Feuillete-Roule</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/27/euillete-Roule/">Feuillete-Roule</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-28T02:34:00.000Z" itemprop="datePublished">2017/11/27</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/27/euillete-Roule/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><video width="100%" height="250px" controls><source src=" 
+  
+    <a href="/tags/Video/" title="Video">Video</a>,
+  
+    <a href="/tags/Recette/" title="Recette">Recette</a>,
+  
+    <a href="/tags/Cuisine/" title="Cuisine">Cuisine</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><video width="100%" height="250px" controls><source src=" 
 /2017/11/27/euillete-Roule/feuillete-roule.webm" type="video/webm"> Your browser does not support the webm tag.</video>
 <h1 id="Recette"><a href="#Recette" class="headerlink" title="Recette"></a>Recette</h1><img src="/2017/11/27/euillete-Roule/feuillete-roule.png" title="Plat parfait">
-	
-	</div>
-  <a type="button" href="/2017/11/27/euillete-Roule/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/27/euillete-Roule/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-27 </div>
-			<div class="article-title"><a href="/2017/11/27/ki-js-sur-linux-mint/" >WikiJS sur linux mint</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/27/ki-js-sur-linux-mint/">WikiJS sur linux mint</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-28T02:03:00.000Z" itemprop="datePublished">2017/11/27</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/27/ki-js-sur-linux-mint/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="Documentation-markdown"><a href="#Documentation-markdown" class="headerlink" title="Documentation markdown"></a>Documentation markdown</h1><p><strong>src</strong> ==&gt; <a href="https://docs.requarks.io/wiki/user-guide/markdown-syntax" target="_blank" rel="external">https://docs.requarks.io/wiki/user-guide/markdown-syntax</a></p>
+  
+    <a href="/tags/NodeJS/" title="NodeJS">NodeJS</a>,
+  
+    <a href="/tags/Wiki/" title="Wiki">Wiki</a>,
+  
+    <a href="/tags/Linux/" title="Linux">Linux</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="Documentation-markdown"><a href="#Documentation-markdown" class="headerlink" title="Documentation markdown"></a>Documentation markdown</h1><p><strong>src</strong> ==&gt; <a href="https://docs.requarks.io/wiki/user-guide/markdown-syntax" target="_blank" rel="external">https://docs.requarks.io/wiki/user-guide/markdown-syntax</a></p>
 <p>==[ <strong>WIKIJS</strong> ]==</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; npm install wiki.js@latest</span><br><span class="line">&gt; node wiki configue</span><br><span class="line">&gt; node wiki start</span><br></pre></td></tr></table></figure>
 <h2 id="Credentials"><a href="#Credentials" class="headerlink" title="Credentials"></a>Credentials</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yvesm@hotmail.com</span><br><span class="line">pwd as usual</span><br></pre></td></tr></table></figure>
 <h2 id="Terminal-1"><a href="#Terminal-1" class="headerlink" title="Terminal 1"></a>Terminal 1</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod dbpath /data/db</span><br></pre></td></tr></table></figure>
 <h2 id="Terminal-2"><a href="#Terminal-2" class="headerlink" title="Terminal 2"></a>Terminal 2</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &apos;/home/luc/monWiki/monWikiJS&apos;</span><br><span class="line">node wiki start</span><br></pre></td></tr></table></figure>
-	
-	</div>
-  <a type="button" href="/2017/11/27/ki-js-sur-linux-mint/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/27/ki-js-sur-linux-mint/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-27 </div>
-			<div class="article-title"><a href="/2017/11/27/dejs-Presentation-Html-Slides/" >Presentation Html Slides</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/27/dejs-Presentation-Html-Slides/">Presentation Html Slides</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T21:55:00.000Z" itemprop="datePublished">2017/11/27</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/27/dejs-Presentation-Html-Slides/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<p><strong>src</strong> ==&gt;  <a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">https://github.com/hakimel/reveal.js</a></p>
+  
+    <a href="/tags/NodeJS/" title="NodeJS">NodeJS</a>,
+  
+    <a href="/tags/Slides/" title="Slides">Slides</a>,
+  
+    <a href="/tags/Presentation/" title="Présentation">Présentation</a>,
+  
+    <a href="/tags/Html/" title="Html">Html</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<p><strong>src</strong> ==&gt;  <a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">https://github.com/hakimel/reveal.js</a></p>
 <h1 id="Online-demo"><a href="#Online-demo" class="headerlink" title="Online demo"></a>Online demo</h1><p><strong>Html slides.js</strong></p>
 <p><strong>src</strong> ==&gt; <a href="https://revealjs.com/#/1" target="_blank" rel="external">https://revealjs.com/#/1</a></p>
 <p><strong>Slides sur Heroku</strong></p>
 <p><strong>src</strong> ==&gt; <a href="http://jr0cket.co.uk/slides/heroku-for-developers.html#/sec-1" target="_blank" rel="external">http://jr0cket.co.uk/slides/heroku-for-developers.html#/sec-1</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">c:</span><br><span class="line">cd \nw_projects\slide_html\reveal.js</span><br><span class="line">npm start</span><br><span class="line"></span><br><span class="line">http://localhost:8000</span><br></pre></td></tr></table></figure>
-	
-	</div>
-  <a type="button" href="/2017/11/27/dejs-Presentation-Html-Slides/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/27/dejs-Presentation-Html-Slides/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-27 </div>
-			<div class="article-title"><a href="/2017/11/27/chis-parmentier-irlandais/" >Hachis parmentier irlandais</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/27/chis-parmentier-irlandais/">Hachis parmentier irlandais</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T21:39:00.000Z" itemprop="datePublished">2017/11/27</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/27/chis-parmentier-irlandais/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<img src="https://i.ytimg.com/vi/5KomSHqF-pI/maxresdefault.jpg">
+  
+    <a href="/tags/Video/" title="Video">Video</a>,
+  
+    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
+  
+    <a href="/tags/Recette/" title="Recette">Recette</a>,
+  
+    <a href="/tags/Cuisine/" title="Cuisine">Cuisine</a>,
+  
+    <a href="/tags/BonAp/" title="BonAp">BonAp</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<img src="https://i.ytimg.com/vi/5KomSHqF-pI/maxresdefault.jpg">
 <h1 id="Ingredients"><a href="#Ingredients" class="headerlink" title="Ingrédients"></a>Ingrédients</h1><ul>
 <li>huile pour frire</li>
 <li>500 g de viande hachée</li>
@@ -407,58 +449,114 @@
 <h3 id="Thumbnail"><a href="#Thumbnail" class="headerlink" title="Thumbnail"></a>Thumbnail</h3><img src="http://img.youtube.com/vi/5KomSHqF-pI/default.jpg">
 <p><strong>Bon Ap’ !</strong></p>
 
-	
-	</div>
-  <a type="button" href="/2017/11/27/chis-parmentier-irlandais/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/27/chis-parmentier-irlandais/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-27 </div>
-			<div class="article-title"><a href="/2017/11/27/st-recette-nicko-BANANA-BREAD/" >Recette Nicko BANANA BREAD</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/27/st-recette-nicko-BANANA-BREAD/">Recette Nicko BANANA BREAD</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T17:00:00.000Z" itemprop="datePublished">2017/11/27</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/27/st-recette-nicko-BANANA-BREAD/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="BANANA-BREAD-VIDEO-RECIPE"><a href="#BANANA-BREAD-VIDEO-RECIPE" class="headerlink" title="BANANA BREAD - VIDEO RECIPE"></a>BANANA BREAD - VIDEO RECIPE</h1><div class="owl-media owl-image owl-local"><img src="/images/BANANA-BREAD.jpg"></div>
+  
+    <a href="/tags/Video/" title="Video">Video</a>,
+  
+    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
+  
+    <a href="/tags/Recette/" title="Recette">Recette</a>,
+  
+    <a href="/tags/Cuisine/" title="Cuisine">Cuisine</a>,
+  
+    <a href="/tags/Nicko/" title="Nicko">Nicko</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="BANANA-BREAD-VIDEO-RECIPE"><a href="#BANANA-BREAD-VIDEO-RECIPE" class="headerlink" title="BANANA BREAD - VIDEO RECIPE"></a>BANANA BREAD - VIDEO RECIPE</h1><div class="owl-media owl-image owl-local"><img src="/images/BANANA-BREAD.jpg"></div>
 <p><em>Local img</em> ==&gt; BANANA-BREAD.jpg</p>
 <p><strong>Nicko’s whips up some banana bread!</strong></p>
 <h2 id="Ingredients"><a href="#Ingredients" class="headerlink" title="Ingredients:"></a>Ingredients:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">2 &amp; 1/2 cups SR flour (or plain with 2 tsp baking powder)</span><br><span class="line">1 cup brown sugar</span><br><span class="line">1 tsp ground cinnamon</span><br><span class="line">125g butter (melted)</span><br><span class="line">2 eggs</span><br><span class="line">3 banana&apos;s</span><br></pre></td></tr></table></figure>
 <h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/JMwlE_lrkEQ" frameborder="0" allowfullscreen></iframe></div>
 <p><strong>src</strong> ==&gt; <a href="http://www.youtube.com/watch?v=JMwlE_lrkEQ" target="_blank" rel="external">http://www.youtube.com/watch?v=JMwlE_lrkEQ</a></p>
 <h2 id="Thumbnail"><a href="#Thumbnail" class="headerlink" title="Thumbnail"></a>Thumbnail</h2><img src="http://img.youtube.com/vi/JMwlE_lrkEQ/default.jpg">
-	
-	</div>
-  <a type="button" href="/2017/11/27/st-recette-nicko-BANANA-BREAD/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/27/st-recette-nicko-BANANA-BREAD/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-26 </div>
-			<div class="article-title"><a href="/2017/11/26/xo-theme-corporate-Readme/" >Hexo theme corporate Readme</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/26/xo-theme-corporate-Readme/">Hexo theme corporate Readme</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T03:06:00.000Z" itemprop="datePublished">2017/11/26</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/26/xo-theme-corporate-Readme/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="Hexo-Corporate"><a href="#Hexo-Corporate" class="headerlink" title="Hexo Corporate"></a>Hexo Corporate</h1><p>Hexo Corporate is a full-featured Hexo theme based on the Metronic Corporate<br>Frontend freebie framework.  </p>
+  
+    <a href="/tags/Hexo/" title="Hexo">Hexo</a>,
+  
+    <a href="/tags/Theme/" title="Theme">Theme</a>,
+  
+    <a href="/tags/Readme/" title="Readme">Readme</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="Hexo-Corporate"><a href="#Hexo-Corporate" class="headerlink" title="Hexo Corporate"></a>Hexo Corporate</h1><p>Hexo Corporate is a full-featured Hexo theme based on the Metronic Corporate<br>Frontend freebie framework.  </p>
 <p>Live example: <a href="http://hexotest.computerlab.io" target="_blank" rel="external">Link</a> | <a href="https://github.com/ptsteadman/hexo-theme-corporate-example" target="_blank" rel="external">Source</a></p>
 <p>This theme is useful for companies interested in using Hexo to create a<br>professional website with an attractive landing page, company blog, contact<br>information, and portfolio.  </p>
 <p><img src="https://s3.amazonaws.com/ptsteadman-images/Corporate.png" alt="Hexo Corporate blog page."></p>
@@ -519,29 +617,59 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![img caption](img url)</span><br><span class="line"></span><br><span class="line">&#123;% fancybox img_url [img_thumbnail] [img_caption] %&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Metronic-Freebie-License"><a href="#Metronic-Freebie-License" class="headerlink" title="Metronic Freebie License"></a>Metronic Freebie License</h2><p>The Metronic CSS and JavaScript components are included with the following<br>license:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">You are free to use this freebie theme in your any personal or commercial</span><br><span class="line">projects. All used resources, plugins, stock images are subject to thier own</span><br><span class="line">licenses!</span><br><span class="line"></span><br><span class="line">The only limitation is that you are not permitted to use this theme in a stock</span><br><span class="line">items that sold in any theme marketplaces(e.g: themeforest.net,</span><br><span class="line">wrapbootstrap.com, etc...).</span><br></pre></td></tr></table></figure>
-	
-	</div>
-  <a type="button" href="/2017/11/26/xo-theme-corporate-Readme/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/26/xo-theme-corporate-Readme/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-26 </div>
-			<div class="article-title"><a href="/2017/11/26/xo-theme-doc-Readme/" >Hexo theme doc Readme</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/26/xo-theme-doc-Readme/">Hexo theme doc Readme</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T02:58:00.000Z" itemprop="datePublished">2017/11/26</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/26/xo-theme-doc-Readme/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="hexo-theme-doc"><a href="#hexo-theme-doc" class="headerlink" title="hexo-theme-doc"></a>hexo-theme-doc</h1><p><a href="https://opensource.org/licenses/MIT" target="_blank" rel="external"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a><br><a href="https://david-dm.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://david-dm.org/zalando-incubator/hexo-theme-doc/status.svg" alt="dependencies Status"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Grade/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Coverage/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://travis-ci.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://travis-ci.org/zalando-incubator/hexo-theme-doc.svg?branch=master" alt="Build Status"></a><br><a href="https://badge.fury.io/js/hexo-theme-doc" target="_blank" rel="external"><img src="https://badge.fury.io/js/hexo-theme-doc.svg" alt="npm version"></a></p>
+  
+    <a href="/tags/Hexo/" title="Hexo">Hexo</a>,
+  
+    <a href="/tags/Documentation/" title="Documentation">Documentation</a>,
+  
+    <a href="/tags/Wiki/" title="Wiki">Wiki</a>,
+  
+    <a href="/tags/Theme/" title="Theme">Theme</a>,
+  
+    <a href="/tags/Readme/" title="Readme">Readme</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="hexo-theme-doc"><a href="#hexo-theme-doc" class="headerlink" title="hexo-theme-doc"></a>hexo-theme-doc</h1><p><a href="https://opensource.org/licenses/MIT" target="_blank" rel="external"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a><br><a href="https://david-dm.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://david-dm.org/zalando-incubator/hexo-theme-doc/status.svg" alt="dependencies Status"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Grade/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Coverage/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://travis-ci.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://travis-ci.org/zalando-incubator/hexo-theme-doc.svg?branch=master" alt="Build Status"></a><br><a href="https://badge.fury.io/js/hexo-theme-doc" target="_blank" rel="external"><img src="https://badge.fury.io/js/hexo-theme-doc.svg" alt="npm version"></a></p>
 <p><strong>LiveDemo:</strong> <a href="https://zalando-incubator.github.io/hexo-theme-doc" target="_blank" rel="external">https://zalando-incubator.github.io/hexo-theme-doc</a></p>
 <p>hexo-theme-doc is a <strong>documentation theme</strong> for <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>, the fast and powerful blog framework powered by Node.js. It differs from other Hexo themes by allowing you to present documentation—especially REST API documentation.</p>
 <p>Created by JavaScript/Node.js developers, hexo-theme-doc capitalizes on Hexo’s <a href="https://hexo.io/api/" target="_blank" rel="external">extensibility</a> and system of plugins for adding custom tags, customizing layouts, and processing multiple kinds of sources, which makes generating static websites simpler than other tools.</p>
@@ -634,29 +762,57 @@
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
-	
-	</div>
-  <a type="button" href="/2017/11/26/xo-theme-doc-Readme/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/26/xo-theme-doc-Readme/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-26 </div>
-			<div class="article-title"><a href="/2017/11/26/xo-theme-freemind-Readme/" >Hexo theme freemind Readme</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/26/xo-theme-freemind-Readme/">Hexo theme freemind Readme</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T02:37:00.000Z" itemprop="datePublished">2017/11/26</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/26/xo-theme-freemind-Readme/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<h1 id="Hexo-Theme-Freemind"><a href="#Hexo-Theme-Freemind" class="headerlink" title="Hexo-Theme-Freemind"></a>Hexo-Theme-Freemind</h1><p><img src="http://wzpan.github.io/hexo-theme-freemind-blog/images/screenshots.png" alt="screenshots"></p>
+  
+    <a href="/tags/Hexo/" title="Hexo">Hexo</a>,
+  
+    <a href="/tags/Theme/" title="Theme">Theme</a>,
+  
+    <a href="/tags/Freemind/" title="Freemind">Freemind</a>,
+  
+    <a href="/tags/Readme/" title="Readme">Readme</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<h1 id="Hexo-Theme-Freemind"><a href="#Hexo-Theme-Freemind" class="headerlink" title="Hexo-Theme-Freemind"></a>Hexo-Theme-Freemind</h1><p><img src="http://wzpan.github.io/hexo-theme-freemind-blog/images/screenshots.png" alt="screenshots"></p>
 <p>Freemind aims at fully taking advantages of Bootstrap.</p>
 <ul>
 <li><a href="http://hahack.com/hexo-theme-freemind-blog/" target="_blank" rel="external">Demo</a></li>
@@ -747,29 +903,61 @@
 <li>Build-in color themes are from <a href="bootswatch.com">Bootswatch</a>.</li>
 </ul>
 
-	
-	</div>
-  <a type="button" href="/2017/11/26/xo-theme-freemind-Readme/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/26/xo-theme-freemind-Readme/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
 </div>
+<hr class="blog-post-sep">
 
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2017-11-26 </div>
-			<div class="article-title"><a href="/2017/11/26/test-bouton-bootstrap/" >Test bouton bootstrap</a></div>						
-		</h3>
-	
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/26/test-bouton-bootstrap/">Test bouton bootstrap</a>
+    </h2>
 
 
-			  <div class="entry">
-  <div class="row">
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-11-27T00:50:00.000Z" itemprop="datePublished">2017/11/26</time>
+
+      </li>
+      <li><i class="fa fa-comments"></i>
+        <a href="http://yoursite.com/2017/11/26/test-bouton-bootstrap/#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
 	
-	
-		<a class="btn btn-default" href="http://hahack.com" target="_blank" rel="external">hahack</a>
+  
+    <a href="/tags/Hexo/" title="Hexo">Hexo</a>,
+  
+    <a href="/tags/Images/" title="Images">Images</a>,
+  
+    <a href="/tags/Test/" title="Test">Test</a>,
+  
+    <a href="/tags/Bootstrap/" title="Bootstrap">Bootstrap</a>,
+  
+    <a href="/tags/FontAwesome/" title="FontAwesome">FontAwesome</a>,
+  
+    <a href="/tags/HexoTags/" title="HexoTags">HexoTags</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	<a class="btn btn-default" href="http://hahack.com" target="_blank" rel="external">hahack</a>
 <a class="btn btn-primary" href="http://hahack.com" target="_blank" rel="external">hahack</a>
 <a class="btn btn-success" href="http://hahack.com" target="_blank" rel="external">hahack</a>
 <a class="btn btn-warning" href="http://hahack.com" target="_blank" rel="external">hahack</a>
@@ -781,292 +969,157 @@
 <i class="fa fa-bicycle"></i>
 <div class="owl-media owl-image owl-local"><img src="/images/oasis.png"></div>
 
-	
-	</div>
-  <a type="button" href="/2017/11/26/test-bouton-bootstrap/#more" class="btn btn-default more">閱讀本文</a>
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://yoursite.com/2017/11/26/test-bouton-bootstrap/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
+</div>
+<hr class="blog-post-sep">
+
+      
+    </div>
+    
+      <div id="page-nav" class="pagination">
+	<span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next</a>
+      </div>
+    
+  </section>
+
 </div>
 
-           
-		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
-<ul class="pagination">
-	 
-		
-          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Precedent</a></li>
-        
-
-        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-
-		
-		   <li class="next"> <a href="/page/2/" class="alignright next">下一頁<i class="fa fa-arrow-circle-o-right"></i></a> </li>          
-        
-	
-</ul>
 </div>
 
-  		</center>
-		</div>
-
-		
-		
-	</div> <!-- col-md-9 -->
-
-	
-		<div class="col-md-3">
-	<div id="sidebar">
-	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜尋" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
+  </div>
   </div>
 
 
-		
-			<div class="widget">
-    
-	    <h4 class="dsq-widget-title">最新留言</h4>
-		<div id="recent-comments"></div>
-		<script type="text/javascript">
-		    getRecentCommentsList({
-			   type: "github" ? "github" : "github",
-			   user: "aoDudeV",
-               repo: "aoDudeV.github.io",
-               client_id: "",
-               client_secret: "",
-			   count: "5" ? "5" : 5,
-			   recent_comments_target: "#recent-comments"
-			});
-		</script>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Us</h2>
+            <p>Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              140 Metropolitan Avenue<br>
+              5th Floor<br>
+              Brooklyn, NY 11249<br>
+              Phone: 716-472-4484<br>
+              Email: <a href="mailto:ptsteadman@gmail.com">ptsteadman@gmail.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
 	
+          <!-- BEGIN TWITTER BLOCK --> 
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/computerlab_"
+	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
+
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+          <!-- END TWITTER BLOCK -->
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2017 my Hexo Site<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/ptsteadman"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
+    
+      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
+    
+      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
+    
+  </ul>  
 </div>
+<!-- END SOCIAL -->
 
-		
-			
-	<div class="widget">
-		<h4>分類</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/Contents/">Contents<span>1</span></a></li>
-		
-			<li><a href="/categories/Demo/">Demo<span>1</span></a></li>
-		
-			<li><a href="/categories/Docs/">Docs<span>3</span></a></li>
-		
-			<li><a href="/categories/Framework/">Framework<span>1</span></a></li>
-		
-			<li><a href="/categories/Info-Tech/">Info_Tech<span>1</span></a></li>
-		
-			<li><a href="/categories/Language/">Language<span>1</span></a></li>
-		
-			<li><a href="/categories/Learning/">Learning<span>1</span></a></li>
-		
-			<li><a href="/categories/Nourritue/">Nourritue<span>1</span></a></li>
-		
-			<li><a href="/categories/Nourriture/">Nourriture<span>4</span></a></li>
-		
-			<li><a href="/categories/Programmation/">Programmation<span>0</span></a></li>
-		
-			<li><a href="/categories/Programming/">Programming<span>11</span></a></li>
-		
-			<li><a href="/categories/Recherche/">Recherche<span>7</span></a></li>
-		
-			<li><a href="/categories/SSG/">SSG<span>6</span></a></li>
-		
-			<li><a href="/categories/StaticSiteGen/">StaticSiteGen<span>1</span></a></li>
-		
-			<li><a href="/categories/Tech-Info/">Tech_Info<span>1</span></a></li>
-		
-			<li><a href="/categories/Test/">Test<span>1</span></a></li>
-		
-			<li><a href="/categories/Web-Apps/">Web Apps<span>5</span></a></li>
-		
-			<li><a href="/categories/Web-Design/">Web Design<span>1</span></a></li>
-		
-			<li><a href="/categories/Web-Hosting/">Web Hosting<span>3</span></a></li>
-		
-			<li><a href="/categories/WebSite/">WebSite<span>1</span></a></li>
-		
-		</ul>
-	</div>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
 
-		
-			
-	<div class="widget">
-		<h4>標籤雲</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/CMS/">CMS<span>1</span></a></li>
-		
-			<li><a href="/tags/Syntax/">Syntax<span>1</span></a></li>
-		
-			<li><a href="/tags/Software/">Software<span>2</span></a></li>
-		
-			<li><a href="/tags/Slides/">Slides<span>2</span></a></li>
-		
-			<li><a href="/tags/iTransWarp/">iTransWarp<span>1</span></a></li>
-		
-			<li><a href="/tags/Database/">Database<span>2</span></a></li>
-		
-			<li><a href="/tags/Online/">Online<span>6</span></a></li>
-		
-			<li><a href="/tags/HexoTags/">HexoTags<span>1</span></a></li>
-		
-			<li><a href="/tags/App-Weather-github-nodejs/">App, Weather, github, nodejs<span>0</span></a></li>
-		
-			<li><a href="/tags/Programming/">Programming<span>1</span></a></li>
-		
-			<li><a href="/tags/Bower/">Bower<span>1</span></a></li>
-		
-			<li><a href="/tags/Image/">Image<span>1</span></a></li>
-		
-			<li><a href="/tags/Theme/">Theme<span>3</span></a></li>
-		
-			<li><a href="/tags/Recette/">Recette<span>5</span></a></li>
-		
-			<li><a href="/tags/plugins/">plugins<span>1</span></a></li>
-		
-			<li><a href="/tags/Markdown/">Markdown<span>3</span></a></li>
-		
-			<li><a href="/tags/Presentation/">Présentation<span>1</span></a></li>
-		
-			<li><a href="/tags/D3js/">D3js<span>1</span></a></li>
-		
-			<li><a href="/tags/FontAwesome/">FontAwesome<span>1</span></a></li>
-		
-			<li><a href="/tags/Example/">Example<span>2</span></a></li>
-		
-		
-		   <li><a href="/tags">...<span>99</span></a></li>
-		 
-		</ul>
-	</div>
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
 
 
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2017/11/28/m-proteine-poulet/" ><i class="fa fa-file-o"></i>Nem proteine poulet</a>
-      </li>
-    
-      <li>
-        <a href="/2017/11/27/euillete-Roule/" ><i class="fa fa-file-o"></i>Feuillete-Roule</a>
-      </li>
-    
-      <li>
-        <a href="/2017/11/27/ki-js-sur-linux-mint/" ><i class="fa fa-file-o"></i>WikiJS sur linux mint</a>
-      </li>
-    
-      <li>
-        <a href="/2017/11/27/dejs-Presentation-Html-Slides/" ><i class="fa fa-file-o"></i>Presentation Html Slides</a>
-      </li>
-    
-      <li>
-        <a href="/2017/11/27/chis-parmentier-irlandais/" ><i class="fa fa-file-o"></i>Hachis parmentier irlandais</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>鏈接</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/wzpan" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hahack" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
-	
-	</ul>
-</div>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-	
-	
-</div> <!-- row-fluid -->
-
-
-	</div>
-  </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2017 John Doe
-  
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
-  
-
-
-  
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
-
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
 </script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
 
 
 
-   <script type="text/javascript">      
-     var search_path = "search.xml";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "/" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
 
 
-<!-- syntax highlighting -->
 
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
 
 </body>
-   </html>
+</html>

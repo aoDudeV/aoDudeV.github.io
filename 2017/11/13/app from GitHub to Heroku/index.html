@@ -1,322 +1,589 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <title>GitHub to Heroku | my Hexo Site</title>
-  <meta name="author" content="John Doe">
-  
-  <meta name="description" content="Beautiful site">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="GitHub to Heroku"/>
-  <meta property="og:site_name" content="my Hexo Site"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+  <meta name="description" content="Quick demonstration of auto-deploying an app from GitHub to HerokuVideo src ==&amp;gt; https://www.youtube.com/watch?v=QUvxrzINj5Q">
+<meta name="keywords" content="GitHub,Video,Youtube,Heroku">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub to Heroku">
+<meta property="og:url" content="http://yoursite.com/2017/11/13/app from GitHub to Heroku/index.html">
+<meta property="og:site_name" content="my Hexo Site">
+<meta property="og:description" content="Quick demonstration of auto-deploying an app from GitHub to HerokuVideo src ==&amp;gt; https://www.youtube.com/watch?v=QUvxrzINj5Q">
+<meta property="og:updated_time" content="2017-11-26T04:27:33.758Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub to Heroku">
+<meta name="twitter:description" content="Quick demonstration of auto-deploying an app from GitHub to HerokuVideo src ==&amp;gt; https://www.youtube.com/watch?v=QUvxrzINj5Q">
   
-    <meta property="og:image" content=""/>
+    <link rel="alternative" href="/atom.xml" title="my Hexo Site" type="application/atom+xml">
   
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
 
-  
-  
-    <link href="/favicon.png" rel="icon">
-  
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/themes/cerulean.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight-default.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/comment.css" media="screen" type="text/css">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
-  <![endif]-->
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
-  
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
-  
-  <!-- analytics -->
-  
-
-
-
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="/">my Hexo Site</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span>716-472-4484</span></li>
+	  <li><i class="fa fa-envelope-o"></i><span>ptsteadman@gmail.com</span></li>
+	</ul>
       </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="/login">Log In</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">my Hexo Site</a>-->
+
+    <a class="site-logo" href="/">
+      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
+    </a>
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	
+	<li class="">
+	  <a  href="/">Home</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/contact/">Contact</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->
 
   <div class="container">
-  	<div class="content">
-    	 
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2017/11/13/app from GitHub to Heroku/">GitHub to Heroku</a>
+    </h2>
 
 
-	
-		<div class="page-header page-header-inverse ">		
-			<h1 class="title title-inverse "> GitHub to Heroku</h1>
-		</div>		
-	
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-app from GitHub to Heroku" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> online source</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
 
-
-
-
-
-
-<div class="row post">
-	<!-- cols -->
-	
-	<div id="top_meta"></div>
-	<div class="col-md-9">
-	
-
-	<!-- content -->
-	<div class="mypage">		
-	  		
-
-	  <h1 id="Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku"><a href="#Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku" class="headerlink" title="Quick demonstration of auto-deploying an app from GitHub to Heroku"></a>Quick demonstration of auto-deploying an app from GitHub to Heroku</h1><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=QUvxrzINj5Q" target="_blank" rel="external">https://www.youtube.com/watch?v=QUvxrzINj5Q</a></p>
+	</li>
+	<li class="hidden-xs"><i class="fa fa-comments"></i>
+	  <a href="http://yoursite.com/2017/11/13/app from GitHub to Heroku/#disqus_thread" class="article-comment-link">Comments</a>
+	</li>
+	<li class="hidden-xs"><i class="fa fa-tags"></i> 
 	  
-	</div>
+  
+    <a href="/tags/GitHub/" title="GitHub">GitHub</a>,
+  
+    <a href="/tags/Video/" title="Video">Video</a>,
+  
+    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
+  
+    <a href="/tags/Heroku/" title="Heroku">Heroku</a>
+  
 
-	<div>
-  	<center>
-	<div class="pagination">
-<ul class="pagination">
-	 
-				
-    	<li class="prev"><a href="/2017/11/13/Recherche 14 sept./" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Precedent</a></li>
-  		
 
-        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+	</li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/Web-Hosting/">Web Hosting</a>
+  </div>
+  <br>
 
-		
-		   <li class="next"><a href="/2017/11/13/UI kit example/" class="alignright next">下一頁<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku"><a href="#Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku" class="headerlink" title="Quick demonstration of auto-deploying an app from GitHub to Heroku"></a>Quick demonstration of auto-deploying an app from GitHub to Heroku</h1><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=QUvxrzINj5Q" target="_blank" rel="external">https://www.youtube.com/watch?v=QUvxrzINj5Q</a></p>
+
+      
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/11/13/Recherche 14 sept./" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-	
-</ul>
+          Recherche 14 sept.
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/13/UI kit example/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">UI kit example</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/Web-Apps/">Web Apps (5)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/StaticSiteGen/">StaticSiteGen (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Web-Hosting/">Web Hosting (3)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Tech-Info/">Tech_Info (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Recherche/">Recherche (7)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Learning/">Learning (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Contents/">Contents (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/WebSite/">WebSite (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Framework/">Framework (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Language/">Language (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Web-Design/">Web Design (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Info-Tech/">Info_Tech (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Programmation/">Programmation (0)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Programming/">Programming (11)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/SSG/">SSG (6)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Nourriture/">Nourriture (4)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Demo/">Demo (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Docs/">Docs (3)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Test/">Test (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Nourritue/">Nourritue (1)</a>
+	</li>
+      
+    </ul>
+  </div>
 </div>
 
-    </center>
-	</div>
 
-    <!-- share -->
-    
-        
-    <div class="bdsharebuttonbox">
-        <a href="#" class="bds_more" data-cmd="more"></a>
-        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
-        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
-        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS/"><i class='fa fa-tags'></i>AngularJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animated/"><i class='fa fa-tags'></i>Animated</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/App/"><i class='fa fa-tags'></i>App</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bash/"><i class='fa fa-tags'></i>Bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Beautify/"><i class='fa fa-tags'></i>Beautify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BonAp/"><i class='fa fa-tags'></i>BonAp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrap/"><i class='fa fa-tags'></i>Bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bower/"><i class='fa fa-tags'></i>Bower</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMS/"><i class='fa fa-tags'></i>CMS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/"><i class='fa fa-tags'></i>CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code/"><i class='fa fa-tags'></i>Code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Converter/"><i class='fa fa-tags'></i>Converter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cuisine/"><i class='fa fa-tags'></i>Cuisine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/D3js/"><i class='fa fa-tags'></i>D3js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/"><i class='fa fa-tags'></i>Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deploy/"><i class='fa fa-tags'></i>Deploy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design/"><i class='fa fa-tags'></i>Design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Documentation/"><i class='fa fa-tags'></i>Documentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EasyToBoot/"><i class='fa fa-tags'></i>EasyToBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Editor/"><i class='fa fa-tags'></i>Editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Embedded/"><i class='fa fa-tags'></i>Embedded</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Emmet/"><i class='fa fa-tags'></i>Emmet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/"><i class='fa fa-tags'></i>English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Example/"><i class='fa fa-tags'></i>Example</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Folder/"><i class='fa fa-tags'></i>Folder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FontAwesome/"><i class='fa fa-tags'></i>FontAwesome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Freemind/"><i class='fa fa-tags'></i>Freemind</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gif/"><i class='fa fa-tags'></i>Gif</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/"><i class='fa fa-tags'></i>GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/"><i class='fa fa-tags'></i>Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Grunt/"><i class='fa fa-tags'></i>Grunt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/"><i class='fa fa-tags'></i>HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/"><i class='fa fa-tags'></i>HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/"><i class='fa fa-tags'></i>Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/"><i class='fa fa-tags'></i>Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HexoTags/"><i class='fa fa-tags'></i>HexoTags</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Html/"><i class='fa fa-tags'></i>Html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hyperliens/"><i class='fa fa-tags'></i>Hyperliens</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Image/"><i class='fa fa-tags'></i>Image</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Images/"><i class='fa fa-tags'></i>Images</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/"><i class='fa fa-tags'></i>Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kivy/"><i class='fa fa-tags'></i>Kivy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Learning/"><i class='fa fa-tags'></i>Learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/"><i class='fa fa-tags'></i>Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LiveCD/"><i class='fa fa-tags'></i>LiveCD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkItUp/"><i class='fa fa-tags'></i>MarkItUp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/"><i class='fa fa-tags'></i>Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MongoDB/"><i class='fa fa-tags'></i>MongoDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Movie/"><i class='fa fa-tags'></i>Movie</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MustHave/"><i class='fa fa-tags'></i>MustHave</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/"><i class='fa fa-tags'></i>MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nicko/"><i class='fa fa-tags'></i>Nicko</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NoSQL/"><i class='fa fa-tags'></i>NoSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/"><i class='fa fa-tags'></i>NodeJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online/"><i class='fa fa-tags'></i>Online</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/"><i class='fa fa-tags'></i>PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Plugins/"><i class='fa fa-tags'></i>Plugins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Poulet/"><i class='fa fa-tags'></i>Poulet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/"><i class='fa fa-tags'></i>Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/"><i class='fa fa-tags'></i>Présentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/"><i class='fa fa-tags'></i>Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Q-A/"><i class='fa fa-tags'></i>Q&A</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/QuickStart/"><i class='fa fa-tags'></i>QuickStart</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Readme/"><i class='fa fa-tags'></i>Readme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Recette/"><i class='fa fa-tags'></i>Recette</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Recherche/"><i class='fa fa-tags'></i>Recherche</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Script/"><i class='fa fa-tags'></i>Script</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortcut/"><i class='fa fa-tags'></i>Shortcut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slides/"><i class='fa fa-tags'></i>Slides</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/"><i class='fa fa-tags'></i>Software</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Syntax/"><i class='fa fa-tags'></i>Syntax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tags/"><i class='fa fa-tags'></i>Tags</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/"><i class='fa fa-tags'></i>Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Theme/"><i class='fa fa-tags'></i>Theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tools/"><i class='fa fa-tags'></i>Tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tutorials/"><i class='fa fa-tags'></i>Tutorials</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI-Kit/"><i class='fa fa-tags'></i>UI_Kit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Un-minify/"><i class='fa fa-tags'></i>Un_minify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Usb-Boot/"><i class='fa fa-tags'></i>Usb_Boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Utilities/"><i class='fa fa-tags'></i>Utilities</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Video/"><i class='fa fa-tags'></i>Video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather/"><i class='fa fa-tags'></i>Weather</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web/"><i class='fa fa-tags'></i>Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Scraping/"><i class='fa fa-tags'></i>Web Scraping</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebIX/"><i class='fa fa-tags'></i>WebIX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebScrapper/"><i class='fa fa-tags'></i>WebScrapper</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Wiki/"><i class='fa fa-tags'></i>Wiki</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Youtube/"><i class='fa fa-tags'></i>Youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheat-sheet/"><i class='fa fa-tags'></i>cheat-sheet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/example/"><i class='fa fa-tags'></i>example</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/"><i class='fa fa-tags'></i>ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-tag-owl/"><i class='fa fa-tags'></i>hexo-tag-owl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/highlight/"><i class='fa fa-tags'></i>highlight</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTransWarp/"><i class='fa fa-tags'></i>iTransWarp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/"><i class='fa fa-tags'></i>jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugins/"><i class='fa fa-tags'></i>plugins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/themes/"><i class='fa fa-tags'></i>themes</a></li></ul>
     </div>
-    <script>
-        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
-        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-    </script>
-
-
-        
-
-    
-	
-	<!-- comment -->
-	
-<section id="comment">
-  <h2 class="title">留言</h2>
-    	 
-	 <div id="comment-thread"></div>
-	 <div id="loading-spin"></div>
-	 <script type="text/javascript">
-	   getComments({
-           type: "github" ? "github" : "github",       
-	       user: "aoDudeV",
-	       repo: "aoDudeV.github.io",
-		   client_id: "",
-           client_secret: "",
-		   no_comment: "暂时还没有留言呢，点击下面的按钮去留言吧！",
-		   go_to_comment: "去留言",
-		   no_issue: "no_issue",
-		   issue_title: "GitHub to Heroku",
-		   issue_id: "",
-		   btn_class: "btn btn-primary",
-		   comments_target: "#comment-thread",
-		   loading_target: "#loading_spin"
-		   });
-	 </script>
-  
-</section>
-
-
-	</div> <!-- col-md-9/col-md-12 -->
-		
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
-
-	<!-- date -->
-	
-	<div class="meta-widget">
-	<i class="fa fa-clock-o"></i>
-	2017-11-13 
-	</div>
-	
-
-	<!-- categories -->
-    
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
-    <ul id="categorys" class="tag_box list-unstyled collapse in">
-          
-  <li>
-    <li><a href="/categories/Web-Hosting/">Web Hosting<span>3</span></a></li>
-  </li>
-
-    </ul>
-	</div>
-	
-
-	<!-- tags -->
-	
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
-    <ul id="tags" class="tag_box list-unstyled collapse in">	  
-	    
-  <li><a href="/tags/GitHub/">GitHub<span>3</span></a></li> <li><a href="/tags/Video/">Video<span>14</span></a></li> <li><a href="/tags/Youtube/">Youtube<span>11</span></a></li> <li><a href="/tags/Heroku/">Heroku<span>3</span></a></li>
-    </ul>
-	</div>
-	
-
-	<!-- toc -->
-	<div class="meta-widget">
-	
-	</div>
-	
-    <hr>
-	
-</div><!-- col-md-3 -->
-
-	</div>
-		
-
-</div><!-- row -->
-
-
-
-	</div>
   </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2017 John Doe
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
   
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
+    
   
-
-
+    
   
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
 
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
+</div>
+</div>
+
+  </section>
+</div>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Us</h2>
+            <p>Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              140 Metropolitan Avenue<br>
+              5th Floor<br>
+              Brooklyn, NY 11249<br>
+              Phone: 716-472-4484<br>
+              Email: <a href="mailto:ptsteadman@gmail.com">ptsteadman@gmail.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+	
+          <!-- BEGIN TWITTER BLOCK --> 
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/computerlab_"
+	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
+
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+          <!-- END TWITTER BLOCK -->
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2017 my Hexo Site<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/ptsteadman"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
+    
+      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
+    
+      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
 </script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
 
 
 
-   <script type="text/javascript">      
-     var search_path = "search.xml";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "/" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
 
 
-<!-- syntax highlighting -->
 
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
 
 </body>
-   </html>
+</html>
