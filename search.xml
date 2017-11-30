@@ -295,9 +295,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> Theme </tag>
-            
             <tag> Readme </tag>
+            
+            <tag> Theme </tag>
             
         </tags>
         
@@ -409,15 +409,15 @@
         
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Documentation </tag>
             
             <tag> Wiki </tag>
             
-            <tag> Theme </tag>
+            <tag> Hexo </tag>
             
             <tag> Readme </tag>
+            
+            <tag> Theme </tag>
             
         </tags>
         
@@ -529,11 +529,11 @@
             
             <tag> Hexo </tag>
             
+            <tag> Readme </tag>
+            
             <tag> Theme </tag>
             
             <tag> Freemind </tag>
-            
-            <tag> Readme </tag>
             
         </tags>
         
@@ -697,17 +697,17 @@
         
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Video </tag>
             
+            <tag> Hexo </tag>
+            
             <tag> Plugins </tag>
+            
+            <tag> Readme </tag>
             
             <tag> HTML5 </tag>
             
             <tag> Embedded </tag>
-            
-            <tag> Readme </tag>
             
         </tags>
         
@@ -1013,13 +1013,13 @@ code snippet
             
             <tag> Recherche </tag>
             
-            <tag> CSS </tag>
-            
             <tag> AngularJS </tag>
             
             <tag> Bower </tag>
             
             <tag> Grunt </tag>
+            
+            <tag> CSS </tag>
             
         </tags>
         
@@ -1093,9 +1093,9 @@ code snippet
             
             <tag> NodeJS </tag>
             
-            <tag> Database </tag>
-            
             <tag> MongoDB </tag>
+            
+            <tag> Database </tag>
             
             <tag> NoSQL </tag>
             
@@ -1269,13 +1269,13 @@ code snippet
         
         <tags>
             
+            <tag> Programming </tag>
+            
             <tag> Tools </tag>
             
             <tag> Software </tag>
             
             <tag> Utilities </tag>
-            
-            <tag> Programming </tag>
             
         </tags>
         
@@ -1305,6 +1305,196 @@ code snippet
             <tag> Animated </tag>
             
             <tag> ffmpeg </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Recherche Web Scrapper]]></title>
+      <url>/2017/11/13/Recherche%20Web%20Scrapper/</url>
+      <content type="html"><![CDATA[<h1 id="Recherche-Web-Scrapper"><a href="#Recherche-Web-Scrapper" class="headerlink" title="Recherche Web Scrapper"></a>Recherche Web Scrapper</h1><p><strong>src</strong> ==&gt; <a href="http://youtu.be/-cxNboVufEo" target="_blank" rel="external">http://youtu.be/-cxNboVufEo</a></p>
+<p><strong>Test de l’extension Web scrapper</strong></p>
+<p><strong>src</strong> ==&gt; <a href="http://webscraper.io" target="_blank" rel="external">http://webscraper.io</a></p>
+<p>import.io ==&gt; <em>ca fonctionne</em>  ==&gt; CSV</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Recherche </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Video </tag>
+            
+            <tag> Youtube </tag>
+            
+            <tag> WebScrapper </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[UI kit example]]></title>
+      <url>/2017/11/13/UI%20kit%20example/</url>
+      <content type="html"><![CDATA[<h1 id="UI-kit-example"><a href="#UI-kit-example" class="headerlink" title="UI kit example"></a>UI kit example</h1><p><strong>Beau site de développeur Web</strong></p>
+<p><strong>src</strong> ==&gt; <a href="http://www.iniapp.com/" target="_blank" rel="external">http://www.iniapp.com/</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> WebSite </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Design </tag>
+            
+            <tag> UI_Kit </tag>
+            
+            <tag> Example </tag>
+            
+            <tag> Web </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Online Unminify]]></title>
+      <url>/2017/11/13/Unminify/</url>
+      <content type="html"><![CDATA[<h1 id="Unminify"><a href="#Unminify" class="headerlink" title="Unminify"></a>Unminify</h1><h2 id="Free-online-tool-to-unminify-unpack-deobfuscate-JavaScript-CSS-and-HTML-code-making-it-readable-and-pretty"><a href="#Free-online-tool-to-unminify-unpack-deobfuscate-JavaScript-CSS-and-HTML-code-making-it-readable-and-pretty" class="headerlink" title="Free online tool to unminify (unpack, deobfuscate) JavaScript, CSS and HTML code, making it readable and pretty."></a>Free online tool to unminify (unpack, deobfuscate) JavaScript, CSS and HTML code, making it readable and pretty.</h2><p><strong>src</strong> ==&gt; <a href="http://unminify.com" target="_blank" rel="external">http://unminify.com</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Apps </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Online </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> Tools </tag>
+            
+            <tag> CSS </tag>
+            
+            <tag> Javascript </tag>
+            
+            <tag> Un_minify </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Deploy to GitHub and Heroku]]></title>
+      <url>/2017/11/13/Deploy%20to%20GitHub%20and%20Heroku/</url>
+      <content type="html"><![CDATA[<h1 id="Deploy-to-GitHub-and-Heroku"><a href="#Deploy-to-GitHub-and-Heroku" class="headerlink" title="Deploy to GitHub and Heroku"></a>Deploy to GitHub and Heroku</h1><h2 id="In-this-video-we-prep-our-Django-app-and-upload-to-GitHub-and-Heroku-We-also-schedule-our-worker-app-to-update-our-database-This-is-a-long-one-so-hang-in-there"><a href="#In-this-video-we-prep-our-Django-app-and-upload-to-GitHub-and-Heroku-We-also-schedule-our-worker-app-to-update-our-database-This-is-a-long-one-so-hang-in-there" class="headerlink" title="In this video we prep our Django app and upload to GitHub and Heroku. We also schedule our worker app to update our database. This is a long one, so hang in there!"></a>In this video we prep our Django app and upload to GitHub and Heroku. We also schedule our worker app to update our database. This is a long one, so hang in there!</h2><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=8Qcqh0jl5YU" target="_blank" rel="external">https://www.youtube.com/watch?v=8Qcqh0jl5YU</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Hosting </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Deploy </tag>
+            
+            <tag> Video </tag>
+            
+            <tag> Youtube </tag>
+            
+            <tag> Heroku </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Recherche iDraw]]></title>
+      <url>/2017/11/13/Recherche%20iDraw/</url>
+      <content type="html"><![CDATA[<h1 id="Recherche-iDraw"><a href="#Recherche-iDraw" class="headerlink" title="Recherche iDraw"></a>Recherche iDraw</h1><p><strong>src</strong> ==&gt; <a href="https://www.youidraw.com" target="_blank" rel="external">https://www.youidraw.com</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Recherche </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Online </tag>
+            
+            <tag> Tools </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[GitHub to Heroku]]></title>
+      <url>/2017/11/13/app%20from%20GitHub%20to%20Heroku/</url>
+      <content type="html"><![CDATA[<h1 id="Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku"><a href="#Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku" class="headerlink" title="Quick demonstration of auto-deploying an app from GitHub to Heroku"></a>Quick demonstration of auto-deploying an app from GitHub to Heroku</h1><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=QUvxrzINj5Q" target="_blank" rel="external">https://www.youtube.com/watch?v=QUvxrzINj5Q</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Hosting </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Video </tag>
+            
+            <tag> Youtube </tag>
+            
+            <tag> Heroku </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Recherche Gif animé]]></title>
+      <url>/2017/11/13/Recherche%20Gif%20anime/</url>
+      <content type="html"><![CDATA[<h1 id="Recherche-Gif-anime"><a href="#Recherche-Gif-anime" class="headerlink" title="Recherche Gif animé"></a>Recherche Gif animé</h1><p><strong>src</strong> ==&gt; <a href="http://Giphy.com" target="_blank" rel="external">http://Giphy.com</a></p>
+<p><strong>src</strong> ==&gt; <a href="http://Gifs.com" target="_blank" rel="external">http://Gifs.com</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Recherche </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Online </tag>
+            
+            <tag> Image </tag>
+            
+            <tag> Gif </tag>
             
         </tags>
         
@@ -1372,9 +1562,9 @@ code snippet
         
         <tags>
             
-            <tag> App </tag>
-            
             <tag> NodeJS </tag>
+            
+            <tag> App </tag>
             
             <tag> Weather </tag>
             
@@ -1407,6 +1597,209 @@ code snippet
             <tag> Recherche </tag>
             
             <tag> Design </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Online HTML Editor]]></title>
+      <url>/2017/11/13/Online%20HTML%20Editor/</url>
+      <content type="html"><![CDATA[<h1 id="Online-HTML-Editor"><a href="#Online-HTML-Editor" class="headerlink" title="Online HTML Editor"></a>Online HTML Editor</h1><p><strong>src</strong> ==&gt; <a href="https://html-online.com/editor/" target="_blank" rel="external">https://html-online.com/editor/</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Apps </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Online </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> Editor </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Online HTML Editor]]></title>
+      <url>/2017/11/13/Html%20to%20markdown%20converter/</url>
+      <content type="html"><![CDATA[<h1 id="Html-to-markdown-converter"><a href="#Html-to-markdown-converter" class="headerlink" title="Html to markdown converter"></a>Html to markdown converter</h1><p><strong>src</strong> ==&gt; <a href="https://domchristie.github.io/to-markdown/" target="_blank" rel="external">https://domchristie.github.io/to-markdown/</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Apps </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Online </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> Tools </tag>
+            
+            <tag> Converter </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Recherche 14 sept.]]></title>
+      <url>/2017/11/13/Recherche%2014%20sept./</url>
+      <content type="html"><![CDATA[<h1 id="Recherche-14-sept"><a href="#Recherche-14-sept" class="headerlink" title="Recherche 14 sept."></a>Recherche 14 sept.</h1><p><strong>src</strong> ==&gt; <a href="http://www.rmprepusb.com/" target="_blank" rel="external">http://www.rmprepusb.com/</a></p>
+<p><strong>src</strong> ==&gt; <a href="http://www.easy2boot.com/" target="_blank" rel="external">http://www.easy2boot.com/</a></p>
+<p><strong>Add ESET System Rescue Live + persistence to Easy2Boot (E2B)’</strong></p>
+<p><strong>src</strong> ==&gt; <a href="https://youtu.be/Z2dla8uz0us" target="_blank" rel="external">https://youtu.be/Z2dla8uz0us</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Recherche </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Tools </tag>
+            
+            <tag> EasyToBoot </tag>
+            
+            <tag> Usb_Boot </tag>
+            
+            <tag> LiveCD </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Recherche 14 juillet]]></title>
+      <url>/2017/11/13/Recherche%2014%20juillet/</url>
+      <content type="html"><![CDATA[<h1 id="Recherche-14-juillet"><a href="#Recherche-14-juillet" class="headerlink" title="Recherche 14 juillet"></a>Recherche 14 juillet</h1><p><strong>src</strong> ==&gt; <a href="http://slides.com/mkozhukh/building-apps-with-webix-ui#/1" target="_blank" rel="external">http://slides.com/mkozhukh/building-apps-with-webix-ui#/1</a></p>
+<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-example" target="_blank" rel="external">https://github.com/webix-hub/nodejs-example</a></p>
+<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-data" target="_blank" rel="external">https://github.com/webix-hub/nodejs-data</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Recherche </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> NodeJS </tag>
+            
+            <tag> Recherche </tag>
+            
+            <tag> WebIX </tag>
+            
+            <tag> Slides </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Using Heroku + Node]]></title>
+      <url>/2017/11/13/Heroku_NodeJS_WebSite/</url>
+      <content type="html"><![CDATA[<h1 id="How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017"><a href="#How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017" class="headerlink" title="How to Create/Host a Website for Free / Using Heroku + Node (2017)"></a>How to Create/Host a Website for Free / Using Heroku + Node (2017)</h1><p><strong>video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=ufBsL3PnNfw" target="_blank" rel="external">https://www.youtube.com/watch?v=ufBsL3PnNfw</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Web Hosting </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Video </tag>
+            
+            <tag> Youtube </tag>
+            
+            <tag> Heroku </tag>
+            
+            <tag> NodeJS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Programme utilitaire]]></title>
+      <url>/2017/11/13/Programme%20utilitaire/</url>
+      <content type="html"><![CDATA[<h1 id="Programme-utilitaire"><a href="#Programme-utilitaire" class="headerlink" title="Programme utilitaire"></a>Programme utilitaire</h1><ul>
+<li><strong>Trouver les duplicates</strong>   G:\techPrg\AntiTwin.exe</li>
+<li><strong>Gros fichier</strong>  C:\Program Files (x86)\WinDirStat\windirstat.exe</li>
+<li><strong>Recherche fichier</strong>   G:\techPrg\SearchMyFilesSearchMyFiles.exe</li>
+<li><strong>Temp CPU</strong>          G:\techPrg\CoreTemp64\Core Temp.exe</li>
+<li><strong>Temp GPU</strong>   G:\techPrg\GPU-ZPortable\GPU-Z.0.8.9.exe</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Tech_Info </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Tools </tag>
+            
+            <tag> Software </tag>
+            
+            <tag> Utilities </tag>
+            
+            <tag> MustHave </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[markItUp! in action]]></title>
+      <url>/2017/11/13/markItUp!%20in%20action/</url>
+      <content type="html"><![CDATA[<h1 id="markItUp-in-action"><a href="#markItUp-in-action" class="headerlink" title="markItUp! in action"></a><em>markItUp! in action</em></h1><p><strong>src</strong> ==&gt; <a href="http://markitup.jaysalvat.com/examples/" target="_blank" rel="external">http://markitup.jaysalvat.com/examples/</a></p>
+<p><img src="http://markitup.jaysalvat.com/_images/examples-sets.png" alt="Tag sets"></p>
+<h3 id="Tag-Sets"><a href="#Tag-Sets" class="headerlink" title="Tag Sets"></a>Tag Sets</h3><h5 id="Html"><a href="#Html" class="headerlink" title="Html"></a><a href="http://markitup.jaysalvat.com/examples/html" target="_blank" rel="external">Html</a></h5><p>markItUp! as a Html oriented editor</p>
+<h5 id="BBcode"><a href="#BBcode" class="headerlink" title="BBcode"></a><a href="http://markitup.jaysalvat.com/examples/bbcode" target="_blank" rel="external">BBcode</a></h5><p>markItUp! as a BBcode oriented editor</p>
+<h5 id="Textile"><a href="#Textile" class="headerlink" title="Textile"></a><a href="http://markitup.jaysalvat.com/examples/textile" target="_blank" rel="external">Textile</a></h5><p>markItUp! as a Textile oriented editor</p>
+<h5 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a><a href="http://markitup.jaysalvat.com/examples/markdown" target="_blank" rel="external">Markdown</a></h5><p>markItUp! as a Markdown oriented editor</p>
+<h5 id="Wiki-syntax"><a href="#Wiki-syntax" class="headerlink" title="Wiki syntax"></a><a href="http://markitup.jaysalvat.com/examples/wiki" target="_blank" rel="external">Wiki syntax</a></h5><p>markItUp! as a Wiki oriented editor</p>
+<h5 id="Dotclear"><a href="#Dotclear" class="headerlink" title="Dotclear"></a><a href="http://markitup.jaysalvat.com/examples/dotclear" target="_blank" rel="external">Dotclear</a></h5><p>markItUp! as a Dotclear oriented editor</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Framework </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> Plugins </tag>
+            
+            <tag> MarkItUp </tag>
             
         </tags>
         
@@ -1463,6 +1856,92 @@ code snippet
             <tag> Example </tag>
             
             <tag> Syntax </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PHP beginner tutorials]]></title>
+      <url>/2017/11/13/PHP%20beginner%20tutorials/</url>
+      <content type="html"><![CDATA[<h1 id="PHP-beginner-tutorials"><a href="#PHP-beginner-tutorials" class="headerlink" title="PHP beginner tutorials"></a>PHP beginner tutorials</h1><p><strong>mmtuts PHP beginers tutorials</strong> (<em>54 videos</em>)</p>
+<p><strong>src</strong> ==&gt; <a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-" target="_blank" rel="external">https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-</a></p>
+<p><strong>Storage :</strong> G:\yt_today\yt_Prog_algo\mmtuts PHP beginers tutorials (54 videos)</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Learning </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Video </tag>
+            
+            <tag> Youtube </tag>
+            
+            <tag> PHP </tag>
+            
+            <tag> Tutorials </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Another Documentation Server! (hads)]]></title>
+      <url>/2017/11/13/Hads_Documentation/</url>
+      <content type="html"><![CDATA[<h1 id="Hey-it’s-Another-Documentation-Server-hads"><a href="#Hey-it’s-Another-Documentation-Server-hads" class="headerlink" title="Hey it’s Another Documentation Server! (hads)"></a>Hey it’s Another Documentation Server! (hads)</h1><p><a href="https://github.com/sinedied/hads" target="_blank" rel="external">https://github.com/sinedied/hads</a><br><a href="https://www.npmjs.com/package/hads" target="_blank" rel="external"><img src="https://img.shields.io/npm/v/hads.svg" alt="NPM version"></a><br><a href="https://travis-ci.org/sinedied/hads" target="_blank" rel="external"><img src="https://img.shields.io/travis/sinedied/hads/master.svg" alt="Build status"></a><br><img src="https://img.shields.io/node/v/hads.svg" alt="Node version"><br><a href="https://github.com/sindresorhus/xo" target="_blank" rel="external"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="XO code style"></a><br><img src="https://img.shields.io/npm/dm/hads.svg" alt="Downloads"><br><a href="LICENSE"><img src="https://img.shields.io/npm/l/hads.svg" alt="License"></a></p>
+<h3 id="The-master-of-hell-docs"><a href="#The-master-of-hell-docs" class="headerlink" title="The master of hell docs"></a><em>The master of <del>hell</del> docs</em></h3><blockquote>
+<p><strong>Hads</strong> is a fast Node.js based web server allowing to browse, search and edit documentation written in<br><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>.</p>
+</blockquote>
+<p><img src="https://cloud.githubusercontent.com/assets/593151/24351859/afb0b958-12e7-11e7-8ad4-8655e6b3c1c1.png" alt="screenshot"></p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>No configuration needed</li>
+<li>Github-like presentation</li>
+<li>GFM (<a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="external">Github Flavoured Markdown</a>)</li>
+<li>Automatic indexation and search</li>
+<li>In-browser editor</li>
+<li>Table of contents using Markdown extension <code>[[toc]]</code></li>
+<li>Navigation index using Markdown extension <code>[[index]]</code></li>
+<li>Diagrams and flowcharts using <a href="http://knsv.github.io/mermaid/" target="_blank" rel="external">Mermaid</a> syntax</li>
+<li>Drag’n drop images</li>
+<li>100% offline</li>
+<li>Custom CSS style</li>
+</ul>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hads</span><br><span class="line">hads -o</span><br></pre></td></tr></table></figure>
+<p>Your browser will open <code>http://localhost:4040</code> and display your project documentation.</p>
+<h3 id="Command-line-options"><a href="#Command-line-options" class="headerlink" title="Command-line options"></a>Command-line options</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Usage: hads [root dir] [options]</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  -p, --port        Port number to listen on       [default: 4040]</span><br><span class="line">  -h, --host        Host address to bind to        [default: &quot;localhost&quot;]</span><br><span class="line">  -i, --images-dir  Directory to store images      [default: &quot;images&quot;]</span><br><span class="line">  -o, --open        Open default browser on start</span><br><span class="line">  --help            Show this help</span><br></pre></td></tr></table></figure>
+<p>If no root dir is specified, <code>./</code> will be used.</p>
+<h2 id="Extras"><a href="#Extras" class="headerlink" title="Extras"></a>Extras</h2><h3 id="Home-page"><a href="#Home-page" class="headerlink" title="Home page"></a>Home page</h3><p>The server will automatically search for a file named <code>index.md</code>, <code>readme.md</code> or <code>README.md</code> on the specified<br>documentation root and will use it as your home page.</p>
+<p>You can customize the CSS style in a file named <code>custom.css</code>.</p>
+<h3 id="Table-of-contents"><a href="#Table-of-contents" class="headerlink" title="Table of contents"></a>Table of contents</h3><p>The special text <code>[[toc]]</code> will be replaced by the table of contents of the markdown document, based on headings.</p>
+<h3 id="Navigation-index"><a href="#Navigation-index" class="headerlink" title="Navigation index"></a>Navigation index</h3><p>The special text <code>[[index]]</code> will be replaced by the full navigation index of all markdown files found under the<br>specified <em>root dir</em>. File and folder names will be <em>humanized</em> for better readability.</p>
+<p>It is particularly useful on the home page to provide an overview of the available documentation for your project.</p>
+<h3 id="Diagrams-and-flowcharts"><a href="#Diagrams-and-flowcharts" class="headerlink" title="Diagrams and flowcharts"></a>Diagrams and flowcharts</h3><p>You can use the <a href="http://knsv.github.io/mermaid/" target="_blank" rel="external">Mermaid</a> syntax to insert diagrams and flowcharts directly in your<br>markdown, but using code blocks with the <code>mermaid</code> language specified, like this:</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
+</code></pre><p>Mermaid <a href="https://mermaidjs.github.io/mermaidAPI.html" target="_blank" rel="external">configuration</a> can be overridden on a given page using the global variable <code>MERMAID_CONFIG</code> in a <code>&lt;script&gt;</code> tag, for example:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">MERMAID_CONFIG = &#123; theme: 'forest' &#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> Contents </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> NodeJS </tag>
+            
+            <tag> Documentation </tag>
+            
+            <tag> Wiki </tag>
+            
+            <tag> Markdown </tag>
             
         </tags>
         
@@ -1527,492 +2006,13 @@ code snippet
             
             <tag> NodeJS </tag>
             
+            <tag> Database </tag>
+            
             <tag> CMS </tag>
             
             <tag> iTransWarp </tag>
             
-            <tag> Database </tag>
-            
             <tag> MySQL </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[markItUp! in action]]></title>
-      <url>/2017/11/13/markItUp!%20in%20action/</url>
-      <content type="html"><![CDATA[<h1 id="markItUp-in-action"><a href="#markItUp-in-action" class="headerlink" title="markItUp! in action"></a><em>markItUp! in action</em></h1><p><strong>src</strong> ==&gt; <a href="http://markitup.jaysalvat.com/examples/" target="_blank" rel="external">http://markitup.jaysalvat.com/examples/</a></p>
-<p><img src="http://markitup.jaysalvat.com/_images/examples-sets.png" alt="Tag sets"></p>
-<h3 id="Tag-Sets"><a href="#Tag-Sets" class="headerlink" title="Tag Sets"></a>Tag Sets</h3><h5 id="Html"><a href="#Html" class="headerlink" title="Html"></a><a href="http://markitup.jaysalvat.com/examples/html" target="_blank" rel="external">Html</a></h5><p>markItUp! as a Html oriented editor</p>
-<h5 id="BBcode"><a href="#BBcode" class="headerlink" title="BBcode"></a><a href="http://markitup.jaysalvat.com/examples/bbcode" target="_blank" rel="external">BBcode</a></h5><p>markItUp! as a BBcode oriented editor</p>
-<h5 id="Textile"><a href="#Textile" class="headerlink" title="Textile"></a><a href="http://markitup.jaysalvat.com/examples/textile" target="_blank" rel="external">Textile</a></h5><p>markItUp! as a Textile oriented editor</p>
-<h5 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a><a href="http://markitup.jaysalvat.com/examples/markdown" target="_blank" rel="external">Markdown</a></h5><p>markItUp! as a Markdown oriented editor</p>
-<h5 id="Wiki-syntax"><a href="#Wiki-syntax" class="headerlink" title="Wiki syntax"></a><a href="http://markitup.jaysalvat.com/examples/wiki" target="_blank" rel="external">Wiki syntax</a></h5><p>markItUp! as a Wiki oriented editor</p>
-<h5 id="Dotclear"><a href="#Dotclear" class="headerlink" title="Dotclear"></a><a href="http://markitup.jaysalvat.com/examples/dotclear" target="_blank" rel="external">Dotclear</a></h5><p>markItUp! as a Dotclear oriented editor</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Framework </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Markdown </tag>
-            
-            <tag> MarkItUp </tag>
-            
-            <tag> Plugins </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Recherche 14 sept.]]></title>
-      <url>/2017/11/13/Recherche%2014%20sept./</url>
-      <content type="html"><![CDATA[<h1 id="Recherche-14-sept"><a href="#Recherche-14-sept" class="headerlink" title="Recherche 14 sept."></a>Recherche 14 sept.</h1><p><strong>src</strong> ==&gt; <a href="http://www.rmprepusb.com/" target="_blank" rel="external">http://www.rmprepusb.com/</a></p>
-<p><strong>src</strong> ==&gt; <a href="http://www.easy2boot.com/" target="_blank" rel="external">http://www.easy2boot.com/</a></p>
-<p><strong>Add ESET System Rescue Live + persistence to Easy2Boot (E2B)’</strong></p>
-<p><strong>src</strong> ==&gt; <a href="https://youtu.be/Z2dla8uz0us" target="_blank" rel="external">https://youtu.be/Z2dla8uz0us</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Recherche </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Tools </tag>
-            
-            <tag> EasyToBoot </tag>
-            
-            <tag> Usb_Boot </tag>
-            
-            <tag> LiveCD </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[GitHub to Heroku]]></title>
-      <url>/2017/11/13/app%20from%20GitHub%20to%20Heroku/</url>
-      <content type="html"><![CDATA[<h1 id="Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku"><a href="#Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku" class="headerlink" title="Quick demonstration of auto-deploying an app from GitHub to Heroku"></a>Quick demonstration of auto-deploying an app from GitHub to Heroku</h1><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=QUvxrzINj5Q" target="_blank" rel="external">https://www.youtube.com/watch?v=QUvxrzINj5Q</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Hosting </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> GitHub </tag>
-            
-            <tag> Video </tag>
-            
-            <tag> Youtube </tag>
-            
-            <tag> Heroku </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[UI kit example]]></title>
-      <url>/2017/11/13/UI%20kit%20example/</url>
-      <content type="html"><![CDATA[<h1 id="UI-kit-example"><a href="#UI-kit-example" class="headerlink" title="UI kit example"></a>UI kit example</h1><p><strong>Beau site de développeur Web</strong></p>
-<p><strong>src</strong> ==&gt; <a href="http://www.iniapp.com/" target="_blank" rel="external">http://www.iniapp.com/</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> WebSite </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> UI_Kit </tag>
-            
-            <tag> Example </tag>
-            
-            <tag> Web </tag>
-            
-            <tag> Design </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Recherche Web Scrapper]]></title>
-      <url>/2017/11/13/Recherche%20Web%20Scrapper/</url>
-      <content type="html"><![CDATA[<h1 id="Recherche-Web-Scrapper"><a href="#Recherche-Web-Scrapper" class="headerlink" title="Recherche Web Scrapper"></a>Recherche Web Scrapper</h1><p><strong>src</strong> ==&gt; <a href="http://youtu.be/-cxNboVufEo" target="_blank" rel="external">http://youtu.be/-cxNboVufEo</a></p>
-<p><strong>Test de l’extension Web scrapper</strong></p>
-<p><strong>src</strong> ==&gt; <a href="http://webscraper.io" target="_blank" rel="external">http://webscraper.io</a></p>
-<p>import.io ==&gt; <em>ca fonctionne</em>  ==&gt; CSV</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Recherche </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Video </tag>
-            
-            <tag> Youtube </tag>
-            
-            <tag> WebScrapper </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Recherche iDraw]]></title>
-      <url>/2017/11/13/Recherche%20iDraw/</url>
-      <content type="html"><![CDATA[<h1 id="Recherche-iDraw"><a href="#Recherche-iDraw" class="headerlink" title="Recherche iDraw"></a>Recherche iDraw</h1><p><strong>src</strong> ==&gt; <a href="https://www.youidraw.com" target="_blank" rel="external">https://www.youidraw.com</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Recherche </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Online </tag>
-            
-            <tag> Tools </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Online Unminify]]></title>
-      <url>/2017/11/13/Unminify/</url>
-      <content type="html"><![CDATA[<h1 id="Unminify"><a href="#Unminify" class="headerlink" title="Unminify"></a>Unminify</h1><h2 id="Free-online-tool-to-unminify-unpack-deobfuscate-JavaScript-CSS-and-HTML-code-making-it-readable-and-pretty"><a href="#Free-online-tool-to-unminify-unpack-deobfuscate-JavaScript-CSS-and-HTML-code-making-it-readable-and-pretty" class="headerlink" title="Free online tool to unminify (unpack, deobfuscate) JavaScript, CSS and HTML code, making it readable and pretty."></a>Free online tool to unminify (unpack, deobfuscate) JavaScript, CSS and HTML code, making it readable and pretty.</h2><p><strong>src</strong> ==&gt; <a href="http://unminify.com" target="_blank" rel="external">http://unminify.com</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Apps </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Online </tag>
-            
-            <tag> HTML </tag>
-            
-            <tag> Tools </tag>
-            
-            <tag> CSS </tag>
-            
-            <tag> Javascript </tag>
-            
-            <tag> Un_minify </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Another Documentation Server! (hads)]]></title>
-      <url>/2017/11/13/Hads_Documentation/</url>
-      <content type="html"><![CDATA[<h1 id="Hey-it’s-Another-Documentation-Server-hads"><a href="#Hey-it’s-Another-Documentation-Server-hads" class="headerlink" title="Hey it’s Another Documentation Server! (hads)"></a>Hey it’s Another Documentation Server! (hads)</h1><p><a href="https://github.com/sinedied/hads" target="_blank" rel="external">https://github.com/sinedied/hads</a><br><a href="https://www.npmjs.com/package/hads" target="_blank" rel="external"><img src="https://img.shields.io/npm/v/hads.svg" alt="NPM version"></a><br><a href="https://travis-ci.org/sinedied/hads" target="_blank" rel="external"><img src="https://img.shields.io/travis/sinedied/hads/master.svg" alt="Build status"></a><br><img src="https://img.shields.io/node/v/hads.svg" alt="Node version"><br><a href="https://github.com/sindresorhus/xo" target="_blank" rel="external"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="XO code style"></a><br><img src="https://img.shields.io/npm/dm/hads.svg" alt="Downloads"><br><a href="LICENSE"><img src="https://img.shields.io/npm/l/hads.svg" alt="License"></a></p>
-<h3 id="The-master-of-hell-docs"><a href="#The-master-of-hell-docs" class="headerlink" title="The master of hell docs"></a><em>The master of <del>hell</del> docs</em></h3><blockquote>
-<p><strong>Hads</strong> is a fast Node.js based web server allowing to browse, search and edit documentation written in<br><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>.</p>
-</blockquote>
-<p><img src="https://cloud.githubusercontent.com/assets/593151/24351859/afb0b958-12e7-11e7-8ad4-8655e6b3c1c1.png" alt="screenshot"></p>
-<p><strong>Features</strong>:</p>
-<ul>
-<li>No configuration needed</li>
-<li>Github-like presentation</li>
-<li>GFM (<a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="external">Github Flavoured Markdown</a>)</li>
-<li>Automatic indexation and search</li>
-<li>In-browser editor</li>
-<li>Table of contents using Markdown extension <code>[[toc]]</code></li>
-<li>Navigation index using Markdown extension <code>[[index]]</code></li>
-<li>Diagrams and flowcharts using <a href="http://knsv.github.io/mermaid/" target="_blank" rel="external">Mermaid</a> syntax</li>
-<li>Drag’n drop images</li>
-<li>100% offline</li>
-<li>Custom CSS style</li>
-</ul>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hads</span><br><span class="line">hads -o</span><br></pre></td></tr></table></figure>
-<p>Your browser will open <code>http://localhost:4040</code> and display your project documentation.</p>
-<h3 id="Command-line-options"><a href="#Command-line-options" class="headerlink" title="Command-line options"></a>Command-line options</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Usage: hads [root dir] [options]</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  -p, --port        Port number to listen on       [default: 4040]</span><br><span class="line">  -h, --host        Host address to bind to        [default: &quot;localhost&quot;]</span><br><span class="line">  -i, --images-dir  Directory to store images      [default: &quot;images&quot;]</span><br><span class="line">  -o, --open        Open default browser on start</span><br><span class="line">  --help            Show this help</span><br></pre></td></tr></table></figure>
-<p>If no root dir is specified, <code>./</code> will be used.</p>
-<h2 id="Extras"><a href="#Extras" class="headerlink" title="Extras"></a>Extras</h2><h3 id="Home-page"><a href="#Home-page" class="headerlink" title="Home page"></a>Home page</h3><p>The server will automatically search for a file named <code>index.md</code>, <code>readme.md</code> or <code>README.md</code> on the specified<br>documentation root and will use it as your home page.</p>
-<p>You can customize the CSS style in a file named <code>custom.css</code>.</p>
-<h3 id="Table-of-contents"><a href="#Table-of-contents" class="headerlink" title="Table of contents"></a>Table of contents</h3><p>The special text <code>[[toc]]</code> will be replaced by the table of contents of the markdown document, based on headings.</p>
-<h3 id="Navigation-index"><a href="#Navigation-index" class="headerlink" title="Navigation index"></a>Navigation index</h3><p>The special text <code>[[index]]</code> will be replaced by the full navigation index of all markdown files found under the<br>specified <em>root dir</em>. File and folder names will be <em>humanized</em> for better readability.</p>
-<p>It is particularly useful on the home page to provide an overview of the available documentation for your project.</p>
-<h3 id="Diagrams-and-flowcharts"><a href="#Diagrams-and-flowcharts" class="headerlink" title="Diagrams and flowcharts"></a>Diagrams and flowcharts</h3><p>You can use the <a href="http://knsv.github.io/mermaid/" target="_blank" rel="external">Mermaid</a> syntax to insert diagrams and flowcharts directly in your<br>markdown, but using code blocks with the <code>mermaid</code> language specified, like this:</p>
-<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
-</code></pre><p>Mermaid <a href="https://mermaidjs.github.io/mermaidAPI.html" target="_blank" rel="external">configuration</a> can be overridden on a given page using the global variable <code>MERMAID_CONFIG</code> in a <code>&lt;script&gt;</code> tag, for example:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">MERMAID_CONFIG = &#123; theme: 'forest' &#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-        <categories>
-            
-            <category> Contents </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> NodeJS </tag>
-            
-            <tag> Documentation </tag>
-            
-            <tag> Wiki </tag>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Deploy to GitHub and Heroku]]></title>
-      <url>/2017/11/13/Deploy%20to%20GitHub%20and%20Heroku/</url>
-      <content type="html"><![CDATA[<h1 id="Deploy-to-GitHub-and-Heroku"><a href="#Deploy-to-GitHub-and-Heroku" class="headerlink" title="Deploy to GitHub and Heroku"></a>Deploy to GitHub and Heroku</h1><h2 id="In-this-video-we-prep-our-Django-app-and-upload-to-GitHub-and-Heroku-We-also-schedule-our-worker-app-to-update-our-database-This-is-a-long-one-so-hang-in-there"><a href="#In-this-video-we-prep-our-Django-app-and-upload-to-GitHub-and-Heroku-We-also-schedule-our-worker-app-to-update-our-database-This-is-a-long-one-so-hang-in-there" class="headerlink" title="In this video we prep our Django app and upload to GitHub and Heroku. We also schedule our worker app to update our database. This is a long one, so hang in there!"></a>In this video we prep our Django app and upload to GitHub and Heroku. We also schedule our worker app to update our database. This is a long one, so hang in there!</h2><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=8Qcqh0jl5YU" target="_blank" rel="external">https://www.youtube.com/watch?v=8Qcqh0jl5YU</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Hosting </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Deploy </tag>
-            
-            <tag> Video </tag>
-            
-            <tag> Youtube </tag>
-            
-            <tag> Heroku </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Using Heroku + Node]]></title>
-      <url>/2017/11/13/Heroku_NodeJS_WebSite/</url>
-      <content type="html"><![CDATA[<h1 id="How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017"><a href="#How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017" class="headerlink" title="How to Create/Host a Website for Free / Using Heroku + Node (2017)"></a>How to Create/Host a Website for Free / Using Heroku + Node (2017)</h1><p><strong>video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=ufBsL3PnNfw" target="_blank" rel="external">https://www.youtube.com/watch?v=ufBsL3PnNfw</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Hosting </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> NodeJS </tag>
-            
-            <tag> Video </tag>
-            
-            <tag> Youtube </tag>
-            
-            <tag> Heroku </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Online HTML Editor]]></title>
-      <url>/2017/11/13/Html%20to%20markdown%20converter/</url>
-      <content type="html"><![CDATA[<h1 id="Html-to-markdown-converter"><a href="#Html-to-markdown-converter" class="headerlink" title="Html to markdown converter"></a>Html to markdown converter</h1><p><strong>src</strong> ==&gt; <a href="https://domchristie.github.io/to-markdown/" target="_blank" rel="external">https://domchristie.github.io/to-markdown/</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Apps </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Online </tag>
-            
-            <tag> HTML </tag>
-            
-            <tag> Tools </tag>
-            
-            <tag> Converter </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Programme utilitaire]]></title>
-      <url>/2017/11/13/Programme%20utilitaire/</url>
-      <content type="html"><![CDATA[<h1 id="Programme-utilitaire"><a href="#Programme-utilitaire" class="headerlink" title="Programme utilitaire"></a>Programme utilitaire</h1><ul>
-<li><strong>Trouver les duplicates</strong>   G:\techPrg\AntiTwin.exe</li>
-<li><strong>Gros fichier</strong>  C:\Program Files (x86)\WinDirStat\windirstat.exe</li>
-<li><strong>Recherche fichier</strong>   G:\techPrg\SearchMyFilesSearchMyFiles.exe</li>
-<li><strong>Temp CPU</strong>          G:\techPrg\CoreTemp64\Core Temp.exe</li>
-<li><strong>Temp GPU</strong>   G:\techPrg\GPU-ZPortable\GPU-Z.0.8.9.exe</li>
-</ul>
-]]></content>
-      
-        <categories>
-            
-            <category> Tech_Info </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Tools </tag>
-            
-            <tag> Software </tag>
-            
-            <tag> Utilities </tag>
-            
-            <tag> MustHave </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Online HTML Editor]]></title>
-      <url>/2017/11/13/Online%20HTML%20Editor/</url>
-      <content type="html"><![CDATA[<h1 id="Online-HTML-Editor"><a href="#Online-HTML-Editor" class="headerlink" title="Online HTML Editor"></a>Online HTML Editor</h1><p><strong>src</strong> ==&gt; <a href="https://html-online.com/editor/" target="_blank" rel="external">https://html-online.com/editor/</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Web Apps </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Online </tag>
-            
-            <tag> HTML </tag>
-            
-            <tag> Editor </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Recherche 14 juillet]]></title>
-      <url>/2017/11/13/Recherche%2014%20juillet/</url>
-      <content type="html"><![CDATA[<h1 id="Recherche-14-juillet"><a href="#Recherche-14-juillet" class="headerlink" title="Recherche 14 juillet"></a>Recherche 14 juillet</h1><p><strong>src</strong> ==&gt; <a href="http://slides.com/mkozhukh/building-apps-with-webix-ui#/1" target="_blank" rel="external">http://slides.com/mkozhukh/building-apps-with-webix-ui#/1</a></p>
-<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-example" target="_blank" rel="external">https://github.com/webix-hub/nodejs-example</a></p>
-<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-data" target="_blank" rel="external">https://github.com/webix-hub/nodejs-data</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Recherche </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> NodeJS </tag>
-            
-            <tag> Recherche </tag>
-            
-            <tag> WebIX </tag>
-            
-            <tag> Slides </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[PHP beginner tutorials]]></title>
-      <url>/2017/11/13/PHP%20beginner%20tutorials/</url>
-      <content type="html"><![CDATA[<h1 id="PHP-beginner-tutorials"><a href="#PHP-beginner-tutorials" class="headerlink" title="PHP beginner tutorials"></a>PHP beginner tutorials</h1><p><strong>mmtuts PHP beginers tutorials</strong> (<em>54 videos</em>)</p>
-<p><strong>src</strong> ==&gt; <a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-" target="_blank" rel="external">https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-</a></p>
-<p><strong>Storage :</strong> G:\yt_today\yt_Prog_algo\mmtuts PHP beginers tutorials (54 videos)</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Learning </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Video </tag>
-            
-            <tag> Youtube </tag>
-            
-            <tag> PHP </tag>
-            
-            <tag> Tutorials </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Recherche Gif animé]]></title>
-      <url>/2017/11/13/Recherche%20Gif%20anime/</url>
-      <content type="html"><![CDATA[<h1 id="Recherche-Gif-anime"><a href="#Recherche-Gif-anime" class="headerlink" title="Recherche Gif animé"></a>Recherche Gif animé</h1><p><strong>src</strong> ==&gt; <a href="http://Giphy.com" target="_blank" rel="external">http://Giphy.com</a></p>
-<p><strong>src</strong> ==&gt; <a href="http://Gifs.com" target="_blank" rel="external">http://Gifs.com</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Recherche </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Online </tag>
-            
-            <tag> Image </tag>
-            
-            <tag> Gif </tag>
             
         </tags>
         
@@ -2043,11 +2043,11 @@ code snippet
             
             <tag> NodeJS </tag>
             
+            <tag> Hexo </tag>
+            
             <tag> GitHub </tag>
             
             <tag> example </tag>
-            
-            <tag> Hexo </tag>
             
             <tag> QuickStart </tag>
             
@@ -2109,6 +2109,211 @@ code snippet
         <tags>
             
             <tag> themes </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Notes On Creating A Hexo Theme]]></title>
+      <url>/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/</url>
+      <content type="html"><![CDATA[<div class="image-strip"><br><img src="https://s3.amazonaws.com/ptsteadman-images/hexo.png"><br></div>
+
+<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>To Update NPM: <code>npm install npm@latest -g</code>.</p>
+<p>In 2015 it makes sense to use NVM.  <a href="http://linoxide.com/ubuntu-how-to/install-node-js-ubuntu" target="_blank" rel="external">NVM Installation<br>Instructions</a>.</p>
+<p>Update NPM: <code>npm install npm@latest -g</code></p>
+<p>Hexo: why can’t you use helper functions in source code?<br>This should be in docs.</p>
+<h2 id="Creating-a-Custom-Index-File-in-Hexo"><a href="#Creating-a-Custom-Index-File-in-Hexo" class="headerlink" title="Creating a Custom Index File in Hexo"></a>Creating a Custom Index File in Hexo</h2><p>Trying to generate a custom index file in source, hexo would ignore<br><code>source/index.md</code> no matter what I did.  What I had to do was uninstall<br><code>hexo-generator-index</code>.  <a href="https://github.com/hexojs/hexo/issues/1077" target="_blank" rel="external">See<br>here</a>.  Then it works.  So, that<br>will be part of the setup for my theme.  But, it’s worth it in order to properly<br>seperate the theme from the content, I think.  Having everyone edit the theme<br>index.ejs template is no good.</p>
+<h2 id="Hexo-Rendering-Raw-EJS-File-Problem-I-Encountered"><a href="#Hexo-Rendering-Raw-EJS-File-Problem-I-Encountered" class="headerlink" title="Hexo Rendering Raw EJS File Problem I Encountered"></a>Hexo Rendering Raw EJS File Problem I Encountered</h2><p>Sometimes the server would keep rendering an old version of my code, but as<br>text.  So I’d see stuff like</p>
+<pre><code>&lt;% if (site.tags.length){ %&gt;
+</code></pre><p>The raw ejs, essentially.  Restarting the server or running <code>hexo clean</code> didn’t<br>do anything.</p>
+<p>After some time, I realized it was due to the gedit swap files being read by<br>hexo as the actual layout files: for example, <code>tag.ejs~</code>.  My <code>partial</code> helpers<br>looked like: <code>&lt;%- partial(&#39;_partials/tag&#39;) %&gt;</code>, and apparently hexo was reading<br>in <code>tag.ejs~</code> instead of <code>tag.ejs</code>.  And therefore, the ejs wasn’t rendering.</p>
+<p>To fix this, I simply changed my partial helper to <code>&lt;%-
+partial(&#39;_partials/tag.ejs&#39;) %&gt;</code>.  Problem solved.</p>
+<h2 id="Hexo-Excerpt-Variable"><a href="#Hexo-Excerpt-Variable" class="headerlink" title="Hexo Excerpt Variable"></a>Hexo Excerpt Variable</h2><p>I was confused by the behavior of the hexo <code>excerpt</code> variable.  If you define<br><code>excerpt: something</code> in the front matter, hexo ignores that.  Instead, to get it<br>to work, one needs to add a <code>&lt;!-- more --&gt;</code> comment in the source of the post.<br>Or, you can install a plugin that allows you to define custom excerpt in the<br>front matter.</p>
+<h2 id="Scripts-Directory"><a href="#Scripts-Directory" class="headerlink" title="Scripts Directory"></a>Scripts Directory</h2><p>One of the things I really discovered too late is the “Scripts” directory in the<br>theme folder.  In Hexo, the various plugins drive the structure of the site, as<br>opposed to the placement of different files and directories, as in Jekyll.  The<br>plugins programatically create folder structure, etc, where in Jekyll I mostly<br>used the liquid markup to structure the site.  </p>
+<p>The problem is, then, that the user wants to extend hexo to do some sort of<br>custom thing.  If one had to publish a new plugin, that’d be too much work.  But<br>the theme level scripts folder allows one to extend the base hexo functionality<br>in ‘user space’ effectively.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Programming </tag>
+            
+            <tag> Design </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[How To Impress Employers at Infosessions]]></title>
+      <url>/2015/05/02/2015-05-02-How-To-Impress/</url>
+      <content type="html"><![CDATA[<p>Top tech talent knows that industry recruiters often bring a stack of<br>pre-negotiated offers to university infosessions, so that they can snag<br>programmers and UX designers who really stand out.  Instead of spending valuable<br>time validating a particularly promising candidate’s skillset through a<br>protracted series of interviews, it’s often more efficient to simply <strong>give the<br>individual an offer right then and there</strong>.  Internal studies at Google have shown<br>that experienced recruiters can usually tell if a programmer has ‘what it takes’<br>just from how they act at infosessions: the insightful questions they ask, the<br>stickers on their laptop, and how they comport themselves in general.</p>
+<a id="more"></a>
+<p>Top tech talent knows that industry recruiters often bring a stack of<br>pre-negotiated offers to university infosessions, so that they can snag<br>programmers and UX designers who really stand out.  Instead of spending valuable<br>time validating a particularly promising candidate’s skillset through a<br>protracted series of interviews, it’s often more efficient to simply <strong>give the<br>individual an offer right then and there</strong>.  Internal studies at Google have shown<br>that experienced recruiters can usually tell if a programmer has ‘what it takes’<br>just from how they act at infosessions: the insightful questions they ask, the<br>stickers on their laptop, and how they comport themselves in general.</p>
+<p>Here are some of tips for optimizing your infosession performance:</p>
+<ul>
+<li><p>Ask questions to get a feel for the company’s culture.  For example, I always<br>start off by asking “do you have a mandatory drug test?”.</p>
+</li>
+<li><p>Make sure that the recruiters know you’re passionate about the company by<br>crying.  </p>
+</li>
+<li><p>Don’t be that awkward guy who goes up for more pizza while the presenter is<br>providing valuable information about the company’s agile development cycle.<br>Instead, demonstrate your ability to amortize I/O costs via bulk loading:<br>bring a whole box of pizza back to your seat.  Protip: “free swag” t-shirts<br>make great face rags, so grab a handful.</p>
+</li>
+<li><p>Stay focused by minimizing distractions.  I typically wear my Bose<br>QuietComfort noise cancelling headphones during the presentation.  This way I<br>retain more information from the PowerPoint, which really impresses the<br>recruiters during the networking session.  Follow me on Spotify to check out<br>my special “Let’s Do This Infosession” playlist.</p>
+</li>
+<li><p>Getting invited to the ‘after-infosession’ is critical.  During the networking<br>session, ask the recruiters what hotel they’re staying at, and make sure that<br>they know that you ‘know a guy’.  Without fail, someone will slip a wax-sealed<br>envelope under your door at midnight, the coveted invitation to an another, more<br>exclusive networking event.  </p>
+</li>
+</ul>
+<p>If you follow these simple tips and brush up on your data structures, you’ll<br>soon be literally <em>drowning</em> in offers, like everyone else.  If these tips don’t<br>work out for you, you probably need to get your MEng.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Humor </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> funny </tag>
+            
+            <tag> employment </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[NAV Web Service Programming Resources]]></title>
+      <url>/2015/04/08/2015-04-08-NAV-Programming-Resources/</url>
+      <content type="html"><![CDATA[<p>Here are some of the resources I found helpful for learning to develop Dynamics NAV web service based applications.</p>
+<h4 id="C-AL-Programming"><a href="#C-AL-Programming" class="headerlink" title="C/AL Programming:"></a>C/AL Programming:</h4><p><a href="http://www.consultec.es/DocTutoriales/Introduction_to_CAL_Programming.pdf" target="_blank" rel="external">Introduction to CAL Programming</a><br>This provides a good overview of the basics of CAL programming, which can become necessary in building a web service applications when a custom codeunit or page extension is required.</p>
+<h4 id="Setting-up-Web-Services"><a href="#Setting-up-Web-Services" class="headerlink" title="Setting up Web Services:"></a>Setting up Web Services:</h4><p><a href="http://vjeko.com/blog/connecting-to-nav-through-web-services-recorded-session" target="_blank" rel="external">Vjecko Web Service Recorded Session</a><br>Vjecko.com has a lot of detailed articles about web service programming, but this older post has a pdf and recorded session that shows how to expose and connect to web services from a .NET application.  Unfortunately, he shows how to create Web Service references in .NET using the now-deprecated Web Refrence method (from .NET 2) instead of the more current Service Reference method.</p>
+<p><a href="http://blogs.msdn.com/b/freddyk/archive/2010/01/20/connecting-to-nav-web-services-from-c-using-service-reference-config-file-version.aspx" target="_blank" rel="external">Using Service Reference to Connect to Web Services</a><br>This explains how to use Service Reference, using code instead of XML web.config configuration, which I found difficult to configure.  (Each time I updated the service reference, I would have to reconfigure the XML).</p>
+<h4 id="NAV-Upgrade-Process"><a href="#NAV-Upgrade-Process" class="headerlink" title="NAV Upgrade Process:"></a>NAV Upgrade Process:</h4><p><a href="http://saurav-nav.blogspot.com/2012/12/nav-2013-upgrade-part-iv-sql-migration.html" target="_blank" rel="external">Migration to SQL Server from C/SIDE Database</a><br>In order to use web services, you don’t need to be using the Role Tailored Client, but you must be using the a SQL server based NAV database.  Web Services can be configured and exposed using the Classic Client for SQL Server Databases.</p>
+<p><a href="http://blogs.msdn.com/b/nav/archive/2012/03/05/rtc-debugging.aspx" target="_blank" rel="external">Debugging Code Called by Web Services</a><br>C/AL code won’t necessarily execute the same as it did in the Classic Client when called  as a Web Service.  C/AL code called as web service execute in the NAV Server tier, instead of the client.  <a href="http://msdn.microsoft.com/en-us/library/ff477107.aspx" target="_blank" rel="external">Certain functions</a> aren’t available for code running in the NAV Server, and some design changes need to be made (for example, CONFIRM dialogue boxes don’t make sense in the context of a web service).  To debug the codeunits called through web services (or the Role Tailored Client), you will need to use Visual Studio.<br><a href="http://msdn.microsoft.com/en-us/library/dd338765.aspx#SU" target="_blank" rel="external">More information.</a></p>
+<h4 id="Deploying-a-NET-Application"><a href="#Deploying-a-NET-Application" class="headerlink" title="Deploying a .NET Application:"></a>Deploying a .NET Application:</h4><p><a href="http://www.asp.net/mvc/overview/deployment/visual-studio-web-deployment/deploying-to-iis" target="_blank" rel="external">Deploying to IIS</a>  After you’ve built a .NET application that consumes .NET web services, you’ll have to find a way to deploy it on your servers, or Azure.  Connection strings can be used to specify different NAV servers for different environments (like development, QA, and prod).</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Dynamics NAV </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Resources </tag>
+            
+            <tag> NAV </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Adding Lookup Field to a Page in Dynamics NAV]]></title>
+      <url>/2015/04/05/2015-04-05-Lookup-on-Page/</url>
+      <content type="html"><![CDATA[<p>One of the problems I faced in building a non-trivial application that consumed<br>NAV Web Services was figuring out how to “join” fields from different tables.<br>For example, when exposing a list of jobs from a job table which includes a<br>resource needed for the job, you might need more than just the resource id<br>that’s a field in the table: you might also need the resource name and<br>description.  While this is easy to get for one record, what about when you<br>need a few hundred records in a table that has been dynamically filtered?  When<br>exposing a Page as a web service, it’s easy to include the fields of the table<br>that the page is based on, but it’s less clear how to include fields from<br>another table.</p>
+<p>Forum posts like <a href="http://dynamicsuser.net/forums/p/32550/170843.aspx" target="_blank" rel="external">this</a> led me to believe that I couldn’t expose flow fields in a Page web service, and I would get exceptions when I tried to expose all the fields of a table.  In fact, it’s perfectly possible to expose a flow field: it’s <strong>flow filters</strong> that don’t work with web services.  But, I also didn’t want to modify the underlying [job] table to add a flow field, and didn’t see an easy way of adding a flow field to a Page.  I tried “joining” the data in the C# application, but found network overhead made the application unusuably slow.</p>
+<p>The solution to this problem was to use C/AL code to the Page to effectively create a lookup / flow field.  This way, the data is “pre-joined” before leaving the NAV Server, which is fast and clean, but you didn’t modify any tables.  Here’s how it’s done:</p>
+<p>Step 1. <strong>Add a Field with SourceExpression Set to a Function Name</strong></p>
+<p>To start, we create a Page using the wizard that includes all of the fields of an underlying table.  Then, we create manually add fields that will contain the lookup data from other tables.  The text in the SourceExpression column will be the name of the function that populates this field.<br><img src="http://ptsteadman.github.io/images/lookup-1.PNG" alt="Add a Field with SourceExpression Set to a Function Name"></p>
+<p>Step 2. <strong>Create Function in the Page’s C/AL Code</strong></p>
+<p>With the Page field designer open, go to the functions tab of C/AL Globals form, and add a function with the name of the text in the SourceExpression column.  Set the return type of the function with the “Locals” button, and a function trigger will appear in the C/AL code editor for your page.  Add code to the body of the function trigger that will be called for each record to provide a value for the field.<br><img src="http://ptsteadman.github.io/images/lookup-2.PNG" alt="Create Function in the Page&#39;s C/AL Code"></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Dynamics NAV </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Resources </tag>
+            
+            <tag> NAV </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Static NGINX Locations]]></title>
+      <url>/2015/04/01/2015-04-01-NGINX-Static-Locations/</url>
+      <content type="html"><![CDATA[<p>I try to get a lot of mileage out of the single AWS t2.micro instance I keep running,<br>which means I have many different projects running on different paths on a single server.  Everytime I finish a project, I have to relearn how to add new “locations” (paths) to the NGINX virtual host.</p>
+<p>I was really frustrated when I couldn’t figure out how to add a static location for the Jekyll<br>website I created for the game I’m developing.  I kept trying to do something like this:</p>
+<pre><code>location / {
+  root /home/ubuntu/personal-website;
+}
+location /array {
+  root /home/ubuntu/array-website/_site;
+}
+</code></pre><p>But everytime I tried to visit [<a href="http://ptsteadman.com/array" target="_blank" rel="external">http://ptsteadman.com/array</a>], I would get a 404 error.<br>I tried a bunch of things: I changed the “root” of the the <code>/</code> location to my game website, and it worked.  But no matter what I did, after using <code>sudo service nginx restart</code>,<br>trying to visit the <code>/array</code> location still resulted in a 404.  I couldn’t add the new route/location.</p>
+<p>Eventually, I realized that the text after the slash in the location is the directory that<br>NGINX will try to find in the “root” location.  So, <code>location /array</code> will look for the directory (or file)<br><code>array</code> in whatever directory “root” is set to.  So, I created a symlink to the root of my<br>static jekyll site with the command <code>ln -s /home/ubuntu/array-website/_site /home/ubuntu/array</code>, and<br>then I could set up my nginx config file in <code>sites-enabled</code> as below:</p>
+<pre><code>location / {
+  root /home/ubuntu/personal-website;
+}
+location /array {
+  root /home/ubuntu;
+}
+</code></pre><p>I think this stuff is all pretty obvious to someone who really understands NGINX and file serving,<br>but I only touch NGINX when I’ve finished a project and feel impatient to deploy.  I think it’s very confusing<br>that NGINX seems to handle paths differently between <code>/</code> locations and and <code>/foo</code> locations,<br>but a real understanding of NGINX might clear things up.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> NGINX </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Web Development </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Spaces for Newline Indents in VS]]></title>
+      <url>/2015/03/23/2015-03-23-Make-VS-Insert-Spaces/</url>
+      <content type="html"><![CDATA[<p>It’s really annoying when Visual Studio shows you this:</p>
+<img src="http://ptsteadman.github.io/images/vs1.png">
+<p>But github or vim shows you the same file like this:</p>
+<img src="http://ptsteadman.github.io/images/vim1.png">
+<p>If you use the “show whitespace” Visual Studio chord <code>(CTRL-R, CTRL-W)</code>,<br>you’ll see that visual studio inserts tabs instead of spaces by<br>default for newline indent:</p>
+<img src="http://ptsteadman.github.io/images/ws.png">
+<p>Visual Studio displays tabs as having the same<br>width as four spaces.  But if you’re collaborating with someone working<br>in another text editor like vim, your automatically-inserted tabs will<br>appear larger than four spaces.</p>
+<p>Here’s how to make visual studio insert spaces instead of tabs on newline indents:<br>go to <code>Tools-&gt;Options-&gt;Text Editor-&gt;All Languages-&gt;Tabs</code>:</p>
+<img src="http://ptsteadman.github.io/images/spaces.png">
+<p>That’s better:</p>
+<img src="http://ptsteadman.github.io/images/ws2.png">
+]]></content>
+      
+        <categories>
+            
+            <category> .NET </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> C# </tag>
+            
+            <tag> Visual Studio </tag>
             
         </tags>
         
@@ -2271,6 +2476,38 @@ code snippet
         <tags>
             
             <tag> highlight </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Welcome To Hexo]]></title>
+      <url>/2014/02/23/2014-02-23-hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Welcome </tag>
+            
+            <tag> How-To </tag>
             
         </tags>
         
