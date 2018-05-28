@@ -1,873 +1,875 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html>
 <head>
   <meta charset="utf-8">
   
   <title>Mon Blog (Hexo)</title>
-
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Beautiful site">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mon Blog (Hexo)">
 <meta property="og:url" content="http://yoursite.com/page/4/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="Beautiful site">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mon Blog (Hexo)">
 <meta name="twitter:description" content="Beautiful site">
   
-    <link rel="alternative" href="/atom.xml" title="Mon Blog (Hexo)" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Mon Blog (Hexo)" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.ico">
   
-    
-  <meta content="{{ title }}" name="description">
-  <meta content="{{ title }}" name="keywords">
-  <meta content="{{ title }}" name="author">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!-- Global styles START -->   
-  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Global styles END --> 
-   
-  <!-- Page level plugin styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
-  <!-- Page level plugin styles END -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 
-  <!-- Theme styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
-  <link rel="stylesheet" href="/css/theme-styles.css">
-  <!-- Theme styles END -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
 </head>
 
-<body class="corporate">
-  <!-- BEGIN TOP BAR -->
-<div class="pre-header">
+<body>
+  <nav class="navbar navbar-inverse">
   <div class="container">
-    <div class="row">
-      <!-- BEGIN TOP BAR LEFT PART -->
-      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
-	<ul class="list-unstyled list-inline">
-	  <li><i class="fa fa-phone"></i><span>(819) 333-1010</span></li>
-	  <li><i class="fa fa-envelope-o"></i><span>abitibitech@gmail.com</span></li>
-	</ul>
-      </div>
-      <!-- END TOP BAR LEFT PART -->
-      <!-- BEGIN TOP BAR MENU -->
-      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
-	<ul class="list-unstyled list-inline pull-right">
-	  <li><a href="/login">Log In</a></li>
-	</ul>
-      </div>
-      <!-- END TOP BAR MENU -->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
     </div>
-  </div>        
-</div>
-<!-- END TOP BAR -->
-<!-- BEGIN HEADER -->
-<div class="header">
-  <div class="container">
-    <!--<a class="site-logo" href="/" id="logo">Mon Blog (Hexo)</a>-->
 
-    <a class="site-logo" href="/">
-      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
-    </a>
-
-    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-    <!-- BEGIN NAVIGATION -->
-    <div class="header-navigation pull-right font-transform-inherit">
-      <ul>
-	
-	<li class="">
-	  <a  href="/">Home</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/projects/">Projects</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/archives/">Blog</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/contact/">Contact</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/about/">About</a>
-	</li>
-	
-	<!-- BEGIN TOP SEARCH -->
-	<li class="menu-search">
-	  <span class="sep"></span>
-	  <i class="fa fa-search search-btn"></i>
-	  <div class="search-box">
-	    <form action="#">
-	      <div class="input-group">
-		<input type="text" placeholder="Search" class="form-control st-default-search-input">
-		<span class="input-group-btn">
-		  <button class="btn btn-primary" type="submit">Search</button>
-		</span>
-	      </div>
-	    </form>
-	  </div> 
-	</li>
-	<!-- END TOP SEARCH -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/archives/">Archives</a></li>
+        
       </ul>
-    </div>
-    <!-- END NAVIGATION -->
-  </div>
-</div>
-<!-- Header END -->
 
-  
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
   <div class="container">
-    <ul class="breadcrumb">
-      <li class="active">Home</li>
-    </ul>
-  <div id="main">
+    <div class="blog-header">
+  <h1 class="blog-title">Mon Blog (Hexo)</h1>
+  
+    <p class="lead blog-description">Theme corporate</p>
+  
+</div>
+
     <div class="row">
+        <div class="col-sm-8 blog-main">
+          
+  
+    <article id="post-NBON-COUPE-FAIM" class="article article-type-post" itemscope itemprop="blogPost">
 
-<div class="col-xs-12 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
+  <header class="article-header">
     
-  </div>
   
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/app from GitHub to Heroku/">GitHub to Heroku</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/app from GitHub to Heroku/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Video/" title="Video">Video</a>,
-  
-    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
-  
-    <a href="/tags/Heroku/" title="Heroku">Heroku</a>,
-  
-    <a href="/tags/GitHub/" title="GitHub">GitHub</a>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/NBON-COUPE-FAIM/">BONBON COUPE FAIM</a>
+    </h1>
   
 
 
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku"><a href="#Quick-demonstration-of-auto-deploying-an-app-from-GitHub-to-Heroku" class="headerlink" title="Quick demonstration of auto-deploying an app from GitHub to Heroku"></a>Quick demonstration of auto-deploying an app from GitHub to Heroku</h1><p><strong>Video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=QUvxrzINj5Q" target="_blank" rel="external">https://www.youtube.com/watch?v=QUvxrzINj5Q</a></p>
+  </header>
 
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/app from GitHub to Heroku/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/NBON-COUPE-FAIM/" class="article-date"><time datetime="2018-04-27T18:42:00.000Z" itemprop="datePublished">2018-04-27</time></a>
 </div>
-<hr class="blog-post-sep">
 
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
+    <div class="article-author">Yves M</div>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recette/">Recette</a> / <a class="article-category-link" href="/categories/Recette/Nourriture/">Nourriture</a>
   </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Recherche Gif anime/">Recherche Gif animé</a>
-    </h2>
 
 
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Recherche Gif anime/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Online/" title="Online">Online</a>,
-  
-    <a href="/tags/Image/" title="Image">Image</a>,
-  
-    <a href="/tags/Gif/" title="Gif">Gif</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Recherche-Gif-anime"><a href="#Recherche-Gif-anime" class="headerlink" title="Recherche Gif animé"></a>Recherche Gif animé</h1><p><strong>src</strong> ==&gt; <a href="http://Giphy.com" target="_blank" rel="external">http://Giphy.com</a></p>
-<p><strong>src</strong> ==&gt; <a href="http://Gifs.com" target="_blank" rel="external">http://Gifs.com</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Recherche Gif anime/" class="more">Read more <i class="icon-angle-right"></i></a>
   </div>
-</div>
-<hr class="blog-post-sep">
+  <div class="article-inner">
 
+    <div class="article-entry" itemprop="articleBody">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/My-first-post/">My first post</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/My-first-post/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/NodeJS/" title="NodeJS">NodeJS</a>,
-  
-    <a href="/tags/App/" title="App">App</a>,
-  
-    <a href="/tags/Weather/" title="Weather">Weather</a>,
-  
-    <a href="/tags/GitHub/" title="GitHub">GitHub</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<p>src ==&gt; <a href="https://github.com/nenee/weatherapp-boilerplate" target="_blank" rel="external">https://github.com/nenee/weatherapp-boilerplate</a></p>
-<h1 id="A-Preact-js-boilerplate-for-developing-a-weather-app"><a href="#A-Preact-js-boilerplate-for-developing-a-weather-app" class="headerlink" title="A Preact.js boilerplate for developing a weather app."></a>A Preact.js boilerplate for developing a weather app.</h1><p><strong>modified by me with the admin plugin</strong> !! <em>Great</em> :-)</p>
-<p>#Preact Boilerplate / Starter Kit for a Weather App</p>
-<h2 id="Set-Up-Guide"><a href="#Set-Up-Guide" class="headerlink" title="Set-Up Guide"></a>Set-Up Guide</h2><ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#development-workflow">Development Workflow</a></li>
-<li><a href="#quick-boilerplate-overview">Quick Boilerplate Overview</a></li>
-<li><a href="#extra-info">Extra Info</a></li>
+        <h1 id="BONBON-COUPE-FAIM-AU-CHOCOLAT-TRES-EFFICACE-CUISINERAPIDE"><a href="#BONBON-COUPE-FAIM-AU-CHOCOLAT-TRES-EFFICACE-CUISINERAPIDE" class="headerlink" title="BONBON COUPE FAIM AU CHOCOLAT TRÈS EFFICACE (CUISINERAPIDE)"></a>BONBON COUPE FAIM AU CHOCOLAT TRÈS EFFICACE (CUISINERAPIDE)</h1><p><strong>src ==&gt;</strong> <a href="https://youtu.be/LBBjxmYqJLs" target="_blank" rel="external">https://youtu.be/LBBjxmYqJLs</a></p>
+<ul>
+<li>100 g de chocolat noir a 70 % de cacao</li>
+<li>4 g d’agar agar</li>
+<li>1 cuillère a soupe de cacao en poudre</li>
+<li>1/2 cuillère a café de canelle</li>
+<li>20 cl d’eau</li>
+<li>du sucre stévia selon os gouts</li>
 </ul>
-<p><strong>0. Before doing any of this, if you’re using your own laptop/desktop, make sure you’ve got the latest versions of node and npm installed (npm v: 4.0.5 &amp; node v: 7.4.0) :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p><strong>1. Clone this repository :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --depth 1 https://github.com/nenee/weatherapp-boilerplate.git weather-app</span><br><span class="line"><span class="built_in">cd</span> weather-app</span><br></pre></td></tr></table></figure>
-<p><strong>2. Make it your own :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf .git &amp;&amp; git init &amp;&amp; npm init</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>:information_source: Command above re-initializes the repo and sets up your NPM project.</p>
-</blockquote>
-<p><strong>3. Install the dependencies :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2 id="Development-Workflow"><a href="#Development-Workflow" class="headerlink" title="Development Workflow"></a>Development Workflow</h2><p><strong>4. Start a live-reload development server :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>This is a full web server for your project. Any time you make changes within the <code>src</code> directory, it will rebuild and even refresh your browser.</p>
-</blockquote>
-<p><strong>5. Generate a production build in <code>./build</code> :</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
-<p><strong>6. Start local production server with <a href="https://github.com/zeit/serve" target="_blank" rel="external">serve</a>:</strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>This simply serves up the contents of <code>./build</code>. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you’ll also need to restart it to see any changes you’ve made to the code in <code>src</code>.</p>
-</blockquote>
-<h2 id="Quick-Boilerplate-Overview"><a href="#Quick-Boilerplate-Overview" class="headerlink" title="Quick Boilerplate Overview"></a>Quick Boilerplate Overview</h2><ul>
-<li><p>The initial run will display the iPhone version (iPhone 6/7 Plus screen size); however, if you modify the path on the url bar by adding “/ipad”, you can view the tablet version (iPad Air screen size).</p>
-</li>
-<li><p>The CSS pre-processor in use is Less. You don’t have to worry about the syntax and just write in normal CSS as there are helper modules to assist you (located in <code>style/helpers</code>).</p>
-</li>
-<li><p>There are many weather APIs out there; this boilerplate uses WeatherUnderground, which I highly recommend for any detailed info you may need; sign up is free and you can find out more about it here :<br><a href="https://www.wunderground.com/weather/api/d/docs?MR=1" target="_blank" rel="external">https://www.wunderground.com/weather/api/d/docs?MR=1</a> There’s also a console, where you can check out particular responses : <a href="https://apigee.com/console/wunderground" target="_blank" rel="external">https://apigee.com/console/wunderground</a></p>
-</li>
-<li><p>Most importantly, have fun with it ! 👌</p>
-</li>
+<h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/LBBjxmYqJLs" frameborder="0" allowfullscreen></iframe></div>
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/NBON-COUPE-FAIM/" data-id="cjgib0s5i0024y4wsv548gw55" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bonbon/">Bonbon</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chocolat/">Chocolat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recette/">Recette</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-ndwich-de-spaghetti-a-la-viande" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/ndwich-de-spaghetti-a-la-viande/">Sandwich de spaghetti à la viande</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/ndwich-de-spaghetti-a-la-viande/" class="article-date"><time datetime="2018-04-27T18:37:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recette/">Recette</a> / <a class="article-category-link" href="/categories/Recette/Nourriture/">Nourriture</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Sandwich-de-spaghetti-a-la-viande"><a href="#Sandwich-de-spaghetti-a-la-viande" class="headerlink" title="Sandwich de spaghetti à la viande"></a>Sandwich de spaghetti à la viande</h1><p><strong>src ==&gt;</strong> <a href="https://youtu.be/01qd5e-TJf0" target="_blank" rel="external">https://youtu.be/01qd5e-TJf0</a></p>
+<h2 id="Sur-le-plan-de-travail"><a href="#Sur-le-plan-de-travail" class="headerlink" title="Sur le plan de travail :"></a>Sur le plan de travail :</h2><ul>
+<li>300 ml de sauce tomate</li>
+<li>250 g de mozzarella</li>
 </ul>
-<h2 id="Extra-Info"><a href="#Extra-Info" class="headerlink" title="Extra Info"></a>Extra Info</h2><ol>
-<li>Handling URLS</li>
-</ol>
-<p>:information_source: You can use URL Routing as defined <a href="http://git.io/preact-router" target="_blank" rel="external">here</a>.</p>
-<p>Pages are just regular components that get mounted when you navigate to a certain URL. Any URL parameters get passed to the component as <code>props</code>.</p>
-<p>Defining what component(s) to load for a given URL is easy and declarative. You can even mix-and-match URL parameters and normal props.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Router&gt;</span><br><span class="line">  &lt;A path=<span class="string">"/"</span> /&gt;</span><br><span class="line">  &lt;B path=<span class="string">"/b"</span> id=<span class="string">"42"</span> /&gt;</span><br><span class="line">  &lt;C path=<span class="string">"/c/:id"</span> /&gt;</span><br><span class="line">&lt;<span class="regexp">/Router&gt;</span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/My-first-post/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Recherche 21 Juillet/">Recherche 21 Juillet</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Recherche 21 Juillet/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Online/" title="Online">Online</a>,
-  
-    <a href="/tags/Tools/" title="Tools">Tools</a>,
-  
-    <a href="/tags/Recherche/" title="Recherche">Recherche</a>,
-  
-    <a href="/tags/Design/" title="Design">Design</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Recherche-21-Juillet"><a href="#Recherche-21-Juillet" class="headerlink" title="Recherche 21 Juillet"></a>Recherche 21 Juillet</h1><p><strong>src</strong> ==&gt; <a href="https://www.canva.com/" target="_blank" rel="external">https://www.canva.com/</a></p>
-<p><strong>src</strong> ==&gt; <a href="http://www.colorschemer.com/online.html" target="_blank" rel="external">http://www.colorschemer.com/online.html</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Recherche 21 Juillet/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Online HTML Editor/">Online HTML Editor</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Online HTML Editor/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Online/" title="Online">Online</a>,
-  
-    <a href="/tags/HTML/" title="HTML">HTML</a>,
-  
-    <a href="/tags/Editor/" title="Editor">Editor</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Online-HTML-Editor"><a href="#Online-HTML-Editor" class="headerlink" title="Online HTML Editor"></a>Online HTML Editor</h1><p><strong>src</strong> ==&gt; <a href="https://html-online.com/editor/" target="_blank" rel="external">https://html-online.com/editor/</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Online HTML Editor/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Html to markdown converter/">Online HTML Editor</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Html to markdown converter/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Online/" title="Online">Online</a>,
-  
-    <a href="/tags/HTML/" title="HTML">HTML</a>,
-  
-    <a href="/tags/Tools/" title="Tools">Tools</a>,
-  
-    <a href="/tags/Converter/" title="Converter">Converter</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Html-to-markdown-converter"><a href="#Html-to-markdown-converter" class="headerlink" title="Html to markdown converter"></a>Html to markdown converter</h1><p><strong>src</strong> ==&gt; <a href="https://domchristie.github.io/to-markdown/" target="_blank" rel="external">https://domchristie.github.io/to-markdown/</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Html to markdown converter/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Recherche 14 sept./">Recherche 14 sept.</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Recherche 14 sept./#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Tools/" title="Tools">Tools</a>,
-  
-    <a href="/tags/EasyToBoot/" title="EasyToBoot">EasyToBoot</a>,
-  
-    <a href="/tags/Usb-Boot/" title="Usb_Boot">Usb_Boot</a>,
-  
-    <a href="/tags/LiveCD/" title="LiveCD">LiveCD</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Recherche-14-sept"><a href="#Recherche-14-sept" class="headerlink" title="Recherche 14 sept."></a>Recherche 14 sept.</h1><p><strong>src</strong> ==&gt; <a href="http://www.rmprepusb.com/" target="_blank" rel="external">http://www.rmprepusb.com/</a></p>
-<p><strong>src</strong> ==&gt; <a href="http://www.easy2boot.com/" target="_blank" rel="external">http://www.easy2boot.com/</a></p>
-<p><strong>Add ESET System Rescue Live + persistence to Easy2Boot (E2B)’</strong></p>
-<p><strong>src</strong> ==&gt; <a href="https://youtu.be/Z2dla8uz0us" target="_blank" rel="external">https://youtu.be/Z2dla8uz0us</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Recherche 14 sept./" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Recherche 14 juillet/">Recherche 14 juillet</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Recherche 14 juillet/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/NodeJS/" title="NodeJS">NodeJS</a>,
-  
-    <a href="/tags/Recherche/" title="Recherche">Recherche</a>,
-  
-    <a href="/tags/WebIX/" title="WebIX">WebIX</a>,
-  
-    <a href="/tags/Slides/" title="Slides">Slides</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Recherche-14-juillet"><a href="#Recherche-14-juillet" class="headerlink" title="Recherche 14 juillet"></a>Recherche 14 juillet</h1><p><strong>src</strong> ==&gt; <a href="http://slides.com/mkozhukh/building-apps-with-webix-ui#/1" target="_blank" rel="external">http://slides.com/mkozhukh/building-apps-with-webix-ui#/1</a></p>
-<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-example" target="_blank" rel="external">https://github.com/webix-hub/nodejs-example</a></p>
-<p><strong>src</strong> ==&gt; <a href="https://github.com/webix-hub/nodejs-data" target="_blank" rel="external">https://github.com/webix-hub/nodejs-data</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Recherche 14 juillet/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Heroku_NodeJS_WebSite/">Using Heroku + Node</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Heroku_NodeJS_WebSite/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Video/" title="Video">Video</a>,
-  
-    <a href="/tags/Youtube/" title="Youtube">Youtube</a>,
-  
-    <a href="/tags/Heroku/" title="Heroku">Heroku</a>,
-  
-    <a href="/tags/NodeJS/" title="NodeJS">NodeJS</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017"><a href="#How-to-Create-Host-a-Website-for-Free-Using-Heroku-Node-2017" class="headerlink" title="How to Create/Host a Website for Free / Using Heroku + Node (2017)"></a>How to Create/Host a Website for Free / Using Heroku + Node (2017)</h1><p><strong>video src</strong> ==&gt; <a href="https://www.youtube.com/watch?v=ufBsL3PnNfw" target="_blank" rel="external">https://www.youtube.com/watch?v=ufBsL3PnNfw</a></p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Heroku_NodeJS_WebSite/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/Programme utilitaire/">Programme utilitaire</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-13T21:26:00.000Z" itemprop="datePublished">2017/11/13</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="http://yoursite.com/2017/11/13/Programme utilitaire/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Tools/" title="Tools">Tools</a>,
-  
-    <a href="/tags/Software/" title="Software">Software</a>,
-  
-    <a href="/tags/Utilities/" title="Utilities">Utilities</a>,
-  
-    <a href="/tags/MustHave/" title="MustHave">MustHave</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Programme-utilitaire"><a href="#Programme-utilitaire" class="headerlink" title="Programme utilitaire"></a>Programme utilitaire</h1><ul>
-<li><strong>Trouver les duplicates</strong>   G:\techPrg\AntiTwin.exe</li>
-<li><strong>Gros fichier</strong>  C:\Program Files (x86)\WinDirStat\windirstat.exe</li>
-<li><strong>Recherche fichier</strong>   G:\techPrg\SearchMyFilesSearchMyFiles.exe</li>
-<li><strong>Temp CPU</strong>          G:\techPrg\CoreTemp64\Core Temp.exe</li>
-<li><strong>Temp GPU</strong>   G:\techPrg\GPU-ZPortable\GPU-Z.0.8.9.exe</li>
+<p><strong>Pour les boulettes de viande :</strong></p>
+<ul>
+<li>750 g de viande hachée</li>
+<li>1 c. à. s. de paprika</li>
+<li>2 c. à. s. de marjolaine</li>
+<li>1 gousse d’ail coupée en petits morceaux</li>
+<li>1 c. à. s. de moutarde</li>
+<li>5 c. à. s. de chapelure</li>
+<li>2 oeufs</li>
+<li>sel, poivre</li>
 </ul>
+<p><strong>Pour les pâtes :</strong></p>
+<ul>
+<li>3 oeufs </li>
+<li>150 g  de parmesan</li>
+<li>500 g de spaghetti</li>
+</ul>
+<p><strong>Aux fourneaux :</strong></p>
+<p>1 - Pour préparer les boulettes, commencez par mélanger tous les ingrédients dans un saladier. Formez ensuite des petites boules que vous faites cuire de chaque côté à la poêle. </p>
+<p>2 - Ensuite, fouettez les 3 oeufs et ajoutez-y le parmesan, avant de mélanger le tout avec les pâtes. </p>
+<p>3 - Tapissez le fond d’un moule circulaire avec la moitié des spaghetti. Puis, disposez les boulettes de viande que vous recouvrez avec la sauce tomate et la mozzarella. Pour finir, ajoutez par-dessus le reste des pâtes.</p>
+<p>4 - Faites cuire le sandwich à 180 °C pendant 15 minutes. Vous avez juste à le démouler et il est prêt à être dégusté. </p>
+<h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/01qd5e-TJf0" frameborder="0" allowfullscreen></iframe></div>
+<p>Bon Ap!</p>
 
       
     </div>
-    <br>
-    <br>
-    <a href="http://yoursite.com/2017/11/13/Programme utilitaire/" class="more">Read more <i class="icon-angle-right"></i></a>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/ndwich-de-spaghetti-a-la-viande/" data-id="cjgiaumq3001vy4ws1vr52ptg" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recette/">Recette</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Viande/">Viande</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Video/">Video</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Youtube/">Youtube</a></li></ul>
+
+
+    </footer>
   </div>
+  
+</article>
+
+
+
+  
+    <article id="post-gnon-farci-au-poulet" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/gnon-farci-au-poulet/">Oignon farci au poulet</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/gnon-farci-au-poulet/" class="article-date"><time datetime="2018-04-27T18:31:00.000Z" itemprop="datePublished">2018-04-27</time></a>
 </div>
-<hr class="blog-post-sep">
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recette/">Recette</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Oignon-farci-au-poulet"><a href="#Oignon-farci-au-poulet" class="headerlink" title="Oignon farci au poulet"></a>Oignon farci au poulet</h1><p><strong>src ==&gt;</strong> <a href="https://youtu.be/Kv7_7qzCwkY" target="_blank" rel="external">https://youtu.be/Kv7_7qzCwkY</a></p>
+<p><strong>Sur le plan de travail (pour 6 portions) :</strong></p>
+<ul>
+<li>450 g de blanc de poulet</li>
+<li>3-4 oignons</li>
+<li>Huile végétale</li>
+<li>100 ml de ketchup</li>
+<li>2 c. à c. de paprika</li>
+<li>2 c. à c. de curry</li>
+<li>1 c. à c. de piment de Cayenne</li>
+<li>1 c. à s. de miel</li>
+<li>75 g de mozzarella râpée</li>
+<li>2 oignons nouveaux</li>
+<li>12 tranches de bacon</li>
+<li>100 ml de sauce BBQ</li>
+</ul>
+<p><strong>Aux fourneaux !</strong></p>
+<p>1 - Émiettez le blanc de poulet avec une fourchette puis retirez le premier anneau des oignons que vous conservez pour plus tard.</p>
+<p>2 - Coupez la partie interne des oignons en morceaux et faites-les revenir dans l’huile. Ajoutez le ketchup, le paprika, le curry, le piment de Cayenne, le miel et mélangez bien.</p>
+<p>3 - Versez la mixture sur le poulet puis saupoudrez de mozzarella et d’oignons nouveaux (coupés). Remuez bien avec les mains.</p>
+<p>4 - Formez des boules de cette mixture que vous mettez dans les anneaux d’oignon (voir vidéo). Enroulez deux tranches de bacon sur chaque oignon farci, surtout pour recouvrir les parties ouvertes de l’oignon. Pour bien maintenir le tout, plantez des brochettes en bois dans les boules. Étalez la sauce barbecue puis enfournez à 180 °C pendant 20 minutes.</p>
+<p>Bon Ap’ ! </p>
 
       
     </div>
-    
-      <div id="page-nav" class="pagination">
-	<a class="extend prev" rel="prev" href="/page/3/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">Next</a>
-      </div>
-    
-  </section>
 
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/gnon-farci-au-poulet/" data-id="cjgian2g0001py4wsak4qa3fv" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Poulet/">Poulet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recette/">Recette</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Video/">Video</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Youtube/">Youtube</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-echerche-14-dec" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/echerche-14-dec/">Recherche 14 dec</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/echerche-14-dec/" class="article-date"><time datetime="2018-04-27T18:26:00.000Z" itemprop="datePublished">2018-04-27</time></a>
 </div>
 
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a> / <a class="article-category-link" href="/categories/Programming/Web-Design/">Web Design</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>2016 California State Championships-Briggs LO 206 Main Event</strong></p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/kIcs6JW8FQU" target="_blank" rel="external">https://youtu.be/kIcs6JW8FQU</a></p>
+<p><strong>Employee manager app built on Vue.js and FireStore</strong></p>
+<p><strong>src ==&gt;</strong> <a href="https://github.com/bradtraversy/vue_firestore_employeemanager" target="_blank" rel="external">https://github.com/bradtraversy/vue_firestore_employeemanager</a></p>
+<p><strong>A virtual terminal for parsing ANSI escape codes in python</strong></p>
+<p><strong>src ==&gt;</strong> <a href="https://github.com/helgefmi/ansiterm" target="_blank" rel="external">https://github.com/helgefmi/ansiterm</a></p>
+<p><strong>Terminal codes (ANSI/VT100) introduction</strong></p>
+<p><strong>src ==&gt;</strong> <a href="http://wiki.bash-hackers.org/scripting/terminalcodes" target="_blank" rel="external">http://wiki.bash-hackers.org/scripting/terminalcodes</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/echerche-14-dec/" data-id="cjgiagqag001hy4wsfxt7vn0r" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recherche/">Recherche</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VueJS/">VueJS</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-zza-baguette" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/zza-baguette/">Pizza baguette</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/zza-baguette/" class="article-date"><time datetime="2018-04-27T16:25:00.000Z" itemprop="datePublished">2018-04-27</time></a>
 </div>
 
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Nourriture/">Nourriture</a>
   </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pizza-baguette"><a href="#Pizza-baguette" class="headerlink" title="Pizza baguette"></a>Pizza baguette</h1><h2 id="Sur-le-plan-de-travail"><a href="#Sur-le-plan-de-travail" class="headerlink" title="Sur le plan de travail :"></a>Sur le plan de travail :</h2><ul>
+<li>1 baguette</li>
+</ul>
+<p><strong>Pour le beurre aux herbes :</strong></p>
+<ul>
+<li>3 c. à s. de beurre</li>
+<li>1 gousse d’ail</li>
+<li>1 c. à s. d’origan</li>
+<li>1 c. à s. de persil</li>
+</ul>
+<p><strong>Pour la sauce à pizza :</strong></p>
+<ul>
+<li>400 g de tomates concassées</li>
+<li>Sel et poivre</li>
+<li>1 c. à c. de piment séché</li>
+<li>Sucre</li>
+<li>1 c. à c. d’origan</li>
+<li>1 c. à s. d’huile d’olive</li>
+</ul>
+<p><strong>Pour la garniture :</strong></p>
+<ul>
+<li>180 g de mozzarella râpée</li>
+<li>75 g de parmesan râpé</li>
+<li>70 g de chorizo</li>
+<li>4 c. à s. de fromage frais</li>
+<li>1 c. à s. de basilic</li>
+</ul>
+<h2 id="Aux-fourneaux"><a href="#Aux-fourneaux" class="headerlink" title="Aux fourneaux !"></a>Aux fourneaux !</h2><p>1 - Commencez par couper la baguette en deux puis divisez-la en trois (vous devez avoir 6 morceaux de pain).</p>
+<p>2 - Faites fondre le beurre dans une poêle puis ajoutez l’ail que vous laissez cuire brièvement. Versez l’origan et le persil puis après quelques minutes, badigeonnez la mixture sur la mie de pain à l’aide d’un pinceau. Enfournez le tout pendant 7 minutes à 180 °C.</p>
+<p>3 - Préparez la sauce en versant l’ensemble des ingrédients dans un verre doseur. Mélangez bien le tout à l’aide d’un mixeur jusqu’à obtenir une sauce homogène. Versez et étalez la sauce sur les 6 morceaux de baguette pré-cuits.</p>
+<p>4 - Saupoudrez les tranches de pain de mozzarella et de parmesan puis ajoutez des tranches de chorizo et du fromage frais par-dessus. Enfournez à nouveau pendant 15 minutes à 180 °C. Pour finir, saupoudrez le tout de basilic avant de servir.</p>
+<p>Bon Ap’ ! </p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/zza-baguette/" data-id="cjgi64jmz001ey4wsgttakh9w" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recette/">Recette</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-cherche-11-dec" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/cherche-11-dec/">Recherche 11 dec</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/cherche-11-dec/" class="article-date"><time datetime="2018-04-27T16:05:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recherche/">Recherche</a> / <a class="article-category-link" href="/categories/Recherche/Web-Design/">Web Design</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Guide-Flexbox"><a href="#Guide-Flexbox" class="headerlink" title="Guide Flexbox"></a>Guide Flexbox</h1><p><strong>src ==&gt;</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
+<p>Mychron4, pull data using the mychron thumb drive. Then I exported to CSV and then into dashware</p>
+<p><strong>src ==&gt;</strong> <a href="http://www.dashwaregauges.com" target="_blank" rel="external">http://www.dashwaregauges.com</a></p>
+<h3 id="Tuto-inkscape-0-92-Dessiner-un-personnage-simple"><a href="#Tuto-inkscape-0-92-Dessiner-un-personnage-simple" class="headerlink" title="Tuto inkscape 0.92 : Dessiner un personnage simple"></a>Tuto inkscape 0.92 : Dessiner un personnage simple</h3><p><strong>src ==&gt;</strong>  <a href="https://youtu.be/HBUWgPTdGyI" target="_blank" rel="external">https://youtu.be/HBUWgPTdGyI</a></p>
+<h3 id="Atlanta-Motorsports-Park-Kart-Race-4-TaG-87-Danny-Kay-with-Dashware"><a href="#Atlanta-Motorsports-Park-Kart-Race-4-TaG-87-Danny-Kay-with-Dashware" class="headerlink" title="Atlanta Motorsports Park Kart Race #4 TaG #87 Danny Kay with Dashware"></a>Atlanta Motorsports Park Kart Race #4 TaG #87 Danny Kay with Dashware</h3><p><strong>src ==&gt;</strong> <a href="https://youtu.be/EsHRqy28mzU" target="_blank" rel="external">https://youtu.be/EsHRqy28mzU</a></p>
+<h3 id="Inkscape-pour-les-debutants-2-Creons-un-logo"><a href="#Inkscape-pour-les-debutants-2-Creons-un-logo" class="headerlink" title="Inkscape pour les débutants 2 : Créons un logo"></a>Inkscape pour les débutants 2 : Créons un logo</h3><p><strong>src ==&gt;</strong> <a href="https://youtu.be/bOidSX0iEhc" target="_blank" rel="external">https://youtu.be/bOidSX0iEhc</a></p>
+<p>Comment créer un logo avec le logiciel gratuit Inkscape</p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/VDmTXbxdyuA" target="_blank" rel="external">https://youtu.be/VDmTXbxdyuA</a></p>
+<p><em>J’aime le style</em></p>
+<p><strong>Inkscape for Beginners: Logo Design Tutorial</strong></p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/OT97oRXZiVY" target="_blank" rel="external">https://youtu.be/OT97oRXZiVY</a></p>
+<p><strong>Inkscape Tutorial: Design a Logo</strong></p>
+<p><strong>src ==&gt;</strong><a href="https://youtu.be/LXZdxzLiEEo" target="_blank" rel="external">https://youtu.be/LXZdxzLiEEo</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/cherche-11-dec/" data-id="cjgi5fe5d0016y4wsmbvkudis" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recherche/">Recherche</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-cherche-12-mars" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/cherche-12-mars/">Recherche 12 mars</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/cherche-12-mars/" class="article-date"><time datetime="2018-04-27T16:00:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Enduro-is-open-source"><a href="#Enduro-is-open-source" class="headerlink" title="Enduro is open source:"></a>Enduro is open source:</h3><p><strong>src ==&gt;</strong><a href="https://github.com/Gottwik/Enduro" target="_blank" rel="external">https://github.com/Gottwik/Enduro</a></p>
+<p><strong>Install enduro: </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i enduro -g</span><br></pre></td></tr></table></figure></p>
+<p><strong>src ==&gt;</strong><a href="https://www.endurojs.com/blog/advantages_of_static_serving" target="_blank" rel="external">https://www.endurojs.com/blog/advantages_of_static_serving</a></p>
+<p><strong>src ==&gt;</strong><a href="https://www.endurojs.com/docs/content-files" target="_blank" rel="external">https://www.endurojs.com/docs/content-files</a></p>
+<p><strong>src ==&gt;</strong><a href="https://www.endurojs.com/themes" target="_blank" rel="external">https://www.endurojs.com/themes</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/cherche-12-mars/" data-id="cjgi58bo70013y4wsclq6rr38" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recherche/">Recherche</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-cherche-12-octobre" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/cherche-12-octobre/">Recherche 12 octobre</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/cherche-12-octobre/" class="article-date"><time datetime="2018-04-27T15:45:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recherche/">Recherche</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Steam-game-saver-gt-GameSave-Manager"><a href="#Steam-game-saver-gt-GameSave-Manager" class="headerlink" title="Steam game saver ==&gt; GameSave Manager"></a>Steam game saver ==&gt; GameSave Manager</h3><p><strong>src ==&gt;</strong> <a href="http://www.gamesave-manager.com/" target="_blank" rel="external">http://www.gamesave-manager.com/</a></p>
+<h3 id="ShareX"><a href="#ShareX" class="headerlink" title="ShareX"></a>ShareX</h3><p>Screen capture, file sharing and productivity tool</p>
+<p><strong>src ==&gt;</strong>  <a href="https://getsharex.com/" target="_blank" rel="external">https://getsharex.com/</a></p>
+<h3 id="DropFile-24-hours"><a href="#DropFile-24-hours" class="headerlink" title="DropFile (24 hours)"></a>DropFile (24 hours)</h3><p>simple secure free anonymous</p>
+<p><strong>src ==&gt;</strong> <a href="https://dropfile.to/" target="_blank" rel="external">https://dropfile.to/</a></p>
+<h3 id="ScreenToGif"><a href="#ScreenToGif" class="headerlink" title="ScreenToGif"></a>ScreenToGif</h3><p>Screen, webcam and sketchboard recorder with an integrated editor.<br><strong>src ==&gt;</strong> <a href="http://www.screentogif.com/" target="_blank" rel="external">http://www.screentogif.com/</a></p>
+<h3 id="PC-Meters-MSI-afterburner"><a href="#PC-Meters-MSI-afterburner" class="headerlink" title="PC Meters (MSI afterburner)"></a>PC Meters (MSI afterburner)</h3><p><strong>src ==&gt;</strong> <a href="https://www.msi.com/page/afterburner#" target="_blank" rel="external">https://www.msi.com/page/afterburner#</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/cherche-12-octobre/" data-id="cjgi4p1mm000zy4wsat17xa2n" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recherche/">Recherche</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/">Tools</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-ntra" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/ntra/">Mentra</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/ntra/" class="article-date"><time datetime="2018-04-27T15:41:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recherche/">Recherche</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>hope + action +  intention <strong>==&gt; focus</strong></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/ntra/" data-id="cjgi4jwnn000ty4wsojotg7ho" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pense/">Pensé</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sante/">Santé</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post--Recettes-au-four" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/-Recettes-au-four/">5 Recettes au four</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/04/27/-Recettes-au-four/" class="article-date"><time datetime="2018-04-27T15:36:00.000Z" itemprop="datePublished">2018-04-27</time></a>
+</div>
+
+    <div class="article-author">Yves M</div>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Recette/">Recette</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="5-recettes-savoureuses-a-faire-au-four"><a href="#5-recettes-savoureuses-a-faire-au-four" class="headerlink" title="5 recettes savoureuses à faire au four"></a>5 recettes savoureuses à faire au four</h1><p><strong>src ==&gt;</strong>  <a href="https://youtu.be/kjBpGOYrbvQ" target="_blank" rel="external">https://youtu.be/kjBpGOYrbvQ</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/-Recettes-au-four/" data-id="cjgi4dbze000ny4wsxzn5skcd" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Recette/">Recette</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Video/">Video</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Youtube/">Youtube</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <div id="page-nav">
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/3/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="active"><span class="page-number">4</span></li><li><a class="page-number" href="/page/5/">5</a></li><li><a class="page-number" href="/page/6/">6</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/11/">11</a></li><li><a class="page-next" rel="next" href="/page/5/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
 
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About Us</h2>
-            <p>AbitibiTech is a software development company based in La Sarre, Québec. <br><br> AbitibiTech was founded in 9999, and is focused on so on and so forth.</p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
-
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Contact</h2>
-            <address class="margin-bottom-40">
-              77 2E rue Est<br>
-              <br>
-              La Sarre, QC J9Z 3G8<br>
-              Phone: (819) 333-1010<br>
-              Email: <a href="mailto:abitibitech@gmail.com">abitibitech@gmail.com</a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
-
-	
-          <!-- BEGIN TWITTER BLOCK --> 
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-
-	  <a data-tweet-limit="1" class="twitter-timeline"
-	  href="https://twitter.com/computerlab_"
-	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
-
-	  <script>!function(d,s,id){var
-	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-          </div>
-          <!-- END TWITTER BLOCK -->
-	
         </div>
-      </div>
-    </div>
-    <!-- END PRE-FOOTER -->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-6 col-sm-6 padding-top-10">
-                  &copy; 2017 Mon Blog (Hexo)<br>
- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
-          </div>
-          <!-- END COPYRIGHT -->
-	  <!-- BEGIN SOCIAL -->
-<div class="col-md-6 col-sm-6">
-  <ul class="social-footer list-unstyled list-inline pull-right">
-    
-      <li><a href="https://github.com/aoDudeV"><i class="fa fa-github"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-twitter"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-facebook"></i></a></li>
-    
-      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-linkedin"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-stackoverflow"></i></a></li>
-    
-  </ul>  
 </div>
-<!-- END SOCIAL -->
+
+
+  
+  <div class="sidebar-module">
+    <h4>Categories</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/NET/">.NET</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Contents/">Contents</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Demo/">Demo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Docs/">Docs</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Dynamics-NAV/">Dynamics NAV</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Framework/">Framework</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Games/">Games</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Hexo/">Hexo</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Humor/">Humor</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Info-Tech/">Info_Tech</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Language/">Language</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Learning/">Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Linux/">Linux</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/NGINX/">NGINX</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Nourritue/">Nourritue</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Programming/">Programming</a><span class="sidebar-module-list-count">22</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Programming/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recette/">Recette</a><span class="sidebar-module-list-count">14</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recette/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">4</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/">Recherche</a><span class="sidebar-module-list-count">19</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Games/">Games</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Recette/">Recette</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Recette/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/SSG/">SSG</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/StaticSiteGen/">StaticSiteGen</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Tech-Info/">Tech_Info</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Test/">Test</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Video/">Video</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Apps/">Web Apps</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Hosting/">Web Hosting</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WebSite/">WebSite</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Youtube/">Youtube</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/3D/">3D</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/API/">API</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/AngularJS/">AngularJS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Animated/">Animated</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/App/">App</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Astuces/">Astuces</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bash/">Bash</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Beautify/">Beautify</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Blanchir/">Blanchir</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/BonAp/">BonAp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bonbon/">Bonbon</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bootstrap/">Bootstrap</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bower/">Bower</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C#</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CMS/">CMS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CRUD/">CRUD</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CSS/">CSS</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Chocolat/">Chocolat</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Code/">Code</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Commands/">Commands</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Comments/">Comments</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Converter/">Converter</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Cuisine/">Cuisine</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/D3js/">D3js</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data/">Data</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Database/">Database</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Deploy/">Deploy</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Design/">Design</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Documentation/">Documentation</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/EasyToBoot/">EasyToBoot</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Editing/">Editing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Editor/">Editor</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electron/">Electron</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Embedded/">Embedded</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Emmet/">Emmet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/English/">English</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Example/">Example</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Flexbox/">Flexbox</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Folder/">Folder</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/FontAwesome/">FontAwesome</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Freemind/">Freemind</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Games/">Games</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gif/">Gif</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GitHub/">GitHub</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Graph/">Graph</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Grunt/">Grunt</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML/">HTML</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML5/">HTML5</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Heroku/">Heroku</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HexoTags/">HexoTags</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/How-To/">How-To</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Html/">Html</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hyperliens/">Hyperliens</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Image/">Image</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Images/">Images</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/JSON/">JSON</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Javascript/">Javascript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Jquery/">Jquery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Kivy/">Kivy</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Laravel/">Laravel</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Lasagne/">Lasagne</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Learning/">Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Linux/">Linux</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Live-Server/">Live-Server</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LiveCD/">LiveCD</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Logiciel/">Logiciel</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LokiJS/">LokiJS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MSQLI/">MSQLI</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MarkItUp/">MarkItUp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Markdown/">Markdown</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MongoDB/">MongoDB</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Movie/">Movie</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Moyenne/">Moyenne</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MustHave/">MustHave</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MySQL/">MySQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NAV/">NAV</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Nicko/">Nicko</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NoSQL/">NoSQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NodeJS/">NodeJS</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Online/">Online</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PHP/">PHP</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Pense/">Pensé</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Pizza/">Pizza</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Plugin/">Plugin</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Plugins/">Plugins</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Postman/">Postman</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Poulet/">Poulet</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Programming/">Programming</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentation/">Présentation</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Python/">Python</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Q-A/">Q&A</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/QuickStart/">QuickStart</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Readme/">Readme</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Recette/">Recette</a><span class="sidebar-module-list-count">21</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Recherche/">Recherche</a><span class="sidebar-module-list-count">16</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Resources/">Resources</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Restfull-API/">Restfull-API</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Sante/">Santé</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Sauce/">Sauce</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Script/">Script</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Shortcut/">Shortcut</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Slide/">Slide</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Slides/">Slides</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software/">Software</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Strategie/">Strategie</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Syntax/">Syntax</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tags/">Tags</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Test/">Test</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Theme/">Theme</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tools/">Tools</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tutorials/">Tutorials</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UI-Kit/">UI_Kit</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UTF8/">UTF8</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Un-minify/">Un_minify</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Usb-Boot/">Usb_Boot</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Utilities/">Utilities</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Vagrant/">Vagrant</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Viande/">Viande</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Video/">Video</a><span class="sidebar-module-list-count">32</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Studio/">Visual Studio</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VsCode/">VsCode</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VueJS/">VueJS</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Vuejs/">Vuejs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Weather/">Weather</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Design/">Web Design</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Development/">Web Development</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Scraping/">Web Scraping</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/WebIX/">WebIX</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/WebScrapper/">WebScrapper</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Welcome/">Welcome</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Wiki/">Wiki</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Youtube/">Youtube</a><span class="sidebar-module-list-count">29</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/cheat-sheet/">cheat-sheet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/employment/">employment</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/example/">example</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/formulaire/">formulaire</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/funny/">funny</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/hexo-tag-owl/">hexo-tag-owl</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/highlight/">highlight</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iTransWarp/">iTransWarp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jQuery/">jQuery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jquery/">jquery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/plugins/">plugins</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/themes/">themes</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/3D/" style="font-size: 10px;">3D</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Animated/" style="font-size: 10px;">Animated</a> <a href="/tags/App/" style="font-size: 10px;">App</a> <a href="/tags/Astuces/" style="font-size: 10px;">Astuces</a> <a href="/tags/Bash/" style="font-size: 11.67px;">Bash</a> <a href="/tags/Beautify/" style="font-size: 10px;">Beautify</a> <a href="/tags/Blanchir/" style="font-size: 10px;">Blanchir</a> <a href="/tags/BonAp/" style="font-size: 10px;">BonAp</a> <a href="/tags/Bonbon/" style="font-size: 10px;">Bonbon</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Bower/" style="font-size: 10px;">Bower</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/CMS/" style="font-size: 10px;">CMS</a> <a href="/tags/CRUD/" style="font-size: 10px;">CRUD</a> <a href="/tags/CSS/" style="font-size: 13.33px;">CSS</a> <a href="/tags/Chocolat/" style="font-size: 10px;">Chocolat</a> <a href="/tags/Code/" style="font-size: 11.67px;">Code</a> <a href="/tags/Commands/" style="font-size: 11.67px;">Commands</a> <a href="/tags/Comments/" style="font-size: 10px;">Comments</a> <a href="/tags/Converter/" style="font-size: 10px;">Converter</a> <a href="/tags/Cuisine/" style="font-size: 13.33px;">Cuisine</a> <a href="/tags/D3js/" style="font-size: 10px;">D3js</a> <a href="/tags/Data/" style="font-size: 10.83px;">Data</a> <a href="/tags/Database/" style="font-size: 10.83px;">Database</a> <a href="/tags/Deploy/" style="font-size: 10px;">Deploy</a> <a href="/tags/Design/" style="font-size: 11.67px;">Design</a> <a href="/tags/Documentation/" style="font-size: 10.83px;">Documentation</a> <a href="/tags/EasyToBoot/" style="font-size: 10px;">EasyToBoot</a> <a href="/tags/Editing/" style="font-size: 10px;">Editing</a> <a href="/tags/Editor/" style="font-size: 10px;">Editor</a> <a href="/tags/Electron/" style="font-size: 10px;">Electron</a> <a href="/tags/Embedded/" style="font-size: 10px;">Embedded</a> <a href="/tags/Emmet/" style="font-size: 10px;">Emmet</a> <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/Example/" style="font-size: 10.83px;">Example</a> <a href="/tags/Flexbox/" style="font-size: 10px;">Flexbox</a> <a href="/tags/Folder/" style="font-size: 10px;">Folder</a> <a href="/tags/FontAwesome/" style="font-size: 10px;">FontAwesome</a> <a href="/tags/Freemind/" style="font-size: 10px;">Freemind</a> <a href="/tags/Games/" style="font-size: 10.83px;">Games</a> <a href="/tags/Gif/" style="font-size: 10.83px;">Gif</a> <a href="/tags/GitHub/" style="font-size: 11.67px;">GitHub</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Grunt/" style="font-size: 10px;">Grunt</a> <a href="/tags/HTML/" style="font-size: 11.67px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 10.83px;">HTML5</a> <a href="/tags/Heroku/" style="font-size: 11.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 15.83px;">Hexo</a> <a href="/tags/HexoTags/" style="font-size: 10px;">HexoTags</a> <a href="/tags/How-To/" style="font-size: 10px;">How-To</a> <a href="/tags/Html/" style="font-size: 10.83px;">Html</a> <a href="/tags/Hyperliens/" style="font-size: 11.67px;">Hyperliens</a> <a href="/tags/Image/" style="font-size: 10px;">Image</a> <a href="/tags/Images/" style="font-size: 10.83px;">Images</a> <a href="/tags/JSON/" style="font-size: 11.67px;">JSON</a> <a href="/tags/Javascript/" style="font-size: 12.5px;">Javascript</a> <a href="/tags/Jquery/" style="font-size: 10px;">Jquery</a> <a href="/tags/Kivy/" style="font-size: 10px;">Kivy</a> <a href="/tags/Laravel/" style="font-size: 10px;">Laravel</a> <a href="/tags/Lasagne/" style="font-size: 10px;">Lasagne</a> <a href="/tags/Learning/" style="font-size: 10px;">Learning</a> <a href="/tags/Linux/" style="font-size: 14.17px;">Linux</a> <a href="/tags/Live-Server/" style="font-size: 10px;">Live-Server</a> <a href="/tags/LiveCD/" style="font-size: 10px;">LiveCD</a> <a href="/tags/Logiciel/" style="font-size: 10px;">Logiciel</a> <a href="/tags/LokiJS/" style="font-size: 10px;">LokiJS</a> <a href="/tags/MSQLI/" style="font-size: 10px;">MSQLI</a> <a href="/tags/MarkItUp/" style="font-size: 10px;">MarkItUp</a> <a href="/tags/Markdown/" style="font-size: 12.5px;">Markdown</a> <a href="/tags/MongoDB/" style="font-size: 10.83px;">MongoDB</a> <a href="/tags/Movie/" style="font-size: 10px;">Movie</a> <a href="/tags/Moyenne/" style="font-size: 10px;">Moyenne</a> <a href="/tags/MustHave/" style="font-size: 10px;">MustHave</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/NAV/" style="font-size: 10.83px;">NAV</a> <a href="/tags/Nicko/" style="font-size: 10px;">Nicko</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/NodeJS/" style="font-size: 15.83px;">NodeJS</a> <a href="/tags/Online/" style="font-size: 14.17px;">Online</a> <a href="/tags/PHP/" style="font-size: 10.83px;">PHP</a> <a href="/tags/Pense/" style="font-size: 10px;">Pensé</a> <a href="/tags/Pizza/" style="font-size: 10.83px;">Pizza</a> <a href="/tags/Plugin/" style="font-size: 10px;">Plugin</a> <a href="/tags/Plugins/" style="font-size: 13.33px;">Plugins</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Poulet/" style="font-size: 13.33px;">Poulet</a> <a href="/tags/Programming/" style="font-size: 16.67px;">Programming</a> <a href="/tags/Presentation/" style="font-size: 10px;">Présentation</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Q-A/" style="font-size: 10px;">Q&A</a> <a href="/tags/QuickStart/" style="font-size: 10px;">QuickStart</a> <a href="/tags/Readme/" style="font-size: 14.17px;">Readme</a> <a href="/tags/Recette/" style="font-size: 18.33px;">Recette</a> <a href="/tags/Recherche/" style="font-size: 17.5px;">Recherche</a> <a href="/tags/Resources/" style="font-size: 10.83px;">Resources</a> <a href="/tags/Restfull-API/" style="font-size: 10px;">Restfull-API</a> <a href="/tags/Sante/" style="font-size: 10px;">Santé</a> <a href="/tags/Sauce/" style="font-size: 10px;">Sauce</a> <a href="/tags/Script/" style="font-size: 10px;">Script</a> <a href="/tags/Shortcut/" style="font-size: 10px;">Shortcut</a> <a href="/tags/Slide/" style="font-size: 10px;">Slide</a> <a href="/tags/Slides/" style="font-size: 11.67px;">Slides</a> <a href="/tags/Software/" style="font-size: 10.83px;">Software</a> <a href="/tags/Strategie/" style="font-size: 10.83px;">Strategie</a> <a href="/tags/Syntax/" style="font-size: 10px;">Syntax</a> <a href="/tags/Tags/" style="font-size: 10.83px;">Tags</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/Theme/" style="font-size: 11.67px;">Theme</a> <a href="/tags/Tools/" style="font-size: 15px;">Tools</a> <a href="/tags/Tutorials/" style="font-size: 10.83px;">Tutorials</a> <a href="/tags/UI-Kit/" style="font-size: 10px;">UI_Kit</a> <a href="/tags/UTF8/" style="font-size: 10px;">UTF8</a> <a href="/tags/Un-minify/" style="font-size: 10px;">Un_minify</a> <a href="/tags/Usb-Boot/" style="font-size: 10px;">Usb_Boot</a> <a href="/tags/Utilities/" style="font-size: 10.83px;">Utilities</a> <a href="/tags/Vagrant/" style="font-size: 10.83px;">Vagrant</a> <a href="/tags/Viande/" style="font-size: 10.83px;">Viande</a> <a href="/tags/Video/" style="font-size: 20px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 10px;">Visual Studio</a> <a href="/tags/VsCode/" style="font-size: 10px;">VsCode</a> <a href="/tags/VueJS/" style="font-size: 10.83px;">VueJS</a> <a href="/tags/Vuejs/" style="font-size: 10px;">Vuejs</a> <a href="/tags/Weather/" style="font-size: 10px;">Weather</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-Design/" style="font-size: 10.83px;">Web Design</a> <a href="/tags/Web-Development/" style="font-size: 10px;">Web Development</a> <a href="/tags/Web-Scraping/" style="font-size: 10px;">Web Scraping</a> <a href="/tags/WebIX/" style="font-size: 10px;">WebIX</a> <a href="/tags/WebScrapper/" style="font-size: 10px;">WebScrapper</a> <a href="/tags/Welcome/" style="font-size: 10px;">Welcome</a> <a href="/tags/Wiki/" style="font-size: 12.5px;">Wiki</a> <a href="/tags/Youtube/" style="font-size: 19.17px;">Youtube</a> <a href="/tags/cheat-sheet/" style="font-size: 10px;">cheat-sheet</a> <a href="/tags/employment/" style="font-size: 10px;">employment</a> <a href="/tags/example/" style="font-size: 10px;">example</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/formulaire/" style="font-size: 10px;">formulaire</a> <a href="/tags/funny/" style="font-size: 10px;">funny</a> <a href="/tags/hexo-tag-owl/" style="font-size: 10px;">hexo-tag-owl</a> <a href="/tags/highlight/" style="font-size: 10px;">highlight</a> <a href="/tags/iTransWarp/" style="font-size: 10px;">iTransWarp</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/plugins/" style="font-size: 10px;">plugins</a> <a href="/tags/themes/" style="font-size: 10px;">themes</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/05/">May 2018</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/04/">April 2018</a><span class="sidebar-module-list-count">41</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2017/11/">November 2017</a><span class="sidebar-module-list-count">46</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2016/01/">January 2016</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/05/">May 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/04/">April 2015</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/03/">March 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/03/">March 2014</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/02/">February 2014</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2018/05/25/Recherche-3-mai-Vuejs-vagrant/">Recherche 3 mai Vuejs vagrant</a>
+        </li>
+      
+        <li>
+          <a href="/2018/05/25/Recherche-2-mai-Vs-Code-Extension/">Recherche 2 mai Vs Code Extension</a>
+        </li>
+      
+        <li>
+          <a href="/2018/05/25/Recherche-1-mai-vuejs/">Recherche 1 mai vuejs</a>
+        </li>
+      
+        <li>
+          <a href="/2018/04/30/kiJS-slides/">LokiJS slides</a>
+        </li>
+      
+        <li>
+          <a href="/2018/04/30/echerche-30-avril/">Recherche 30 avril</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
 
         </div>
-      </div>
     </div>
-    <!-- END FOOTER -->
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Yves M<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
 
-  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
-<!--[if lt IE 9]>
-<script src="/metronic/assets/plugins/respond.min.js"></script>
-<![endif]--> 
-<script src="/metronic/assets/plugins/jquery.min.js"></script>
-<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
-<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
-<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/layout.js"></script>
-<script src="/js/wow.min.js"></script>
+  
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        Layout.init();    
-        Layout.initOWL();
-        Layout.initTwitter();
-        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-        Layout.initNavScrolling(); 
-	new WOW().init();
-    });
-</script>
-<!-- END CORE PLUGINS -->
-
-<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 
-
-
-
-
-<!-- END PAGE-SPECIFIC PLUGINS --> 
-
-<!-- BEGIN INTEGRATIONS -->
-
-
-
-
-
-<!-- END INTEGRATIONS -->
+<script src="/js/script.js"></script>
 
 </body>
 </html>

@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html>
 <head>
   <meta charset="utf-8">
   
   <title>Hexo theme doc Readme | Mon Blog (Hexo)</title>
-
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="hexo-theme-doc LiveDemo: https://zalando-incubator.github.io/hexo-theme-doc hexo-theme-doc is a documentation theme for Hexo, the fast and powerful blog framework powered by Node.js. It differs from o">
 <meta name="keywords" content="Documentation,Wiki,Hexo,Readme,Theme">
 <meta property="og:type" content="article">
@@ -19,6 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/26/xo-theme-doc-Readme/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="hexo-theme-doc LiveDemo: https://zalando-incubator.github.io/hexo-theme-doc hexo-theme-doc is a documentation theme for Hexo, the fast and powerful blog framework powered by Node.js. It differs from o">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="https://img.shields.io/badge/License-MIT-yellow.svg">
 <meta property="og:image" content="https://david-dm.org/zalando-incubator/hexo-theme-doc/status.svg">
 <meta property="og:image" content="https://api.codacy.com/project/badge/Grade/0a927311457a4180a4d7606a8f66ab5f">
@@ -32,182 +26,97 @@
 <meta name="twitter:description" content="hexo-theme-doc LiveDemo: https://zalando-incubator.github.io/hexo-theme-doc hexo-theme-doc is a documentation theme for Hexo, the fast and powerful blog framework powered by Node.js. It differs from o">
 <meta name="twitter:image" content="https://img.shields.io/badge/License-MIT-yellow.svg">
   
-    <link rel="alternative" href="/atom.xml" title="Mon Blog (Hexo)" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Mon Blog (Hexo)" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.ico">
   
-    
-  <meta content="{{ title }}" name="description">
-  <meta content="{{ title }}" name="keywords">
-  <meta content="{{ title }}" name="author">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!-- Global styles START -->   
-  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Global styles END --> 
-   
-  <!-- Page level plugin styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
-  <!-- Page level plugin styles END -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 
-  <!-- Theme styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
-  <link rel="stylesheet" href="/css/theme-styles.css">
-  <!-- Theme styles END -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
 </head>
 
-<body class="corporate">
-  <!-- BEGIN TOP BAR -->
-<div class="pre-header">
+<body>
+  <nav class="navbar navbar-inverse">
   <div class="container">
-    <div class="row">
-      <!-- BEGIN TOP BAR LEFT PART -->
-      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
-	<ul class="list-unstyled list-inline">
-	  <li><i class="fa fa-phone"></i><span>(819) 333-1010</span></li>
-	  <li><i class="fa fa-envelope-o"></i><span>abitibitech@gmail.com</span></li>
-	</ul>
-      </div>
-      <!-- END TOP BAR LEFT PART -->
-      <!-- BEGIN TOP BAR MENU -->
-      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
-	<ul class="list-unstyled list-inline pull-right">
-	  <li><a href="/login">Log In</a></li>
-	</ul>
-      </div>
-      <!-- END TOP BAR MENU -->
-    </div>
-  </div>        
-</div>
-<!-- END TOP BAR -->
-<!-- BEGIN HEADER -->
-<div class="header">
-  <div class="container">
-    <!--<a class="site-logo" href="/" id="logo">Mon Blog (Hexo)</a>-->
-
-    <a class="site-logo" href="/">
-      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
-    </a>
-
-    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-    <!-- BEGIN NAVIGATION -->
-    <div class="header-navigation pull-right font-transform-inherit">
-      <ul>
-	
-	<li class="">
-	  <a  href="/">Home</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/projects/">Projects</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/archives/">Blog</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/contact/">Contact</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/about/">About</a>
-	</li>
-	
-	<!-- BEGIN TOP SEARCH -->
-	<li class="menu-search">
-	  <span class="sep"></span>
-	  <i class="fa fa-search search-btn"></i>
-	  <div class="search-box">
-	    <form action="#">
-	      <div class="input-group">
-		<input type="text" placeholder="Search" class="form-control st-default-search-input">
-		<span class="input-group-btn">
-		  <button class="btn btn-primary" type="submit">Search</button>
-		</span>
-	      </div>
-	    </form>
-	  </div> 
-	</li>
-	<!-- END TOP SEARCH -->
-      </ul>
-    </div>
-    <!-- END NAVIGATION -->
-  </div>
-</div>
-<!-- Header END -->
-
-  <div class="container">
-  <ul class="breadcrumb">
-    <li><a href="/">Home</a></li>
-    <li><a href="/archives/">Blog</a></li>
-    <li class="active">Post</li>
-  </ul>
-  <section id="main">
-    
-    <h2 itemprop="name">
-      <a class="article-title" href="/2017/11/26/xo-theme-doc-Readme/">Hexo theme doc Readme</a>
-    </h2>
-
-
-    <div class="row">
-<div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-xo-theme-doc-Readme" class="article article-type-post blog-item" itemscope itemprop="blogPost">
-  <div class="article-meta">
-  </div>
-  <div class="article-inner">
-    
-    
-    <header class="article-header">
-      <ul class="blog-info">
-	<li><i class="fa fa-user"></i> John Doe</li>
-	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2017-11-27T02:58:00.000Z" itemprop="datePublished">2017/11/26</time>
-
-	</li>
-	<li class="hidden-xs"><i class="fa fa-comments"></i>
-	  <a href="http://yoursite.com/2017/11/26/xo-theme-doc-Readme/#disqus_thread" class="article-comment-link">Comments</a>
-	</li>
-	<li class="hidden-xs"><i class="fa fa-tags"></i> 
-	  
-  
-    <a href="/tags/Documentation/" title="Documentation">Documentation</a>,
-  
-    <a href="/tags/Wiki/" title="Wiki">Wiki</a>,
-  
-    <a href="/tags/Hexo/" title="Hexo">Hexo</a>,
-  
-    <a href="/tags/Readme/" title="Readme">Readme</a>,
-  
-    <a href="/tags/Theme/" title="Theme">Theme</a>
-  
-
-
-	</li>
-      </ul>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/archives/">Archives</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">Mon Blog (Hexo)</h1>
+  
+    <p class="lead blog-description">Theme corporate</p>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="post-xo-theme-doc-Readme" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo theme doc Readme
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2017/11/26/xo-theme-doc-Readme/" class="article-date"><time datetime="2017-11-27T02:58:00.000Z" itemprop="datePublished">2017-11-26</time></a>
+</div>
+
+    <div class="article-author">John Doe</div>
+    
   <div class="article-category">
-    
-    Category: 
-    
-    Categories:
     <a class="article-category-link" href="/categories/SSG/">SSG</a>
   </div>
-  <br>
 
 
-    </header>
-    
+  </div>
+  <div class="article-inner">
+
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="hexo-theme-doc"><a href="#hexo-theme-doc" class="headerlink" title="hexo-theme-doc"></a>hexo-theme-doc</h1><p><a href="https://opensource.org/licenses/MIT" target="_blank" rel="external"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a><br><a href="https://david-dm.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://david-dm.org/zalando-incubator/hexo-theme-doc/status.svg" alt="dependencies Status"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Grade/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://www.codacy.com/app/bhaskarmelkani/hexo-theme-doc" target="_blank" rel="external"><img src="https://api.codacy.com/project/badge/Coverage/0a927311457a4180a4d7606a8f66ab5f" alt="Codacy Badge"></a><br><a href="https://travis-ci.org/zalando-incubator/hexo-theme-doc" target="_blank" rel="external"><img src="https://travis-ci.org/zalando-incubator/hexo-theme-doc.svg?branch=master" alt="Build Status"></a><br><a href="https://badge.fury.io/js/hexo-theme-doc" target="_blank" rel="external"><img src="https://badge.fury.io/js/hexo-theme-doc.svg" alt="npm version"></a></p>
@@ -305,443 +214,145 @@
 
       
     </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/26/xo-theme-doc-Readme/" data-id="cjaltuw8w003zuwwsgwpsknfd" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Documentation/">Documentation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Readme/">Readme</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Theme/">Theme</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Wiki/">Wiki</a></li></ul>
+
+
+    </footer>
   </div>
   
     
-<nav id="article-nav">
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
-    <a href="/2017/11/26/xo-theme-corporate-Readme/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hexo theme corporate Readme
-        
-      </div>
-    </a>
-  
-  
+  <li role="presentation">
     <a href="/2017/11/26/xo-theme-freemind-Readme/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hexo theme freemind Readme</div>
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Hexo theme freemind Readme</span>
     </a>
+  </li>
   
-</nav>
+  
+  <li role="presentation">
+    <a href="/2017/11/26/xo-theme-corporate-Readme/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Hexo theme corporate Readme</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
 
   
-  <br>
 </article>
 
 
 
 
-</div>
-<div class="col-md-3 col-sm-3 blog-sidebar">
-  <!-- CATEGORIES START -->
-<h2 class="no-top-space">Categories</h2>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 
-<div class="widget-wrap">
-  <div class="widget">
-    <ul class="nav sidebar-categories margin-bottom-40">
+</div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Categories</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/NET/">.NET</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Contents/">Contents</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Demo/">Demo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Docs/">Docs</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Dynamics-NAV/">Dynamics NAV</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Framework/">Framework</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Games/">Games</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Hexo/">Hexo</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Humor/">Humor</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Info-Tech/">Info_Tech</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Language/">Language</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Learning/">Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Linux/">Linux</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/NGINX/">NGINX</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Nourritue/">Nourritue</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Programming/">Programming</a><span class="sidebar-module-list-count">22</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Programming/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recette/">Recette</a><span class="sidebar-module-list-count">14</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recette/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">4</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/">Recherche</a><span class="sidebar-module-list-count">19</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Games/">Games</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Recette/">Recette</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Recette/Nourriture/">Nourriture</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Recherche/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/SSG/">SSG</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/StaticSiteGen/">StaticSiteGen</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Tech-Info/">Tech_Info</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Test/">Test</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Video/">Video</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Apps/">Web Apps</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Design/">Web Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Web-Hosting/">Web Hosting</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WebSite/">WebSite</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Youtube/">Youtube</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/3D/">3D</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/API/">API</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/AngularJS/">AngularJS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Animated/">Animated</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/App/">App</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Astuces/">Astuces</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bash/">Bash</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Beautify/">Beautify</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Blanchir/">Blanchir</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/BonAp/">BonAp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bonbon/">Bonbon</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bootstrap/">Bootstrap</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Bower/">Bower</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C#</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CMS/">CMS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CRUD/">CRUD</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CSS/">CSS</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Chocolat/">Chocolat</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Code/">Code</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Commands/">Commands</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Comments/">Comments</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Converter/">Converter</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Cuisine/">Cuisine</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/D3js/">D3js</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data/">Data</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Database/">Database</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Deploy/">Deploy</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Design/">Design</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Documentation/">Documentation</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/EasyToBoot/">EasyToBoot</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Editing/">Editing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Editor/">Editor</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electron/">Electron</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Embedded/">Embedded</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Emmet/">Emmet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/English/">English</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Example/">Example</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Flexbox/">Flexbox</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Folder/">Folder</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/FontAwesome/">FontAwesome</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Freemind/">Freemind</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Games/">Games</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gif/">Gif</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GitHub/">GitHub</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Graph/">Graph</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Grunt/">Grunt</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML/">HTML</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML5/">HTML5</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Heroku/">Heroku</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HexoTags/">HexoTags</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/How-To/">How-To</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Html/">Html</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hyperliens/">Hyperliens</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Image/">Image</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Images/">Images</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/JSON/">JSON</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Javascript/">Javascript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Jquery/">Jquery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Kivy/">Kivy</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Laravel/">Laravel</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Lasagne/">Lasagne</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Learning/">Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Linux/">Linux</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Live-Server/">Live-Server</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LiveCD/">LiveCD</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Logiciel/">Logiciel</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LokiJS/">LokiJS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MSQLI/">MSQLI</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MarkItUp/">MarkItUp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Markdown/">Markdown</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MongoDB/">MongoDB</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Movie/">Movie</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Moyenne/">Moyenne</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MustHave/">MustHave</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MySQL/">MySQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NAV/">NAV</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Nicko/">Nicko</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NoSQL/">NoSQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NodeJS/">NodeJS</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Online/">Online</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PHP/">PHP</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Pense/">Pensé</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Pizza/">Pizza</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Plugin/">Plugin</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Plugins/">Plugins</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Postman/">Postman</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Poulet/">Poulet</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Programming/">Programming</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentation/">Présentation</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Python/">Python</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Q-A/">Q&A</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/QuickStart/">QuickStart</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Readme/">Readme</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Recette/">Recette</a><span class="sidebar-module-list-count">21</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Recherche/">Recherche</a><span class="sidebar-module-list-count">16</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Resources/">Resources</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Restfull-API/">Restfull-API</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Sante/">Santé</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Sauce/">Sauce</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Script/">Script</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Shortcut/">Shortcut</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Slide/">Slide</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Slides/">Slides</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software/">Software</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Strategie/">Strategie</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Syntax/">Syntax</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tags/">Tags</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Test/">Test</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Theme/">Theme</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tools/">Tools</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Tutorials/">Tutorials</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UI-Kit/">UI_Kit</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UTF8/">UTF8</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Un-minify/">Un_minify</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Usb-Boot/">Usb_Boot</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Utilities/">Utilities</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Vagrant/">Vagrant</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Viande/">Viande</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Video/">Video</a><span class="sidebar-module-list-count">32</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Studio/">Visual Studio</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VsCode/">VsCode</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VueJS/">VueJS</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Vuejs/">Vuejs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Weather/">Weather</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Design/">Web Design</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Development/">Web Development</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web-Scraping/">Web Scraping</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/WebIX/">WebIX</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/WebScrapper/">WebScrapper</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Welcome/">Welcome</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Wiki/">Wiki</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Youtube/">Youtube</a><span class="sidebar-module-list-count">29</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/cheat-sheet/">cheat-sheet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/employment/">employment</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/example/">example</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/formulaire/">formulaire</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/funny/">funny</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/hexo-tag-owl/">hexo-tag-owl</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/highlight/">highlight</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iTransWarp/">iTransWarp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jQuery/">jQuery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jquery/">jquery</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/plugins/">plugins</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/themes/">themes</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/3D/" style="font-size: 10px;">3D</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Animated/" style="font-size: 10px;">Animated</a> <a href="/tags/App/" style="font-size: 10px;">App</a> <a href="/tags/Astuces/" style="font-size: 10px;">Astuces</a> <a href="/tags/Bash/" style="font-size: 11.67px;">Bash</a> <a href="/tags/Beautify/" style="font-size: 10px;">Beautify</a> <a href="/tags/Blanchir/" style="font-size: 10px;">Blanchir</a> <a href="/tags/BonAp/" style="font-size: 10px;">BonAp</a> <a href="/tags/Bonbon/" style="font-size: 10px;">Bonbon</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Bower/" style="font-size: 10px;">Bower</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/CMS/" style="font-size: 10px;">CMS</a> <a href="/tags/CRUD/" style="font-size: 10px;">CRUD</a> <a href="/tags/CSS/" style="font-size: 13.33px;">CSS</a> <a href="/tags/Chocolat/" style="font-size: 10px;">Chocolat</a> <a href="/tags/Code/" style="font-size: 11.67px;">Code</a> <a href="/tags/Commands/" style="font-size: 11.67px;">Commands</a> <a href="/tags/Comments/" style="font-size: 10px;">Comments</a> <a href="/tags/Converter/" style="font-size: 10px;">Converter</a> <a href="/tags/Cuisine/" style="font-size: 13.33px;">Cuisine</a> <a href="/tags/D3js/" style="font-size: 10px;">D3js</a> <a href="/tags/Data/" style="font-size: 10.83px;">Data</a> <a href="/tags/Database/" style="font-size: 10.83px;">Database</a> <a href="/tags/Deploy/" style="font-size: 10px;">Deploy</a> <a href="/tags/Design/" style="font-size: 11.67px;">Design</a> <a href="/tags/Documentation/" style="font-size: 10.83px;">Documentation</a> <a href="/tags/EasyToBoot/" style="font-size: 10px;">EasyToBoot</a> <a href="/tags/Editing/" style="font-size: 10px;">Editing</a> <a href="/tags/Editor/" style="font-size: 10px;">Editor</a> <a href="/tags/Electron/" style="font-size: 10px;">Electron</a> <a href="/tags/Embedded/" style="font-size: 10px;">Embedded</a> <a href="/tags/Emmet/" style="font-size: 10px;">Emmet</a> <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/Example/" style="font-size: 10.83px;">Example</a> <a href="/tags/Flexbox/" style="font-size: 10px;">Flexbox</a> <a href="/tags/Folder/" style="font-size: 10px;">Folder</a> <a href="/tags/FontAwesome/" style="font-size: 10px;">FontAwesome</a> <a href="/tags/Freemind/" style="font-size: 10px;">Freemind</a> <a href="/tags/Games/" style="font-size: 10.83px;">Games</a> <a href="/tags/Gif/" style="font-size: 10.83px;">Gif</a> <a href="/tags/GitHub/" style="font-size: 11.67px;">GitHub</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Grunt/" style="font-size: 10px;">Grunt</a> <a href="/tags/HTML/" style="font-size: 11.67px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 10.83px;">HTML5</a> <a href="/tags/Heroku/" style="font-size: 11.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 15.83px;">Hexo</a> <a href="/tags/HexoTags/" style="font-size: 10px;">HexoTags</a> <a href="/tags/How-To/" style="font-size: 10px;">How-To</a> <a href="/tags/Html/" style="font-size: 10.83px;">Html</a> <a href="/tags/Hyperliens/" style="font-size: 11.67px;">Hyperliens</a> <a href="/tags/Image/" style="font-size: 10px;">Image</a> <a href="/tags/Images/" style="font-size: 10.83px;">Images</a> <a href="/tags/JSON/" style="font-size: 11.67px;">JSON</a> <a href="/tags/Javascript/" style="font-size: 12.5px;">Javascript</a> <a href="/tags/Jquery/" style="font-size: 10px;">Jquery</a> <a href="/tags/Kivy/" style="font-size: 10px;">Kivy</a> <a href="/tags/Laravel/" style="font-size: 10px;">Laravel</a> <a href="/tags/Lasagne/" style="font-size: 10px;">Lasagne</a> <a href="/tags/Learning/" style="font-size: 10px;">Learning</a> <a href="/tags/Linux/" style="font-size: 14.17px;">Linux</a> <a href="/tags/Live-Server/" style="font-size: 10px;">Live-Server</a> <a href="/tags/LiveCD/" style="font-size: 10px;">LiveCD</a> <a href="/tags/Logiciel/" style="font-size: 10px;">Logiciel</a> <a href="/tags/LokiJS/" style="font-size: 10px;">LokiJS</a> <a href="/tags/MSQLI/" style="font-size: 10px;">MSQLI</a> <a href="/tags/MarkItUp/" style="font-size: 10px;">MarkItUp</a> <a href="/tags/Markdown/" style="font-size: 12.5px;">Markdown</a> <a href="/tags/MongoDB/" style="font-size: 10.83px;">MongoDB</a> <a href="/tags/Movie/" style="font-size: 10px;">Movie</a> <a href="/tags/Moyenne/" style="font-size: 10px;">Moyenne</a> <a href="/tags/MustHave/" style="font-size: 10px;">MustHave</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/NAV/" style="font-size: 10.83px;">NAV</a> <a href="/tags/Nicko/" style="font-size: 10px;">Nicko</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/NodeJS/" style="font-size: 15.83px;">NodeJS</a> <a href="/tags/Online/" style="font-size: 14.17px;">Online</a> <a href="/tags/PHP/" style="font-size: 10.83px;">PHP</a> <a href="/tags/Pense/" style="font-size: 10px;">Pensé</a> <a href="/tags/Pizza/" style="font-size: 10.83px;">Pizza</a> <a href="/tags/Plugin/" style="font-size: 10px;">Plugin</a> <a href="/tags/Plugins/" style="font-size: 13.33px;">Plugins</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Poulet/" style="font-size: 13.33px;">Poulet</a> <a href="/tags/Programming/" style="font-size: 16.67px;">Programming</a> <a href="/tags/Presentation/" style="font-size: 10px;">Présentation</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Q-A/" style="font-size: 10px;">Q&A</a> <a href="/tags/QuickStart/" style="font-size: 10px;">QuickStart</a> <a href="/tags/Readme/" style="font-size: 14.17px;">Readme</a> <a href="/tags/Recette/" style="font-size: 18.33px;">Recette</a> <a href="/tags/Recherche/" style="font-size: 17.5px;">Recherche</a> <a href="/tags/Resources/" style="font-size: 10.83px;">Resources</a> <a href="/tags/Restfull-API/" style="font-size: 10px;">Restfull-API</a> <a href="/tags/Sante/" style="font-size: 10px;">Santé</a> <a href="/tags/Sauce/" style="font-size: 10px;">Sauce</a> <a href="/tags/Script/" style="font-size: 10px;">Script</a> <a href="/tags/Shortcut/" style="font-size: 10px;">Shortcut</a> <a href="/tags/Slide/" style="font-size: 10px;">Slide</a> <a href="/tags/Slides/" style="font-size: 11.67px;">Slides</a> <a href="/tags/Software/" style="font-size: 10.83px;">Software</a> <a href="/tags/Strategie/" style="font-size: 10.83px;">Strategie</a> <a href="/tags/Syntax/" style="font-size: 10px;">Syntax</a> <a href="/tags/Tags/" style="font-size: 10.83px;">Tags</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/Theme/" style="font-size: 11.67px;">Theme</a> <a href="/tags/Tools/" style="font-size: 15px;">Tools</a> <a href="/tags/Tutorials/" style="font-size: 10.83px;">Tutorials</a> <a href="/tags/UI-Kit/" style="font-size: 10px;">UI_Kit</a> <a href="/tags/UTF8/" style="font-size: 10px;">UTF8</a> <a href="/tags/Un-minify/" style="font-size: 10px;">Un_minify</a> <a href="/tags/Usb-Boot/" style="font-size: 10px;">Usb_Boot</a> <a href="/tags/Utilities/" style="font-size: 10.83px;">Utilities</a> <a href="/tags/Vagrant/" style="font-size: 10.83px;">Vagrant</a> <a href="/tags/Viande/" style="font-size: 10.83px;">Viande</a> <a href="/tags/Video/" style="font-size: 20px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 10px;">Visual Studio</a> <a href="/tags/VsCode/" style="font-size: 10px;">VsCode</a> <a href="/tags/VueJS/" style="font-size: 10.83px;">VueJS</a> <a href="/tags/Vuejs/" style="font-size: 10px;">Vuejs</a> <a href="/tags/Weather/" style="font-size: 10px;">Weather</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-Design/" style="font-size: 10.83px;">Web Design</a> <a href="/tags/Web-Development/" style="font-size: 10px;">Web Development</a> <a href="/tags/Web-Scraping/" style="font-size: 10px;">Web Scraping</a> <a href="/tags/WebIX/" style="font-size: 10px;">WebIX</a> <a href="/tags/WebScrapper/" style="font-size: 10px;">WebScrapper</a> <a href="/tags/Welcome/" style="font-size: 10px;">Welcome</a> <a href="/tags/Wiki/" style="font-size: 12.5px;">Wiki</a> <a href="/tags/Youtube/" style="font-size: 19.17px;">Youtube</a> <a href="/tags/cheat-sheet/" style="font-size: 10px;">cheat-sheet</a> <a href="/tags/employment/" style="font-size: 10px;">employment</a> <a href="/tags/example/" style="font-size: 10px;">example</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/formulaire/" style="font-size: 10px;">formulaire</a> <a href="/tags/funny/" style="font-size: 10px;">funny</a> <a href="/tags/hexo-tag-owl/" style="font-size: 10px;">hexo-tag-owl</a> <a href="/tags/highlight/" style="font-size: 10px;">highlight</a> <a href="/tags/iTransWarp/" style="font-size: 10px;">iTransWarp</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/plugins/" style="font-size: 10px;">plugins</a> <a href="/tags/themes/" style="font-size: 10px;">themes</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/05/">May 2018</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/04/">April 2018</a><span class="sidebar-module-list-count">41</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2017/11/">November 2017</a><span class="sidebar-module-list-count">46</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2016/01/">January 2016</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/05/">May 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/04/">April 2015</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/03/">March 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/03/">March 2014</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/02/">February 2014</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
       
-	<li>
-	  <a href="/categories/Programming/">Programming (11)</a>
-	</li>
+        <li>
+          <a href="/2018/05/25/Recherche-3-mai-Vuejs-vagrant/">Recherche 3 mai Vuejs vagrant</a>
+        </li>
       
-	<li>
-	  <a href="/categories/Web-Hosting/">Web Hosting (3)</a>
-	</li>
+        <li>
+          <a href="/2018/05/25/Recherche-2-mai-Vs-Code-Extension/">Recherche 2 mai Vs Code Extension</a>
+        </li>
       
-	<li>
-	  <a href="/categories/Contents/">Contents (1)</a>
-	</li>
+        <li>
+          <a href="/2018/05/25/Recherche-1-mai-vuejs/">Recherche 1 mai vuejs</a>
+        </li>
       
-	<li>
-	  <a href="/categories/SSG/">SSG (6)</a>
-	</li>
+        <li>
+          <a href="/2018/04/30/kiJS-slides/">LokiJS slides</a>
+        </li>
       
-	<li>
-	  <a href="/categories/Nourriture/">Nourriture (4)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Web-Apps/">Web Apps (5)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Info-Tech/">Info_Tech (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Learning/">Learning (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Tech-Info/">Tech_Info (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Recherche/">Recherche (7)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Web-Design/">Web Design (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/WebSite/">WebSite (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Demo/">Demo (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Docs/">Docs (3)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Nourritue/">Nourritue (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/StaticSiteGen/">StaticSiteGen (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Test/">Test (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Framework/">Framework (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Language/">Language (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/NET/">.NET (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Hexo/">Hexo (2)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Humor/">Humor (1)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/Dynamics-NAV/">Dynamics NAV (2)</a>
-	</li>
-      
-	<li>
-	  <a href="/categories/NGINX/">NGINX (1)</a>
-	</li>
+        <li>
+          <a href="/2018/04/30/echerche-30-avril/">Recherche 30 avril</a>
+        </li>
       
     </ul>
   </div>
-</div>
 
 
-<!-- CATEGORIES END -->
 
-<!-- BEGIN BLOG TAGS -->
-<div class="blog-tags margin-bottom-20">
-  <h2>Tags</h2>
-  
-  <div class="widget-wrap">
-    <div class="widget">
-      
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS/"><i class='fa fa-tags'></i>AngularJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animated/"><i class='fa fa-tags'></i>Animated</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/App/"><i class='fa fa-tags'></i>App</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bash/"><i class='fa fa-tags'></i>Bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Beautify/"><i class='fa fa-tags'></i>Beautify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BonAp/"><i class='fa fa-tags'></i>BonAp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrap/"><i class='fa fa-tags'></i>Bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bower/"><i class='fa fa-tags'></i>Bower</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/"><i class='fa fa-tags'></i>C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMS/"><i class='fa fa-tags'></i>CMS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/"><i class='fa fa-tags'></i>CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code/"><i class='fa fa-tags'></i>Code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Converter/"><i class='fa fa-tags'></i>Converter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cuisine/"><i class='fa fa-tags'></i>Cuisine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/D3js/"><i class='fa fa-tags'></i>D3js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/"><i class='fa fa-tags'></i>Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deploy/"><i class='fa fa-tags'></i>Deploy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design/"><i class='fa fa-tags'></i>Design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Documentation/"><i class='fa fa-tags'></i>Documentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EasyToBoot/"><i class='fa fa-tags'></i>EasyToBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Editor/"><i class='fa fa-tags'></i>Editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Embedded/"><i class='fa fa-tags'></i>Embedded</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Emmet/"><i class='fa fa-tags'></i>Emmet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/"><i class='fa fa-tags'></i>English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Example/"><i class='fa fa-tags'></i>Example</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Folder/"><i class='fa fa-tags'></i>Folder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FontAwesome/"><i class='fa fa-tags'></i>FontAwesome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Freemind/"><i class='fa fa-tags'></i>Freemind</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gif/"><i class='fa fa-tags'></i>Gif</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/"><i class='fa fa-tags'></i>GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/"><i class='fa fa-tags'></i>Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Grunt/"><i class='fa fa-tags'></i>Grunt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/"><i class='fa fa-tags'></i>HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/"><i class='fa fa-tags'></i>HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/"><i class='fa fa-tags'></i>Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/"><i class='fa fa-tags'></i>Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HexoTags/"><i class='fa fa-tags'></i>HexoTags</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Html/"><i class='fa fa-tags'></i>Html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hyperliens/"><i class='fa fa-tags'></i>Hyperliens</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Image/"><i class='fa fa-tags'></i>Image</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Images/"><i class='fa fa-tags'></i>Images</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/"><i class='fa fa-tags'></i>Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kivy/"><i class='fa fa-tags'></i>Kivy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Learning/"><i class='fa fa-tags'></i>Learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/"><i class='fa fa-tags'></i>Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LiveCD/"><i class='fa fa-tags'></i>LiveCD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkItUp/"><i class='fa fa-tags'></i>MarkItUp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/"><i class='fa fa-tags'></i>Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MongoDB/"><i class='fa fa-tags'></i>MongoDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Movie/"><i class='fa fa-tags'></i>Movie</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MustHave/"><i class='fa fa-tags'></i>MustHave</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/"><i class='fa fa-tags'></i>MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAV/"><i class='fa fa-tags'></i>NAV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nicko/"><i class='fa fa-tags'></i>Nicko</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NoSQL/"><i class='fa fa-tags'></i>NoSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/"><i class='fa fa-tags'></i>NodeJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online/"><i class='fa fa-tags'></i>Online</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/"><i class='fa fa-tags'></i>PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Plugins/"><i class='fa fa-tags'></i>Plugins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Poulet/"><i class='fa fa-tags'></i>Poulet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/"><i class='fa fa-tags'></i>Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/"><i class='fa fa-tags'></i>Présentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/"><i class='fa fa-tags'></i>Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Q-A/"><i class='fa fa-tags'></i>Q&A</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/QuickStart/"><i class='fa fa-tags'></i>QuickStart</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Readme/"><i class='fa fa-tags'></i>Readme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Recette/"><i class='fa fa-tags'></i>Recette</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Recherche/"><i class='fa fa-tags'></i>Recherche</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resources/"><i class='fa fa-tags'></i>Resources</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Script/"><i class='fa fa-tags'></i>Script</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortcut/"><i class='fa fa-tags'></i>Shortcut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slides/"><i class='fa fa-tags'></i>Slides</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/"><i class='fa fa-tags'></i>Software</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Syntax/"><i class='fa fa-tags'></i>Syntax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tags/"><i class='fa fa-tags'></i>Tags</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/"><i class='fa fa-tags'></i>Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Theme/"><i class='fa fa-tags'></i>Theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tools/"><i class='fa fa-tags'></i>Tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tutorials/"><i class='fa fa-tags'></i>Tutorials</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI-Kit/"><i class='fa fa-tags'></i>UI_Kit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Un-minify/"><i class='fa fa-tags'></i>Un_minify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Usb-Boot/"><i class='fa fa-tags'></i>Usb_Boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Utilities/"><i class='fa fa-tags'></i>Utilities</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Video/"><i class='fa fa-tags'></i>Video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Visual-Studio/"><i class='fa fa-tags'></i>Visual Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather/"><i class='fa fa-tags'></i>Weather</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web/"><i class='fa fa-tags'></i>Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Development/"><i class='fa fa-tags'></i>Web Development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Scraping/"><i class='fa fa-tags'></i>Web Scraping</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebIX/"><i class='fa fa-tags'></i>WebIX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebScrapper/"><i class='fa fa-tags'></i>WebScrapper</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Wiki/"><i class='fa fa-tags'></i>Wiki</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Youtube/"><i class='fa fa-tags'></i>Youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheat-sheet/"><i class='fa fa-tags'></i>cheat-sheet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/employment/"><i class='fa fa-tags'></i>employment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/example/"><i class='fa fa-tags'></i>example</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/"><i class='fa fa-tags'></i>ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/funny/"><i class='fa fa-tags'></i>funny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-tag-owl/"><i class='fa fa-tags'></i>hexo-tag-owl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/highlight/"><i class='fa fa-tags'></i>highlight</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTransWarp/"><i class='fa fa-tags'></i>iTransWarp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/"><i class='fa fa-tags'></i>jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugins/"><i class='fa fa-tags'></i>plugins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/themes/"><i class='fa fa-tags'></i>themes</a></li></ul>
+        </div>
     </div>
   </div>
-
-
-</div>
-<!-- END BLOG TAGS -->
-
-
-<!-- BEGIN FEATURED POSTS -->                            
-<h2>Featured Posts</h2>
-<div class="recent-news margin-bottom-10">
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <div class="row margin-bottom-10">
-	<div class="col-md-4">
-	  <img src="https://s3.amazonaws.com/ptsteadman-images/vs.jpg" class="img-responsive ">
-	</div>
-	<div class="col-md-8">
-	  <h3><a href="http://yoursite.com/2015/03/23/2015-03-23-Make-VS-Insert-Spaces/">Spaces for Newline Indents in VS</a></h3>
-	</div>                        
-      </div>
-    
-  
-    
-      <div class="row margin-bottom-10">
-	<div class="col-md-4">
-	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
-	</div>
-	<div class="col-md-8">
-	  <h3><a href="http://yoursite.com/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
-	</div>                        
-      </div>
-    
-  
-    
-  
-    
-  
-    
-      <div class="row margin-bottom-10">
-	<div class="col-md-4">
-	  <img src="https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png" class="img-responsive ">
-	</div>
-	<div class="col-md-8">
-	  <h3><a href="http://yoursite.com/2015/04/01/2015-04-01-NGINX-Static-Locations/">Static NGINX Locations</a></h3>
-	</div>                        
-      </div>
-    
-  
-    
-  
-    
-  
-</div>
-<!-- END FEATURED POSTS -->                            
-
-</div>
-</div>
-
-  </section>
-</div>
-
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About Us</h2>
-            <p>AbitibiTech is a software development company based in La Sarre, Québec. <br><br> AbitibiTech was founded in 9999, and is focused on so on and so forth.</p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
-
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Contact</h2>
-            <address class="margin-bottom-40">
-              77 2E rue Est<br>
-              <br>
-              La Sarre, QC J9Z 3G8<br>
-              Phone: (819) 333-1010<br>
-              Email: <a href="mailto:abitibitech@gmail.com">abitibitech@gmail.com</a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
-
-	
-          <!-- BEGIN TWITTER BLOCK --> 
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-
-	  <a data-tweet-limit="1" class="twitter-timeline"
-	  href="https://twitter.com/computerlab_"
-	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
-
-	  <script>!function(d,s,id){var
-	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-          </div>
-          <!-- END TWITTER BLOCK -->
-	
-        </div>
-      </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Yves M<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-    <!-- END PRE-FOOTER -->
+  </div>
+</footer>
 
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-6 col-sm-6 padding-top-10">
-                  &copy; 2017 Mon Blog (Hexo)<br>
- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
-          </div>
-          <!-- END COPYRIGHT -->
-	  <!-- BEGIN SOCIAL -->
-<div class="col-md-6 col-sm-6">
-  <ul class="social-footer list-unstyled list-inline pull-right">
-    
-      <li><a href="https://github.com/aoDudeV"><i class="fa fa-github"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-twitter"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-facebook"></i></a></li>
-    
-      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-linkedin"></i></a></li>
-    
-      <li><a href="/"><i class="fa fa-stackoverflow"></i></a></li>
-    
-  </ul>  
-</div>
-<!-- END SOCIAL -->
+  
 
-        </div>
-      </div>
-    </div>
-    <!-- END FOOTER -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
 
-  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
-<!--[if lt IE 9]>
-<script src="/metronic/assets/plugins/respond.min.js"></script>
-<![endif]--> 
-<script src="/metronic/assets/plugins/jquery.min.js"></script>
-<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
-<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
-<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/layout.js"></script>
-<script src="/js/wow.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        Layout.init();    
-        Layout.initOWL();
-        Layout.initTwitter();
-        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-        Layout.initNavScrolling(); 
-	new WOW().init();
-    });
-</script>
-<!-- END CORE PLUGINS -->
-
-<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 
-
-
-
-
-<!-- END PAGE-SPECIFIC PLUGINS --> 
-
-<!-- BEGIN INTEGRATIONS -->
-
-
-
-
-
-<!-- END INTEGRATIONS -->
+<script src="/js/script.js"></script>
 
 </body>
 </html>
