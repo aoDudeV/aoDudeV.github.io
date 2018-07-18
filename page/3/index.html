@@ -8,7 +8,7 @@
   <meta name="description" content="Beautiful site">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mon Blog (Hexo)">
-<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:url" content="https://aoDudeV.github.io/page/3/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="Beautiful site">
 <meta property="og:locale" content="default">
@@ -112,7 +112,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$json[] = [<span class="string">'ip'</span> =&gt; $ip, <span class="string">'port'</span> =&gt; $port];</span><br><span class="line">json_encode($json, JSON_FORCE_OBJECT);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>src ==&gt;</strong> <a href="http://ideone.com/1QUOm6" target="_blank" rel="external">http://ideone.com/1QUOm6</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://ideone.com/1QUOm6" target="_blank" rel="noopener">http://ideone.com/1QUOm6</a></p>
 <p>Solution for UTF-8 Special Chars</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?</span></span><br><span class="line">$array = <span class="keyword">array</span>(<span class="string">'nome'</span>=&gt;<span class="string">'Paição'</span>,<span class="string">'cidade'</span>=&gt;<span class="string">'São Paulo'</span>);</span><br><span class="line"></span><br><span class="line">$array = array_map(<span class="string">'htmlentities'</span>,$array);</span><br><span class="line"></span><br><span class="line"><span class="comment">//encode</span></span><br><span class="line">$json = html_entity_decode(json_encode($array));</span><br><span class="line"></span><br><span class="line"><span class="comment">//Output: &#123;"nome":"Paição","cidade":"São Paulo"&#125;</span></span><br><span class="line"><span class="keyword">echo</span> $json;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Note that if you try to encode an array containing non-utf values, you’ll get null values in the resulting JSON string.  You can batch-encode all the elements of an array with the array_map function:</p>
@@ -121,7 +121,7 @@
 <p>This function will encode all array values to utf8 so they are safe for json_encode(); </p>
 <p><strong>usage:</strong></p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">json_encode(utf8json($dataArray)); </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">utf8json</span><span class="params">($inArray)</span> </span>&#123; </span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> $depth = <span class="number">0</span>; </span><br><span class="line"></span><br><span class="line">    <span class="comment">/* our return object */</span> </span><br><span class="line">    $newArray = <span class="keyword">array</span>(); </span><br><span class="line"></span><br><span class="line">    <span class="comment">/* safety recursion limit */</span> </span><br><span class="line">    $depth ++; </span><br><span class="line">    <span class="keyword">if</span>($depth &gt;= <span class="string">'30'</span>) &#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>; </span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">    <span class="comment">/* step through inArray */</span> </span><br><span class="line">    <span class="keyword">foreach</span>($inArray <span class="keyword">as</span> $key=&gt;$val) &#123; </span><br><span class="line">        <span class="keyword">if</span>(is_array($val)) &#123; </span><br><span class="line">            <span class="comment">/* recurse on array elements */</span> </span><br><span class="line">            $newArray[$key] = utf8json($val); </span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; </span><br><span class="line">            <span class="comment">/* encode string values */</span> </span><br><span class="line">            $newArray[$key] = utf8_encode($val); </span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">    <span class="comment">/* return utf8 encoded array */</span> </span><br><span class="line">    <span class="keyword">return</span> $newArray; </span><br><span class="line">&#125; </span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>src ==&gt;</strong> <a href="http://www.kodingmadesimple.com/2015/01/convert-mysql-to-json-using-php.html" target="_blank" rel="external">http://www.kodingmadesimple.com/2015/01/convert-mysql-to-json-using-php.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://www.kodingmadesimple.com/2015/01/convert-mysql-to-json-using-php.html" target="_blank" rel="noopener">http://www.kodingmadesimple.com/2015/01/convert-mysql-to-json-using-php.html</a></p>
 
       
     </div>
@@ -132,7 +132,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/de-php/" data-id="cjgif8npw0045y4ws11bbt3e2" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/de-php/" data-id="cjjr6eaoj005qro3hern5j6vm" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -179,8 +179,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>jQuery formBuilder</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://formbuilder.online/" target="_blank" rel="external">https://formbuilder.online/</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"build-wrap"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">jQuery(function($) &#123;</span></span><br><span class="line"><span class="undefined">  $('.build-wrap').formBuilder();</span></span><br><span class="line"><span class="undefined">&#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>src ==&gt;</strong> <a href="https://formbuilder.online/" target="_blank" rel="noopener">https://formbuilder.online/</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"build-wrap"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">jQuery(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">  $(<span class="string">'.build-wrap'</span>).formBuilder();</span></span><br><span class="line"><span class="undefined">&#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"rendered-form"</span> <span class="attr">data-form-render</span>=<span class="string">"[object Object]"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fb-select form-group field-select-1495550955531"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"select-1495550955531"</span> <span class="attr">class</span>=<span class="string">"fb-select-label"</span>&gt;</span>Select<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">name</span>=<span class="string">"select-1495550955531"</span> <span class="attr">id</span>=<span class="string">"select-1495550955531"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"option-1"</span> <span class="attr">selected</span>=<span class="string">"true"</span> <span class="attr">id</span>=<span class="string">"select-1495550955531-0"</span>&gt;</span>Option 1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"option-2"</span> <span class="attr">id</span>=<span class="string">"select-1495550955531-1"</span>&gt;</span>Option 2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"option-3"</span> <span class="attr">id</span>=<span class="string">"select-1495550955531-2"</span>&gt;</span>Option 3<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fb-date form-group field-date-1495550971675"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"date-1495550971675"</span> <span class="attr">class</span>=<span class="string">"fb-date-label"</span>&gt;</span>Champ Date<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">name</span>=<span class="string">"date-1495550971675"</span> <span class="attr">id</span>=<span class="string">"date-1495550971675"</span> <span class="attr">type</span>=<span class="string">"date"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
@@ -191,7 +191,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/uery-form-builder/" data-id="cjgieyqb8003xy4ws240581md" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/uery-form-builder/" data-id="cjjr6eat50099ro3hip4m1736" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -244,7 +244,7 @@
 <li>Flotte Beta: 2 x croiseurs 1 et 2 x défenseurs 1</li>
 <li>Flotte Theta: 3 x croiseurs2 et 1 x défenseur 2</li>
 </ul>
-<p><strong>src ==&gt;</strong> <a href="http://www.jeuxvideo.com/forums/1-28312-5311-2-0-1-0-aide-aide-aux-debutants.htm" target="_blank" rel="external">http://www.jeuxvideo.com/forums/1-28312-5311-2-0-1-0-aide-aide-aux-debutants.htm</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://www.jeuxvideo.com/forums/1-28312-5311-2-0-1-0-aide-aide-aux-debutants.htm" target="_blank" rel="noopener">http://www.jeuxvideo.com/forums/1-28312-5311-2-0-1-0-aide-aide-aux-debutants.htm</a></p>
 
       
     </div>
@@ -255,7 +255,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/dless-space/" data-id="cjgied4m9003oy4wsyei5sb47" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/dless-space/" data-id="cjjr6eaox0062ro3hg19pxnv2" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -303,9 +303,9 @@
       
         <p><strong>How to Create Masonry Layout CSS3 &amp; HTML5 - Material Design Card Based Pinterest Like Column Layout</strong></p>
 <img src="https://i.ytimg.com/vi/4fvRO7h70tg/maxresdefault.jpg">
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=4fvRO7h70tg" target="_blank" rel="external">https://www.youtube.com/watch?v=4fvRO7h70tg</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=4fvRO7h70tg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=4fvRO7h70tg</a></p>
 <h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/4fvRO7h70tg" frameborder="0" allowfullscreen></iframe></div>
-<p><a href="https://codepen.io/smashtheshell/pen/qRRdvb" target="_blank" rel="external">https://codepen.io/smashtheshell/pen/qRRdvb</a></p>
+<p><a href="https://codepen.io/smashtheshell/pen/qRRdvb" target="_blank" rel="noopener">https://codepen.io/smashtheshell/pen/qRRdvb</a></p>
 
       
     </div>
@@ -316,7 +316,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/w-to-Create-Masonry-Layout/" data-id="cjgie5a8z003fy4wsezim9mxo" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/w-to-Create-Masonry-Layout/" data-id="cjjr6easr008wro3hsg4mdxjv" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -376,17 +376,17 @@
 <li>choux de Bruxelles : 2 à 3 minutes</li>
 </ul>
 <h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/1M5hoOQgzss" frameborder="0" allowfullscreen></iframe></div>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=1M5hoOQgzss" target="_blank" rel="external">https://www.youtube.com/watch?v=1M5hoOQgzss</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=1M5hoOQgzss" target="_blank" rel="noopener">https://www.youtube.com/watch?v=1M5hoOQgzss</a></p>
 <p><strong> Les couteaux ? - YouCook</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=H-5jLeLGieQ" target="_blank" rel="external">https://www.youtube.com/watch?v=H-5jLeLGieQ</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=H-5jLeLGieQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=H-5jLeLGieQ</a></p>
 <h2 id="Video-1"><a href="#Video-1" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/H-5jLeLGieQ" frameborder="0" allowfullscreen></iframe></div>
-<p><strong>Les pommes de terre - YouCook</strong><br><strong>src ==&gt;</strong> <a href="https://youtu.be/0dGm1sDfU-Q" target="_blank" rel="external">https://youtu.be/0dGm1sDfU-Q</a></p>
+<p><strong>Les pommes de terre - YouCook</strong><br><strong>src ==&gt;</strong> <a href="https://youtu.be/0dGm1sDfU-Q" target="_blank" rel="noopener">https://youtu.be/0dGm1sDfU-Q</a></p>
 <ul>
 <li>Pommes de terre (cuite à l’eau dans un premier temps, départ de cuisson dans de l’eau froide), persil, ail, huile.</li>
 </ul>
 <h2 id="Video-2"><a href="#Video-2" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/0dGm1sDfU-Q" frameborder="0" allowfullscreen></iframe></div>
 <p><strong>Poulet Curry - YouCook</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://youtu.be/4KaBA8LISqI" target="_blank" rel="external">https://youtu.be/4KaBA8LISqI</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/4KaBA8LISqI" target="_blank" rel="noopener">https://youtu.be/4KaBA8LISqI</a></p>
 <p><strong>Ingrédients :</strong></p>
 <ul>
 <li>Poulet</li>
@@ -408,7 +408,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/anchir-les-legumes/" data-id="cjgic3lc30036y4wskaqyy9py" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/anchir-les-legumes/" data-id="cjjr6eaom005tro3hnfav8hoq" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -455,7 +455,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>Install and Configure Gollum wiki on Ubuntu 16.04</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=qbBElCn6C_w" target="_blank" rel="external">https://www.youtube.com/watch?v=qbBElCn6C_w</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=qbBElCn6C_w" target="_blank" rel="noopener">https://www.youtube.com/watch?v=qbBElCn6C_w</a></p>
 <h2 id="Video"><a href="#Video" class="headerlink" title="Vidéo"></a>Vidéo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/qbBElCn6C_w" frameborder="0" allowfullscreen></iframe></div>
       
     </div>
@@ -466,7 +466,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/Recherche-20-nov/" data-id="cjgibylzo0030y4wsinlhr74n" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/Recherche-20-nov/" data-id="cjjr6eajy0035ro3h809c9tf2" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -513,7 +513,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>PÂTÉ CHINOIS GOURMAND AU PORC HACHÉ, BACON ET MOZZARELLA</strong></p>
-<p><strong>src ==&gt;</strong> <a href="http://www.recettes.qc.ca/recettes/recette/pate-chinois-gourmand-au-porc-hache-bacon-et-mozzarella-150939" target="_blank" rel="external">http://www.recettes.qc.ca/recettes/recette/pate-chinois-gourmand-au-porc-hache-bacon-et-mozzarella-150939</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://www.recettes.qc.ca/recettes/recette/pate-chinois-gourmand-au-porc-hache-bacon-et-mozzarella-150939" target="_blank" rel="noopener">http://www.recettes.qc.ca/recettes/recette/pate-chinois-gourmand-au-porc-hache-bacon-et-mozzarella-150939</a></p>
 
       
     </div>
@@ -524,7 +524,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/ATE-CHINOIS-GOURMAND/" data-id="cjgibt6g9002wy4wsx1h6f10y" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/ATE-CHINOIS-GOURMAND/" data-id="cjjr6eagc000uro3h2j51crro" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -571,15 +571,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Serverless"><a href="#Serverless" class="headerlink" title="Serverless"></a>Serverless</h1><p>Un site dynamique sans serveur (serverless), c’est possible ! - Virginie MATHIVET</p>
-<p><strong>src ==&gt;</strong> <a href="https://youtu.be/y_ciJDcVzgo" target="_blank" rel="external">https://youtu.be/y_ciJDcVzgo</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/y_ciJDcVzgo" target="_blank" rel="noopener">https://youtu.be/y_ciJDcVzgo</a></p>
 <p><strong>Star Traders : Frontiers</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/playlist?list=PLkuhO0P1wmeP4NUlVqSxtSu8flZVwfNMP" target="_blank" rel="external">https://www.youtube.com/playlist?list=PLkuhO0P1wmeP4NUlVqSxtSu8flZVwfNMP</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/playlist?list=PLkuhO0P1wmeP4NUlVqSxtSu8flZVwfNMP" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=PLkuhO0P1wmeP4NUlVqSxtSu8flZVwfNMP</a></p>
 <p><strong>JSONata A Declarative Syntax for Querying Your JSON Data - Andrew Coleman</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=TDWf6R8aqDo" target="_blank" rel="external">https://www.youtube.com/watch?v=TDWf6R8aqDo</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=TDWf6R8aqDo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=TDWf6R8aqDo</a></p>
 <p><strong>JSONata in 5 minutes</strong></p>
-<p><strong>src ==&gt;</strong>  <a href="https://www.youtube.com/watch?v=ZBaK40rtIBM" target="_blank" rel="external">https://www.youtube.com/watch?v=ZBaK40rtIBM</a></p>
+<p><strong>src ==&gt;</strong>  <a href="https://www.youtube.com/watch?v=ZBaK40rtIBM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ZBaK40rtIBM</a></p>
 <p><strong>JSonata</strong></p>
-<p><strong>src ==&gt;</strong>  <a href="https://www.youtube.com/watch?v=ZRtlkIj0uDY" target="_blank" rel="external">https://www.youtube.com/watch?v=ZRtlkIj0uDY</a></p>
+<p><strong>src ==&gt;</strong>  <a href="https://www.youtube.com/watch?v=ZRtlkIj0uDY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ZRtlkIj0uDY</a></p>
 
       
     </div>
@@ -590,7 +590,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/cherche-18-dec/" data-id="cjgibnakf002sy4wst6hy21o0" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/cherche-18-dec/" data-id="cjjr6eano0053ro3hficqzp7t" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -637,13 +637,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>ElFinder</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://studio-42.github.io/elFinder/#elf_l1_SW1hZ2Vz" target="_blank" rel="external">https://studio-42.github.io/elFinder/#elf_l1_SW1hZ2Vz</a></p>
-<p><strong>src ==&gt;</strong> <a href="https://colorlib.com/polygon/gentelella/index.html" target="_blank" rel="external">https://colorlib.com/polygon/gentelella/index.html</a></p>
-<p><strong>src ==&gt;</strong> <a href="https://medialoot.com/preview/frame/lumino.html" target="_blank" rel="external">https://medialoot.com/preview/frame/lumino.html</a></p>
-<p><strong>src ==&gt;</strong> <a href="http://www.blacktie.co/demo/dashgum/chartjs.html" target="_blank" rel="external">http://www.blacktie.co/demo/dashgum/chartjs.html</a></p>
-<p><strong>src ==&gt;</strong> <a href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html" target="_blank" rel="external">https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html</a></p>
-<p><strong>src ==&gt;</strong> <a href="https://github.com/bopoda/ace" target="_blank" rel="external">https://github.com/bopoda/ace</a></p>
-<p><strong>src ==&gt;</strong> <a href="http://ace.jeka.by/index.html" target="_blank" rel="external">http://ace.jeka.by/index.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://studio-42.github.io/elFinder/#elf_l1_SW1hZ2Vz" target="_blank" rel="noopener">https://studio-42.github.io/elFinder/#elf_l1_SW1hZ2Vz</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://colorlib.com/polygon/gentelella/index.html" target="_blank" rel="noopener">https://colorlib.com/polygon/gentelella/index.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://medialoot.com/preview/frame/lumino.html" target="_blank" rel="noopener">https://medialoot.com/preview/frame/lumino.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://www.blacktie.co/demo/dashgum/chartjs.html" target="_blank" rel="noopener">http://www.blacktie.co/demo/dashgum/chartjs.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html" target="_blank" rel="noopener">https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://github.com/bopoda/ace" target="_blank" rel="noopener">https://github.com/bopoda/ace</a></p>
+<p><strong>src ==&gt;</strong> <a href="http://ace.jeka.by/index.html" target="_blank" rel="noopener">http://ace.jeka.by/index.html</a></p>
 
       
     </div>
@@ -654,7 +654,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/cherche-17-avril/" data-id="cjgibgs6m002py4wsdnphvcm1" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/cherche-17-avril/" data-id="cjjr6eanj004yro3h58mitekf" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -701,9 +701,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>API en Protobuf : 3 fois mieux que le JSON - Pascal CORPET</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=9jhmvmMRf84" target="_blank" rel="external">https://www.youtube.com/watch?v=9jhmvmMRf84</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://www.youtube.com/watch?v=9jhmvmMRf84" target="_blank" rel="noopener">https://www.youtube.com/watch?v=9jhmvmMRf84</a></p>
 <p><strong>Un kebab maison de la pâte jusqu’à la garniture.</strong></p>
-<p><strong>src ==&gt;</strong> <a href="https://youtu.be/v3WfokC28nU" target="_blank" rel="external">https://youtu.be/v3WfokC28nU</a></p>
+<p><strong>src ==&gt;</strong> <a href="https://youtu.be/v3WfokC28nU" target="_blank" rel="noopener">https://youtu.be/v3WfokC28nU</a></p>
 
       
     </div>
@@ -714,7 +714,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/cherche-16-dec/" data-id="cjgib7633002cy4ws8agvbvgs" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2018/04/27/cherche-16-dec/" data-id="cjjr6eane004wro3hs81ea256" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       

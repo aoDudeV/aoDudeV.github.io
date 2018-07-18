@@ -9,12 +9,12 @@
 <meta name="keywords" content="Programming,Design">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Notes On Creating A Hexo Theme">
-<meta property="og:url" content="http://yoursite.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/index.html">
+<meta property="og:url" content="https://aoDudeV.github.io/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="SetupTo Update NPM: npm install npm@latest -g. In 2015 it makes sense to use NVM.  NVM InstallationInstructions. Update NPM: npm install npm@latest -g Hexo: why can’t you use helper functions in sou">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://s3.amazonaws.com/ptsteadman-images/hexo.png">
-<meta property="og:updated_time" content="2017-11-27T03:25:18.062Z">
+<meta property="og:updated_time" content="2017-11-27T03:25:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Notes On Creating A Hexo Theme">
 <meta name="twitter:description" content="SetupTo Update NPM: npm install npm@latest -g. In 2015 it makes sense to use NVM.  NVM InstallationInstructions. Update NPM: npm install npm@latest -g Hexo: why can’t you use helper functions in sou">
@@ -116,10 +116,10 @@
         <div class="image-strip"><br><img src="https://s3.amazonaws.com/ptsteadman-images/hexo.png"><br></div>
 
 <h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>To Update NPM: <code>npm install npm@latest -g</code>.</p>
-<p>In 2015 it makes sense to use NVM.  <a href="http://linoxide.com/ubuntu-how-to/install-node-js-ubuntu" target="_blank" rel="external">NVM Installation<br>Instructions</a>.</p>
+<p>In 2015 it makes sense to use NVM.  <a href="http://linoxide.com/ubuntu-how-to/install-node-js-ubuntu" target="_blank" rel="noopener">NVM Installation<br>Instructions</a>.</p>
 <p>Update NPM: <code>npm install npm@latest -g</code></p>
 <p>Hexo: why can’t you use helper functions in source code?<br>This should be in docs.</p>
-<h2 id="Creating-a-Custom-Index-File-in-Hexo"><a href="#Creating-a-Custom-Index-File-in-Hexo" class="headerlink" title="Creating a Custom Index File in Hexo"></a>Creating a Custom Index File in Hexo</h2><p>Trying to generate a custom index file in source, hexo would ignore<br><code>source/index.md</code> no matter what I did.  What I had to do was uninstall<br><code>hexo-generator-index</code>.  <a href="https://github.com/hexojs/hexo/issues/1077" target="_blank" rel="external">See<br>here</a>.  Then it works.  So, that<br>will be part of the setup for my theme.  But, it’s worth it in order to properly<br>seperate the theme from the content, I think.  Having everyone edit the theme<br>index.ejs template is no good.</p>
+<h2 id="Creating-a-Custom-Index-File-in-Hexo"><a href="#Creating-a-Custom-Index-File-in-Hexo" class="headerlink" title="Creating a Custom Index File in Hexo"></a>Creating a Custom Index File in Hexo</h2><p>Trying to generate a custom index file in source, hexo would ignore<br><code>source/index.md</code> no matter what I did.  What I had to do was uninstall<br><code>hexo-generator-index</code>.  <a href="https://github.com/hexojs/hexo/issues/1077" target="_blank" rel="noopener">See<br>here</a>.  Then it works.  So, that<br>will be part of the setup for my theme.  But, it’s worth it in order to properly<br>seperate the theme from the content, I think.  Having everyone edit the theme<br>index.ejs template is no good.</p>
 <h2 id="Hexo-Rendering-Raw-EJS-File-Problem-I-Encountered"><a href="#Hexo-Rendering-Raw-EJS-File-Problem-I-Encountered" class="headerlink" title="Hexo Rendering Raw EJS File Problem I Encountered"></a>Hexo Rendering Raw EJS File Problem I Encountered</h2><p>Sometimes the server would keep rendering an old version of my code, but as<br>text.  So I’d see stuff like</p>
 <pre><code>&lt;% if (site.tags.length){ %&gt;
 </code></pre><p>The raw ejs, essentially.  Restarting the server or running <code>hexo clean</code> didn’t<br>do anything.</p>
@@ -139,7 +139,7 @@ partial(&#39;_partials/tag.ejs&#39;) %&gt;</code>.  Problem solved.</p>
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/" data-id="cjamj2zsl000agcws4gphc3uk" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/" data-id="cjjr6eah40017ro3h3miccmfz" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       

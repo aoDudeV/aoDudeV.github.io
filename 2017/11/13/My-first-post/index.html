@@ -9,11 +9,11 @@
 <meta name="keywords" content="NodeJS,App,Weather,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My first post">
-<meta property="og:url" content="http://yoursite.com/2017/11/13/My-first-post/index.html">
+<meta property="og:url" content="https://aoDudeV.github.io/2017/11/13/My-first-post/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="src ==&amp;gt; https://github.com/nenee/weatherapp-boilerplate A Preact.js boilerplate for developing a weather app.modified by me with the admin plugin !! Great :-) #Preact Boilerplate / Starter Kit for">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-11-17T14:12:05.810Z">
+<meta property="og:updated_time" content="2017-11-17T14:12:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My first post">
 <meta name="twitter:description" content="src ==&amp;gt; https://github.com/nenee/weatherapp-boilerplate A Preact.js boilerplate for developing a weather app.modified by me with the admin plugin !! Great :-) #Preact Boilerplate / Starter Kit for">
@@ -111,7 +111,7 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>src ==&gt; <a href="https://github.com/nenee/weatherapp-boilerplate" target="_blank" rel="external">https://github.com/nenee/weatherapp-boilerplate</a></p>
+        <p>src ==&gt; <a href="https://github.com/nenee/weatherapp-boilerplate" target="_blank" rel="noopener">https://github.com/nenee/weatherapp-boilerplate</a></p>
 <h1 id="A-Preact-js-boilerplate-for-developing-a-weather-app"><a href="#A-Preact-js-boilerplate-for-developing-a-weather-app" class="headerlink" title="A Preact.js boilerplate for developing a weather app."></a>A Preact.js boilerplate for developing a weather app.</h1><p><strong>modified by me with the admin plugin</strong> !! <em>Great</em> :-)</p>
 <p>#Preact Boilerplate / Starter Kit for a Weather App</p>
 <h2 id="Set-Up-Guide"><a href="#Set-Up-Guide" class="headerlink" title="Set-Up Guide"></a>Set-Up Guide</h2><ul>
@@ -138,7 +138,7 @@
 </blockquote>
 <p><strong>5. Generate a production build in <code>./build</code> :</strong></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
-<p><strong>6. Start local production server with <a href="https://github.com/zeit/serve" target="_blank" rel="external">serve</a>:</strong></p>
+<p><strong>6. Start local production server with <a href="https://github.com/zeit/serve" target="_blank" rel="noopener">serve</a>:</strong></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>This simply serves up the contents of <code>./build</code>. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you’ll also need to restart it to see any changes you’ve made to the code in <code>src</code>.</p>
@@ -148,7 +148,7 @@
 </li>
 <li><p>The CSS pre-processor in use is Less. You don’t have to worry about the syntax and just write in normal CSS as there are helper modules to assist you (located in <code>style/helpers</code>).</p>
 </li>
-<li><p>There are many weather APIs out there; this boilerplate uses WeatherUnderground, which I highly recommend for any detailed info you may need; sign up is free and you can find out more about it here :<br><a href="https://www.wunderground.com/weather/api/d/docs?MR=1" target="_blank" rel="external">https://www.wunderground.com/weather/api/d/docs?MR=1</a> There’s also a console, where you can check out particular responses : <a href="https://apigee.com/console/wunderground" target="_blank" rel="external">https://apigee.com/console/wunderground</a></p>
+<li><p>There are many weather APIs out there; this boilerplate uses WeatherUnderground, which I highly recommend for any detailed info you may need; sign up is free and you can find out more about it here :<br><a href="https://www.wunderground.com/weather/api/d/docs?MR=1" target="_blank" rel="noopener">https://www.wunderground.com/weather/api/d/docs?MR=1</a> There’s also a console, where you can check out particular responses : <a href="https://apigee.com/console/wunderground" target="_blank" rel="noopener">https://apigee.com/console/wunderground</a></p>
 </li>
 <li><p>Most importantly, have fun with it ! 👌</p>
 </li>
@@ -156,7 +156,7 @@
 <h2 id="Extra-Info"><a href="#Extra-Info" class="headerlink" title="Extra Info"></a>Extra Info</h2><ol>
 <li>Handling URLS</li>
 </ol>
-<p>:information_source: You can use URL Routing as defined <a href="http://git.io/preact-router" target="_blank" rel="external">here</a>.</p>
+<p>:information_source: You can use URL Routing as defined <a href="http://git.io/preact-router" target="_blank" rel="noopener">here</a>.</p>
 <p>Pages are just regular components that get mounted when you navigate to a certain URL. Any URL parameters get passed to the component as <code>props</code>.</p>
 <p>Defining what component(s) to load for a given URL is easy and declarative. You can even mix-and-match URL parameters and normal props.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Router&gt;</span><br><span class="line">  &lt;A path=<span class="string">"/"</span> /&gt;</span><br><span class="line">  &lt;B path=<span class="string">"/b"</span> id=<span class="string">"42"</span> /&gt;</span><br><span class="line">  &lt;C path=<span class="string">"/c/:id"</span> /&gt;</span><br><span class="line">&lt;<span class="regexp">/Router&gt;</span></span><br></pre></td></tr></table></figure>
@@ -169,7 +169,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/My-first-post/" data-id="cjaltuw6p000guwws7w5carkb" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2017/11/13/My-first-post/" data-id="cjjr6eall003nro3hu4mlxyt2" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -192,8 +192,8 @@
   
   
   <li role="presentation">
-    <a href="/2017/11/13/Heroku_NodeJS_WebSite/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">Using Heroku + Node</span>
+    <a href="/2017/11/13/Html to markdown converter/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Online HTML Editor</span>
       <i class="fa fa-chevron-right pull-right"></i>
     </a>
   </li>

@@ -9,11 +9,11 @@
 <meta name="keywords" content="Web Development">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Static NGINX Locations">
-<meta property="og:url" content="http://yoursite.com/2015/04/01/2015-04-01-NGINX-Static-Locations/index.html">
+<meta property="og:url" content="https://aoDudeV.github.io/2015/04/01/2015-04-01-NGINX-Static-Locations/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="I try to get a lot of mileage out of the single AWS t2.micro instance I keep running,which means I have many different projects running on different paths on a single server.  Everytime I finish a pro">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-11-27T03:25:18.061Z">
+<meta property="og:updated_time" content="2017-11-27T03:25:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Static NGINX Locations">
 <meta name="twitter:description" content="I try to get a lot of mileage out of the single AWS t2.micro instance I keep running,which means I have many different projects running on different paths on a single server.  Everytime I finish a pro">
@@ -119,7 +119,7 @@
 location /array {
   root /home/ubuntu/array-website/_site;
 }
-</code></pre><p>But everytime I tried to visit [<a href="http://ptsteadman.com/array" target="_blank" rel="external">http://ptsteadman.com/array</a>], I would get a 404 error.<br>I tried a bunch of things: I changed the “root” of the the <code>/</code> location to my game website, and it worked.  But no matter what I did, after using <code>sudo service nginx restart</code>,<br>trying to visit the <code>/array</code> location still resulted in a 404.  I couldn’t add the new route/location.</p>
+</code></pre><p>But everytime I tried to visit [<a href="http://ptsteadman.com/array]" target="_blank" rel="noopener">http://ptsteadman.com/array]</a>, I would get a 404 error.<br>I tried a bunch of things: I changed the “root” of the the <code>/</code> location to my game website, and it worked.  But no matter what I did, after using <code>sudo service nginx restart</code>,<br>trying to visit the <code>/array</code> location still resulted in a 404.  I couldn’t add the new route/location.</p>
 <p>Eventually, I realized that the text after the slash in the location is the directory that<br>NGINX will try to find in the “root” location.  So, <code>location /array</code> will look for the directory (or file)<br><code>array</code> in whatever directory “root” is set to.  So, I created a symlink to the root of my<br>static jekyll site with the command <code>ln -s /home/ubuntu/array-website/_site /home/ubuntu/array</code>, and<br>then I could set up my nginx config file in <code>sites-enabled</code> as below:</p>
 <pre><code>location / {
   root /home/ubuntu/personal-website;
@@ -138,7 +138,7 @@ location /array {
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/01/2015-04-01-NGINX-Static-Locations/" data-id="cjamj2zse0006gcwsifbi1p65" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2015/04/01/2015-04-01-NGINX-Static-Locations/" data-id="cjjr6eafy000oro3h3ptmuh0d" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       

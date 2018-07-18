@@ -9,13 +9,13 @@
 <meta name="keywords" content="Resources,NAV">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Adding Lookup Field to a Page in Dynamics NAV">
-<meta property="og:url" content="http://yoursite.com/2015/04/05/2015-04-05-Lookup-on-Page/index.html">
+<meta property="og:url" content="https://aoDudeV.github.io/2015/04/05/2015-04-05-Lookup-on-Page/index.html">
 <meta property="og:site_name" content="Mon Blog (Hexo)">
 <meta property="og:description" content="One of the problems I faced in building a non-trivial application that consumedNAV Web Services was figuring out how to “join” fields from different tables.For example, when exposing a list of jobs fr">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://ptsteadman.github.io/images/lookup-1.PNG">
 <meta property="og:image" content="http://ptsteadman.github.io/images/lookup-2.PNG">
-<meta property="og:updated_time" content="2017-11-27T03:25:18.062Z">
+<meta property="og:updated_time" content="2017-11-27T03:25:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Adding Lookup Field to a Page in Dynamics NAV">
 <meta name="twitter:description" content="One of the problems I faced in building a non-trivial application that consumedNAV Web Services was figuring out how to “join” fields from different tables.For example, when exposing a list of jobs fr">
@@ -115,7 +115,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>One of the problems I faced in building a non-trivial application that consumed<br>NAV Web Services was figuring out how to “join” fields from different tables.<br>For example, when exposing a list of jobs from a job table which includes a<br>resource needed for the job, you might need more than just the resource id<br>that’s a field in the table: you might also need the resource name and<br>description.  While this is easy to get for one record, what about when you<br>need a few hundred records in a table that has been dynamically filtered?  When<br>exposing a Page as a web service, it’s easy to include the fields of the table<br>that the page is based on, but it’s less clear how to include fields from<br>another table.</p>
-<p>Forum posts like <a href="http://dynamicsuser.net/forums/p/32550/170843.aspx" target="_blank" rel="external">this</a> led me to believe that I couldn’t expose flow fields in a Page web service, and I would get exceptions when I tried to expose all the fields of a table.  In fact, it’s perfectly possible to expose a flow field: it’s <strong>flow filters</strong> that don’t work with web services.  But, I also didn’t want to modify the underlying [job] table to add a flow field, and didn’t see an easy way of adding a flow field to a Page.  I tried “joining” the data in the C# application, but found network overhead made the application unusuably slow.</p>
+<p>Forum posts like <a href="http://dynamicsuser.net/forums/p/32550/170843.aspx" target="_blank" rel="noopener">this</a> led me to believe that I couldn’t expose flow fields in a Page web service, and I would get exceptions when I tried to expose all the fields of a table.  In fact, it’s perfectly possible to expose a flow field: it’s <strong>flow filters</strong> that don’t work with web services.  But, I also didn’t want to modify the underlying [job] table to add a flow field, and didn’t see an easy way of adding a flow field to a Page.  I tried “joining” the data in the C# application, but found network overhead made the application unusuably slow.</p>
 <p>The solution to this problem was to use C/AL code to the Page to effectively create a lookup / flow field.  This way, the data is “pre-joined” before leaving the NAV Server, which is fast and clean, but you didn’t modify any tables.  Here’s how it’s done:</p>
 <p>Step 1. <strong>Add a Field with SourceExpression Set to a Function Name</strong></p>
 <p>To start, we create a Page using the wizard that includes all of the fields of an underlying table.  Then, we create manually add fields that will contain the lookup data from other tables.  The text in the SourceExpression column will be the name of the function that populates this field.<br><img src="http://ptsteadman.github.io/images/lookup-1.PNG" alt="Add a Field with SourceExpression Set to a Function Name"></p>
@@ -131,7 +131,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/05/2015-04-05-Lookup-on-Page/" data-id="cjamj2zsb0005gcwssf047s0e" class="article-share-link">
+      <a data-url="https://aoDudeV.github.io/2015/04/05/2015-04-05-Lookup-on-Page/" data-id="cjjr6eacx0005ro3hqeqiyh5w" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
