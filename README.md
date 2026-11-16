@@ -26,6 +26,13 @@ base SQLite, ni interface d’administration.
 - `.github/workflows/deploy.yml` : construction et déploiement automatiques sur
   GitHub Pages.
 
+## Thème clair / sombre
+
+Le bouton dans l’en-tête bascule entre le thème clair et le thème sombre. Au
+premier passage, le site suit la préférence du système ; le choix est ensuite
+mémorisé dans le navigateur (`localStorage`, clé `fil-rouge-theme`). Le thème
+est appliqué avant l’affichage de la page pour éviter tout flash de couleur.
+
 ## Développement local
 
 Prérequis : **Node.js 22.23.4 ou plus récent** (Astro 7.4.12 l’exige).

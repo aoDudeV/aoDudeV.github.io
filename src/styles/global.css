@@ -1,14 +1,49 @@
 /* Styles du blog statique — même esprit visuel que le blog Next.js. */
 
 :root {
+  color-scheme: light;
+
   --violet: #7c3aed;
   --violet-fonce: #6d28d9;
   --violet-clair: #ede9fe;
+  --violet-clair-hover: #ddd6fe;
   --texte: #18181b;
   --texte-doux: #52525b;
   --bordure: #e4e4e7;
   --fond: #fafafa;
-  --blanc: #ffffff;
+  --surface: #ffffff;
+  --surface-douce: #f4f4f5;
+  --surface-violette: #faf5ff;
+  --lien: #7c3aed;
+  --bouton-fond: #7c3aed;
+  --bouton-fond-hover: #6d28d9;
+  --bouton-texte: #ffffff;
+  --code-fond: #18181b;
+  --code-texte: #e4e4e7;
+  --focus: #c4b5fd;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+
+  --violet: #7c3aed;
+  --violet-fonce: #c4b5fd;
+  --violet-clair: #2e1065;
+  --violet-clair-hover: #3b0764;
+  --texte: #f4f4f5;
+  --texte-doux: #a1a1aa;
+  --bordure: #3f3f46;
+  --fond: #121212;
+  --surface: #1c1c1f;
+  --surface-douce: #27272a;
+  --surface-violette: #2e1065;
+  --lien: #a78bfa;
+  --bouton-fond: #7c3aed;
+  --bouton-fond-hover: #6d28d9;
+  --bouton-texte: #ffffff;
+  --code-fond: #09090b;
+  --code-texte: #e4e4e7;
+  --focus: #a78bfa;
 }
 
 * {
@@ -17,6 +52,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--fond);
 }
 
 body {
@@ -33,7 +69,7 @@ body {
 }
 
 a {
-  color: var(--violet);
+  color: var(--lien);
 }
 
 [hidden] {
@@ -49,7 +85,7 @@ a {
 
 /* En-tête */
 .entete {
-  background: var(--blanc);
+  background: var(--surface);
   border-bottom: 1px solid var(--bordure);
   position: sticky;
   top: 0;
@@ -71,6 +107,55 @@ a {
   font-size: 1.1rem;
   text-decoration: none;
   color: var(--texte);
+}
+
+.entete-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bascule-theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border: 1px solid var(--bordure);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--texte-doux);
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.bascule-theme:hover {
+  background: var(--violet-clair);
+  color: var(--violet-fonce);
+  border-color: var(--violet);
+}
+
+.bascule-theme svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.bascule-theme .icone-soleil {
+  display: none;
+}
+
+.bascule-theme .icone-lune {
+  display: block;
+}
+
+html[data-theme='dark'] .bascule-theme .icone-soleil {
+  display: block;
+}
+
+html[data-theme='dark'] .bascule-theme .icone-lune {
+  display: none;
 }
 
 .nav {
@@ -98,8 +183,8 @@ a {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--violet-fonce);
-  color: #fff;
+  background: var(--bouton-fond);
+  color: var(--bouton-texte);
   padding: 0.6rem 1rem;
   border-radius: 0 0 8px 0;
   font-weight: 700;
@@ -166,18 +251,18 @@ p {
 
 .bouton {
   display: inline-block;
-  background: var(--violet);
-  color: #fff;
+  background: var(--bouton-fond);
+  color: var(--bouton-texte);
   text-decoration: none;
   font-weight: 700;
   padding: 0.65rem 1.2rem;
   border-radius: 10px;
-  border: 2px solid var(--violet);
+  border: 2px solid var(--bouton-fond);
 }
 
 .bouton:hover {
-  background: var(--violet-fonce);
-  border-color: var(--violet-fonce);
+  background: var(--bouton-fond-hover);
+  border-color: var(--bouton-fond-hover);
 }
 
 .bouton.secondaire {
@@ -201,7 +286,7 @@ p {
 }
 
 .carte code {
-  background: #f4f4f5;
+  background: var(--surface-douce);
   border-radius: 5px;
   padding: 0.1rem 0.35rem;
   font-size: 0.9em;
@@ -249,7 +334,7 @@ p {
 }
 
 .carte {
-  background: var(--blanc);
+  background: var(--surface);
   border: 1px solid var(--bordure);
   border-radius: 14px;
   padding: 1.25rem;
@@ -308,7 +393,7 @@ p {
 
 /* Filtres de la liste */
 .filtres {
-  background: var(--blanc);
+  background: var(--surface);
   border: 1px solid var(--bordure);
   border-radius: 16px;
   padding: 1.25rem;
@@ -346,7 +431,7 @@ p {
 
 .champ-recherche input:focus,
 .filtre-groupe select:focus {
-  outline: 3px solid #c4b5fd;
+  outline: 3px solid var(--focus);
   outline-offset: 1px;
   border-color: var(--violet);
 }
@@ -385,7 +470,7 @@ p {
 
 .aucun-resultat {
   margin-top: 2rem;
-  background: var(--blanc);
+  background: var(--surface);
   border: 1px dashed var(--bordure);
   border-radius: 14px;
   padding: 1.5rem;
@@ -412,7 +497,7 @@ p {
 .puce {
   appearance: none;
   border: 1px solid var(--bordure);
-  background: var(--blanc);
+  background: var(--surface);
   color: var(--texte-doux);
   border-radius: 999px;
   padding: 0.35rem 0.7rem;
@@ -429,18 +514,17 @@ p {
 .puce:hover {
   border-color: var(--violet);
   color: var(--violet-fonce);
-  background: #faf5ff;
+  background: var(--surface-violette);
 }
 
 .puce-compte {
   font-size: 0.7rem;
   font-weight: 700;
-  opacity: 0.75;
 }
 
 /* Article */
 .article {
-  background: var(--blanc);
+  background: var(--surface);
   border: 1px solid var(--bordure);
   border-radius: 16px;
   padding: clamp(1.25rem, 4vw, 2.5rem);
@@ -489,7 +573,7 @@ p {
 }
 
 a.tag:hover {
-  background: #ddd6fe;
+  background: var(--violet-clair-hover);
 }
 
 .article-note {
@@ -548,8 +632,8 @@ a.tag:hover {
 }
 
 .contenu-article pre {
-  background: #18181b;
-  color: #e4e4e7;
+  background: var(--code-fond);
+  color: var(--code-texte);
   padding: 1rem;
   border-radius: 12px;
   overflow-x: auto;
@@ -563,7 +647,7 @@ a.tag:hover {
 }
 
 .contenu-article :not(pre) > code {
-  background: #f4f4f5;
+  background: var(--surface-douce);
   color: var(--violet-fonce);
   padding: 0.1rem 0.35rem;
   border-radius: 5px;
@@ -574,7 +658,7 @@ a.tag:hover {
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   border-left: 4px solid var(--violet-clair);
-  background: #faf5ff;
+  background: var(--surface-violette);
   color: var(--texte-doux);
 }
 
@@ -650,7 +734,7 @@ a.tag:hover {
 /* Pied de page */
 .pied {
   border-top: 1px solid var(--bordure);
-  background: var(--blanc);
+  background: var(--surface);
   color: var(--texte-doux);
   font-size: 0.9rem;
   padding: 1.25rem 0;
@@ -676,7 +760,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 3px solid #c4b5fd;
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -685,8 +769,14 @@ select:focus-visible {
     align-items: flex-start;
   }
 
-  .nav {
+  .entete-actions {
     width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .pied-contenu {

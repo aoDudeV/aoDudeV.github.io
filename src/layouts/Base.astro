@@ -28,6 +28,24 @@ function estActif(prefixe) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafafa" />
+    <script is:inline>
+      (() => {
+        const systemeSombre =
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let choix = null;
+        try {
+          choix = localStorage.getItem('fil-rouge-theme');
+        } catch {
+          choix = null;
+        }
+        const sombre = choix === 'dark' || (choix !== 'light' && systemeSombre);
+        document.documentElement.dataset.theme = sombre ? 'dark' : 'light';
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', sombre ? '#121212' : '#fafafa');
+      })();
+    </script>
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
@@ -58,14 +76,49 @@ function estActif(prefixe) {
     <header class="entete">
       <div class="conteneur entete-interieur">
         <a class="logo" href="/">📝 {SITE_NAME}</a>
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="/" aria-current={estActif('/') ? 'page' : undefined}>Accueil</a>
-          <a href="/articles/" aria-current={estActif('/articles/') ? 'page' : undefined}>Articles</a>
-          <a href="/categories/" aria-current={estActif('/categories/') ? 'page' : undefined}>Catégories</a>
-          <a href="/tags/" aria-current={estActif('/tags/') ? 'page' : undefined}>Tags</a>
-          <a href="/archives/" aria-current={estActif('/archives/') ? 'page' : undefined}>Archives</a>
-          <a href="/a-propos/" aria-current={estActif('/a-propos/') ? 'page' : undefined}>À propos</a>
-        </nav>
+        <div class="entete-actions">
+          <nav class="nav" aria-label="Navigation principale">
+            <a href="/" aria-current={estActif('/') ? 'page' : undefined}>Accueil</a>
+            <a href="/articles/" aria-current={estActif('/articles/') ? 'page' : undefined}>Articles</a>
+            <a href="/categories/" aria-current={estActif('/categories/') ? 'page' : undefined}>Catégories</a>
+            <a href="/tags/" aria-current={estActif('/tags/') ? 'page' : undefined}>Tags</a>
+            <a href="/archives/" aria-current={estActif('/archives/') ? 'page' : undefined}>Archives</a>
+            <a href="/a-propos/" aria-current={estActif('/a-propos/') ? 'page' : undefined}>À propos</a>
+          </nav>
+          <button
+            class="bascule-theme"
+            type="button"
+            aria-label="Changer de thème"
+            title="Changer de thème"
+          >
+            <svg
+              class="icone-soleil"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg
+              class="icone-lune"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -83,5 +136,62 @@ function estActif(prefixe) {
         </p>
       </div>
     </footer>
+
+    <script is:inline>
+      (() => {
+        const racine = document.documentElement;
+        const bouton = document.querySelector('.bascule-theme');
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (!bouton) return;
+
+        const appliquer = (theme) => {
+          const sombre = theme === 'dark';
+          racine.dataset.theme = sombre ? 'dark' : 'light';
+          bouton.setAttribute(
+            'aria-label',
+            sombre ? 'Activer le thème clair' : 'Activer le thème sombre',
+          );
+          bouton.setAttribute(
+            'title',
+            sombre ? 'Passer au thème clair' : 'Passer au thème sombre',
+          );
+          if (meta) meta.setAttribute('content', sombre ? '#121212' : '#fafafa');
+        };
+
+        appliquer(racine.dataset.theme === 'dark' ? 'dark' : 'light');
+
+        bouton.addEventListener('click', () => {
+          const suivant = racine.dataset.theme === 'dark' ? 'light' : 'dark';
+          try {
+            localStorage.setItem('fil-rouge-theme', suivant);
+          } catch {
+            /* le choix ne sera pas mémorisé */
+          }
+          appliquer(suivant);
+        });
+
+        const media = window.matchMedia
+          ? window.matchMedia('(prefers-color-scheme: dark)')
+          : null;
+        if (!media) return;
+
+        const suivreSysteme = (evenement) => {
+          let choix = null;
+          try {
+            choix = localStorage.getItem('fil-rouge-theme');
+          } catch {
+            choix = null;
+          }
+          if (choix === 'light' || choix === 'dark') return;
+          appliquer(evenement.matches ? 'dark' : 'light');
+        };
+
+        if (media.addEventListener) {
+          media.addEventListener('change', suivreSysteme);
+        } else if (media.addListener) {
+          media.addListener(suivreSysteme);
+        }
+      })();
+    </script>
   </body>
 </html>
