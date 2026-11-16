@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import { annees, nombreArticles } from '../data/articles.js';
+---
+
+<Base
+  title="Archives"
+  description={`Les ${nombreArticles} articles du blog classés par année.`}
+  canonical="/archives/"
+>
+  <p class="etiquette">Archives</p>
+  <h1>Archives</h1>
+  <p class="intro">
+    Tous les articles classés par année, de 2014 à aujourd’hui.
+  </p>
+
+  <div class="puces">
+    {
+      annees.map((annee) => (
+        <a class="puce" href={`#${annee.annee}`}>
+          {annee.annee}
+          <span class="puce-compte">{annee.articles.length}</span>
+        </a>
+      ))
+    }
+  </div>
+
+  {
+    annees.map((annee) => (
+      <section aria-labelledby={`annee-${annee.annee}`}>
+        <div class="section-entete">
+          <h2 id={`annee-${annee.annee}`}>
+            {annee.annee} <span class="compte">{annee.articles.length}</span>
+          </h2>
+        </div>
+        <ul class="liste-archive">
+          {annee.articles.map((article) => (
+            <li>
+              <time dateTime={article.date}>{article.dateCourte}</time>
+              <a href={article.url}>{article.titre}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

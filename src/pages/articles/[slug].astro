@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleContent from '../../components/ArticleContent.astro';
+import { articles } from '../../data/articles.js';
+
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const description = article.resume;
+---
+
+<Base
+  title={article.titre}
+  description={description}
+  canonical={article.url}
+  type="article"
+  publishedTime={`${article.date}T00:00:00Z`}
+>
+  <article class="article">
+    <p class="fil"><a href="/articles/">← Tous les articles</a></p>
+
+    <h1>{article.titre}</h1>
+
+    <p class="meta">
+      <time dateTime={article.date}>{article.dateLongue}</time>
+      <span aria-hidden="true">·</span>
+      <span>{article.auteur}</span>
+      <a class="tag" href={`/categories/${article.categorieSlug}/`}>
+        {article.categorie}
+      </a>
+      {
+        article.tagsSlugs.map((tag) => (
+          <a class="tag" href={`/tags/${tag.slug}/`}>
+            {tag.nom}
+          </a>
+        ))
+      }
+    </p>
+
+    <ArticleContent blocs={article.blocs} />
+
+    {
+      article.date < '2020-01-01' && (
+        <p class="article-note">
+          Article d’archive importé de l’ancien blog Hexo. Certains liens ou
+          médias peuvent être anciens.
+        </p>
+      )
+    }
+
+    <p class="fil" style="margin-top: 2rem; margin-bottom: 0;">
+      <a href="/articles/">← Retour à la liste des articles</a>
+    </p>
+  </article>
+</Base>

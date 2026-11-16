@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE_NAME, nombreArticles } from '../data/articles.js';
+---
+
+<Base
+  title="À propos"
+  description="À propos du blog, de sa version statique Astro et de ses archives Hexo."
+  canonical="/a-propos/"
+>
+  <article class="article">
+    <p class="etiquette">À propos</p>
+    <h1>{SITE_NAME}</h1>
+
+    <p class="intro">
+      Un blog personnel consacré au développement web, aux recettes, aux outils
+      et aux notes techniques. Cette version est entièrement statique.
+    </p>
+
+    <h2>Une version statique</h2>
+    <p>
+      Le site est construit avec <strong>Astro</strong> et publié automatiquement
+      sur <strong>GitHub Pages</strong> par GitHub Actions. Il ne contient ni
+      serveur Node, ni base SQLite, ni interface d’administration : les pages
+      sont de simples fichiers HTML, CSS et JavaScript.
+    </p>
+
+    <h2>{nombreArticles} articles</h2>
+    <p>
+      Le blog réunit les archives de l’ancien site Hexo (2014–2018) et les notes
+      du fil rouge Next.js. Les anciennes adresses Hexo sont conservées sous
+      forme de redirections statiques vers les nouveaux articles.
+    </p>
+
+    <h2>Le laboratoire dynamique</h2>
+    <p>
+      La version dynamique du fil rouge reste un laboratoire séparé, avec son
+      serveur, sa base de données et son administration. Ce site public n’en
+      dépend pas : il peut être servi par n’importe quel hébergement de fichiers
+      statiques.
+    </p>
+
+    <h2>Liens</h2>
+    <p>
+      <a href="/articles/">Tous les articles</a> ·
+      <a href="/archives/">Les archives</a> ·
+      <a href="/rss.xml">Le flux RSS</a> ·
+      <a href="https://github.com/aoDudeV">GitHub</a>
+    </p>
+  </article>
+</Base>

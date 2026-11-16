@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import { categories } from '../../data/articles.js';
+---
+
+<Base
+  title="Catégories"
+  description="Toutes les catégories du blog, avec le nombre d’articles associés."
+  canonical="/categories/"
+>
+  <p class="etiquette">Classement</p>
+  <h1>Catégories</h1>
+  <p class="intro">
+    {categories.length} catégories pour parcourir les articles par thème.
+  </p>
+
+  <div class="grille">
+    {
+      categories.map((categorie) => (
+        <article class="carte">
+          <h2>
+            <a class="lien-article" href={`/categories/${categorie.slug}/`}>
+              {categorie.nom}
+            </a>
+          </h2>
+          <p>
+            {categorie.articles.length} article
+            {categorie.articles.length > 1 ? 's' : ''}
+          </p>
+          <a class="lien-article" href={`/categories/${categorie.slug}/`}>
+            Voir la catégorie →
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</Base>

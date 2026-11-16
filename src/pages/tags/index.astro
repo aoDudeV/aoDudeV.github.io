@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tagsTries } from '../../data/articles.js';
+---
+
+<Base
+  title="Tags"
+  description="Tous les tags du blog, du plus utilisé au moins utilisé."
+  canonical="/tags/"
+>
+  <p class="etiquette">Mots-clés</p>
+  <h1>Tags</h1>
+  <p class="intro">
+    {tagsTries.length} tags pour retrouver rapidement un article.
+  </p>
+
+  <div class="puces">
+    {
+      tagsTries.map((tag) => (
+        <a class="puce" href={`/tags/${tag.slug}/`}>
+          {tag.nom}
+          <span class="puce-compte">{tag.articles.length}</span>
+        </a>
+      ))
+    }
+  </div>
+</Base>

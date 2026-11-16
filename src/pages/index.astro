@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  articlesRecents,
+  categoriesPopulaires,
+  nombreArticles,
+} from '../data/articles.js';
+---
+
+<Base title={SITE_NAME} description={SITE_DESCRIPTION}>
+  <section class="hero">
+    <p class="etiquette">Blog statique · GitHub Pages</p>
+    <h1>{SITE_NAME}</h1>
+    <p class="intro">
+      Bienvenue sur la version statique du blog. On y retrouve {nombreArticles}
+      articles : les archives de l’ancien blog Hexo et les notes du fil rouge
+      Next.js. Tout est construit avec Astro et publié automatiquement par
+      GitHub Actions.
+    </p>
+    <div class="actions">
+      <a class="bouton" href="/articles/">Lire les articles</a>
+      <a class="bouton secondaire" href="/archives/">Parcourir les archives</a>
+      <a class="bouton secondaire" href="/rss.xml">Flux RSS</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="derniers-articles">
+    <div class="section-entete">
+      <h2 id="derniers-articles">Derniers articles</h2>
+      <a href="/articles/">Tous les articles →</a>
+    </div>
+    <div class="grille">
+      {
+        articlesRecents.map((article) => (
+          <ArticleCard article={article} heading="h3" />
+        ))
+      }
+    </div>
+  </section>
+
+  <section aria-labelledby="sujets">
+    <div class="section-entete">
+      <h2 id="sujets">Sujets</h2>
+      <a href="/categories/">Toutes les catégories →</a>
+    </div>
+    <div class="puces">
+      {
+        categoriesPopulaires.map((categorie) => (
+          <a class="puce" href={`/categories/${categorie.slug}/`}>
+            {categorie.nom}
+            <span class="puce-compte">{categorie.articles.length}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="deux-colonnes" aria-label="À propos du site">
+    <div class="carte">
+      <h2>Un blog, deux versions</h2>
+      <p>
+        Ce site est la version statique du blog. Le laboratoire dynamique
+        Docker/K3s reste séparé : ici, pas de serveur Node, pas de SQLite et pas
+        d’administration. Les pages sont de simples fichiers HTML.
+      </p>
+      <a class="lien-article" href="/a-propos/">En savoir plus →</a>
+    </div>
+    <div class="carte">
+      <h2>Anciennes adresses préservées</h2>
+      <p>
+        Les anciennes URL Hexo du type <code>/2018/05/25/...</code> sont
+        conservées sous forme de redirections statiques vers les nouveaux
+        articles.
+      </p>
+      <a class="lien-article" href="/archives/">Voir les archives →</a>
+    </div>
+  </section>
+</Base>

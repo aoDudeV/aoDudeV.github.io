@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { categories } from '../../data/articles.js';
+
+export function getStaticPaths() {
+  return categories.map((categorie) => ({
+    params: { slug: categorie.slug },
+    props: { categorie },
+  }));
+}
+
+const { categorie } = Astro.props;
+---
+
+<Base
+  title={`Catégorie : ${categorie.nom}`}
+  description={`Articles de la catégorie ${categorie.nom}.`}
+  canonical={`/categories/${categorie.slug}/`}
+>
+  <p class="fil"><a href="/categories/">← Toutes les catégories</a></p>
+  <p class="etiquette">Catégorie</p>
+  <h1>{categorie.nom}</h1>
+  <p class="intro">
+    {categorie.articles.length} article
+    {categorie.articles.length > 1 ? 's' : ''} dans cette catégorie.
+  </p>
+
+  <div class="grille">
+    {
+      categorie.articles.map((article) => (
+        <ArticleCard article={article} heading="h2" />
+      ))
+    }
+  </div>
+</Base>

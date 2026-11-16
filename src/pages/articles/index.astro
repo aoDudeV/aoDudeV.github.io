@@ -1,0 +1,154 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import {
+  articles,
+  categories,
+  nombreArticles,
+  tagsTries,
+} from '../../data/articles.js';
+
+const categoriesTries = [...categories].sort((a, b) =>
+  a.nom.localeCompare(b.nom, 'fr'),
+);
+---
+
+<Base
+  title="Tous les articles"
+  description={`Les ${nombreArticles} articles du blog : archives Hexo et notes du fil rouge Next.js.`}
+  canonical="/articles/"
+>
+  <p class="etiquette">Blog</p>
+  <h1>Tous les articles</h1>
+  <p class="intro">
+    {nombreArticles} articles publiés. Les archives de l’ancien blog Hexo et les
+    notes du fil rouge Next.js sont réunies ici. Utilise la recherche ou les
+    filtres pour retrouver un sujet.
+  </p>
+
+  <section class="filtres" aria-label="Filtrer les articles">
+    <div class="champ-recherche">
+      <label for="recherche-articles">Rechercher un sujet</label>
+      <input
+        id="recherche-articles"
+        type="search"
+        placeholder="Ex. Docker, recette, Next.js…"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="filtre-groupe">
+      <label for="filtre-categorie">Sujet</label>
+      <select id="filtre-categorie">
+        <option value="">Tous les sujets</option>
+        {
+          categoriesTries.map((categorie) => (
+            <option value={categorie.slug}>
+              {categorie.nom} ({categorie.articles.length})
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="filtre-groupe">
+      <label for="filtre-tag">Tag</label>
+      <select id="filtre-tag">
+        <option value="">Tous les tags</option>
+        {
+          tagsTries.map((tag) => (
+            <option value={tag.slug}>
+              {tag.nom} ({tag.articles.length})
+            </option>
+          ))
+        }
+      </select>
+    </div>
+  </section>
+
+  <div class="resume-filtres">
+    <p class="resultat-compte" aria-live="polite">
+      <span id="compte-articles">{nombreArticles}</span> articles
+    </p>
+    <button type="button" class="bouton-effacer" id="effacer-filtres" hidden>
+      Effacer les filtres
+    </button>
+  </div>
+
+  <div id="liste-articles" class="liste-articles">
+    <div class="grille" id="grille-articles">
+      {
+        articles.map((article) => (
+          <ArticleCard article={article} heading="h2" />
+        ))
+      }
+    </div>
+
+    <div class="aucun-resultat" id="aucun-resultat" hidden>
+      <p>Aucun article ne correspond à ces filtres.</p>
+      <button type="button" class="bouton" id="reinitialiser-filtres">
+        Réinitialiser les filtres
+      </button>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const champ = document.querySelector('#recherche-articles');
+  const filtreCategorie = document.querySelector('#filtre-categorie');
+  const filtreTag = document.querySelector('#filtre-tag');
+  const cartes = [...document.querySelectorAll('#grille-articles .carte')];
+  const compte = document.querySelector('#compte-articles');
+  const aucun = document.querySelector('#aucun-resultat');
+  const effacer = document.querySelector('#effacer-filtres');
+  const reinitialiser = document.querySelector('#reinitialiser-filtres');
+
+  if (champ && filtreCategorie && filtreTag && compte && aucun) {
+    const normaliser = (texte) =>
+      texte.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+    const filtrer = () => {
+      const requete = normaliser(champ.value.trim());
+      const categorie = filtreCategorie.value;
+      const tag = filtreTag.value;
+      let visibles = 0;
+
+      for (const carte of cartes) {
+        const texte = carte.dataset.recherche || '';
+        const tags = ` ${carte.dataset.tags || ''} `;
+        const correspond =
+          (!requete || texte.includes(requete)) &&
+          (!categorie || carte.dataset.categorie === categorie) &&
+          (!tag || tags.includes(` ${tag} `));
+
+        carte.hidden = !correspond;
+        if (correspond) {
+          visibles += 1;
+        }
+      }
+
+      compte.textContent = String(visibles);
+      aucun.hidden = visibles !== 0;
+      if (effacer) {
+        effacer.hidden = !(champ.value.trim() || categorie || tag);
+      }
+    };
+
+    const toutEffacer = () => {
+      champ.value = '';
+      filtreCategorie.value = '';
+      filtreTag.value = '';
+      filtrer();
+      champ.focus();
+    };
+
+    champ.addEventListener('input', filtrer);
+    filtreCategorie.addEventListener('change', filtrer);
+    filtreTag.addEventListener('change', filtrer);
+    effacer?.addEventListener('click', toutEffacer);
+    reinitialiser?.addEventListener('click', toutEffacer);
+
+    // Restaure l'état si le navigateur a mémorisé les champs au retour.
+    filtrer();
+  }
+</script>

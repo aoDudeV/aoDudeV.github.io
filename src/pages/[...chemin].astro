@@ -1,0 +1,15 @@
+---
+import Redirect from '../layouts/Redirect.astro';
+import redirects from '../data/redirects.json';
+
+export function getStaticPaths() {
+  return redirects.map((redirect) => ({
+    params: { chemin: redirect.from },
+    props: { redirect },
+  }));
+}
+
+const { redirect } = Astro.props;
+---
+
+<Redirect to={redirect.to} title={`Redirection — ${redirect.from}`} />

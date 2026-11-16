@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aodudev.github.io/sitemap.xml

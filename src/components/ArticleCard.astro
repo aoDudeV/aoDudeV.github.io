@@ -1,0 +1,37 @@
+---
+const { article, heading = 'h2' } = Astro.props;
+const Heading = heading;
+const tags = article.tagsSlugs ?? [];
+---
+
+<article
+  class="carte"
+  data-categorie={article.categorieSlug}
+  data-tags={tags.map((tag) => tag.slug).join(' ')}
+  data-recherche={article.recherche}
+>
+  <a class="carte-sujet" href={`/categories/${article.categorieSlug}/`}>
+    {article.categorie}
+  </a>
+
+  <Heading>
+    <a class="lien-article" href={article.url}>{article.titre}</a>
+  </Heading>
+
+  <p>{article.resume}</p>
+
+  <p class="carte-meta">
+    <time dateTime={article.date}>{article.dateCourte}</time>
+    <span aria-hidden="true">·</span>
+    <span>{article.auteur}</span>
+    {article.tags.slice(0, 3).map((tag) => <span class="tag">{tag}</span>)}
+  </p>
+
+  <a
+    class="lien-article"
+    href={article.url}
+    aria-label={`Lire l’article : ${article.titre}`}
+  >
+    Lire l’article →
+  </a>
+</article>

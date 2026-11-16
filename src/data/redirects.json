@@ -1,0 +1,1462 @@
+[
+  {
+    "from": "archives/2014",
+    "to": "/archives/#2014",
+    "type": "archive"
+  },
+  {
+    "from": "archives/2015",
+    "to": "/archives/#2015",
+    "type": "archive"
+  },
+  {
+    "from": "archives/2016",
+    "to": "/archives/#2016",
+    "type": "archive"
+  },
+  {
+    "from": "archives/2017",
+    "to": "/archives/#2017",
+    "type": "archive"
+  },
+  {
+    "from": "archives/2018",
+    "to": "/archives/#2018",
+    "type": "archive"
+  },
+  {
+    "from": "archives/page",
+    "to": "/archives/",
+    "type": "archive-index"
+  },
+  {
+    "from": "archives/page/10",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/11",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/2",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/3",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/4",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/5",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/6",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/7",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/8",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "archives/page/9",
+    "to": "/archives/",
+    "type": "archive-page"
+  },
+  {
+    "from": "2014/02/23/2014-02-23-hello-world",
+    "to": "/articles/2014-02-23-hello-world/",
+    "type": "article"
+  },
+  {
+    "from": "2014/03/15/code-highlight",
+    "to": "/articles/code-highlight/",
+    "type": "article"
+  },
+  {
+    "from": "2014/03/15/lorem-ipsum",
+    "to": "/articles/lorem-ipsum/",
+    "type": "article"
+  },
+  {
+    "from": "2014/03/16/qna",
+    "to": "/articles/qna/",
+    "type": "article"
+  },
+  {
+    "from": "2014/03/16/tag-plugins",
+    "to": "/articles/tag-plugins/",
+    "type": "article"
+  },
+  {
+    "from": "2015/03/23/2015-03-23-Make-VS-Insert-Spaces",
+    "to": "/articles/2015-03-23-make-vs-insert-spaces/",
+    "type": "article"
+  },
+  {
+    "from": "2015/04/01/2015-04-01-NGINX-Static-Locations",
+    "to": "/articles/2015-04-01-nginx-static-locations/",
+    "type": "article"
+  },
+  {
+    "from": "2015/04/05/2015-04-05-Lookup-on-Page",
+    "to": "/articles/2015-04-05-lookup-on-page/",
+    "type": "article"
+  },
+  {
+    "from": "2015/04/08/2015-04-08-NAV-Programming-Resources",
+    "to": "/articles/2015-04-08-nav-programming-resources/",
+    "type": "article"
+  },
+  {
+    "from": "2015/05/02/2015-05-02-How-To-Impress",
+    "to": "/articles/2015-05-02-how-to-impress/",
+    "type": "article"
+  },
+  {
+    "from": "2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme",
+    "to": "/articles/2016-01-02-notes-on-creating-a-hexo-theme/",
+    "type": "article"
+  },
+  {
+    "from": "2016/01/30/color-themes",
+    "to": "/articles/color-themes/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Deploy to GitHub and Heroku",
+    "to": "/articles/deploy-to-github-and-heroku/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Hads_Documentation",
+    "to": "/articles/hads-documentation/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Heroku_NodeJS_WebSite",
+    "to": "/articles/heroku-nodejs-website/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Html to markdown converter",
+    "to": "/articles/html-to-markdown-converter/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/My-first-post",
+    "to": "/articles/my-first-post/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Online HTML Editor",
+    "to": "/articles/online-html-editor/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/PHP beginner tutorials",
+    "to": "/articles/php-beginner-tutorials/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Programme utilitaire",
+    "to": "/articles/programme-utilitaire/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche 14 juillet",
+    "to": "/articles/recherche-14-juillet/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche 14 sept.",
+    "to": "/articles/recherche-14-sept/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche 21 Juillet",
+    "to": "/articles/recherche-21-juillet/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche Gif anime",
+    "to": "/articles/recherche-gif-anime/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche Web Scrapper",
+    "to": "/articles/recherche-web-scrapper/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Recherche iDraw",
+    "to": "/articles/recherche-idraw/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/UI kit example",
+    "to": "/articles/ui-kit-example/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/Unminify",
+    "to": "/articles/unminify/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/app from GitHub to Heroku",
+    "to": "/articles/app-from-github-to-heroku/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/hello-world",
+    "to": "/articles/hello-world/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/itranswarpJS_CMS",
+    "to": "/articles/itranswarpjs-cms/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/markItUp! in action",
+    "to": "/articles/markitup-in-action/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/13/mastering_markdown",
+    "to": "/articles/mastering-markdown/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Bash-script-movie2folder",
+    "to": "/articles/bash-script-movie2folder/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Chili-Dog-Bread-Ring",
+    "to": "/articles/chili-dog-bread-ring/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Hexo-plugin-HTML5-video",
+    "to": "/articles/hexo-plugin-html5-video/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Hexo-plugin-Image-insert",
+    "to": "/articles/hexo-plugin-image-insert/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Hexo-plugin-Readme",
+    "to": "/articles/hexo-plugin-readme/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Outils-newest-tools",
+    "to": "/articles/outils-newest-tools/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-1-fevrier-2k17",
+    "to": "/articles/recherche-1-fevrier-2k17/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-13-fevrier-2k17",
+    "to": "/articles/recherche-13-fevrier-2k17/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-AngularJS",
+    "to": "/articles/recherche-angularjs/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-D3js",
+    "to": "/articles/recherche-d3js/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-Emmet",
+    "to": "/articles/recherche-emmet/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Recherche-MongoDB",
+    "to": "/articles/recherche-mongodb/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Stop-using-animated-gif",
+    "to": "/articles/stop-using-animated-gif/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Test-highlight-python",
+    "to": "/articles/test-highlight-python/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/Tutorials-jquery-and-javascript",
+    "to": "/articles/tutorials-jquery-and-javascript/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/test-bouton-bootstrap",
+    "to": "/articles/test-bouton-bootstrap/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/xo-theme-corporate-Readme",
+    "to": "/articles/xo-theme-corporate-readme/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/xo-theme-doc-Readme",
+    "to": "/articles/xo-theme-doc-readme/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/26/xo-theme-freemind-Readme",
+    "to": "/articles/xo-theme-freemind-readme/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/27/chis-parmentier-irlandais",
+    "to": "/articles/chis-parmentier-irlandais/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/27/dejs-Presentation-Html-Slides",
+    "to": "/articles/dejs-presentation-html-slides/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/27/euillete-Roule",
+    "to": "/articles/euillete-roule/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/27/ki-js-sur-linux-mint",
+    "to": "/articles/ki-js-sur-linux-mint/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/27/st-recette-nicko-BANANA-BREAD",
+    "to": "/articles/st-recette-nicko-banana-bread/",
+    "type": "article"
+  },
+  {
+    "from": "2017/11/28/m-proteine-poulet",
+    "to": "/articles/m-proteine-poulet/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/-Recettes-au-four",
+    "to": "/articles/recettes-au-four/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/ATE-CHINOIS-GOURMAND",
+    "to": "/articles/ate-chinois-gourmand/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/NBON-COUPE-FAIM",
+    "to": "/articles/nbon-coupe-faim/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/Recherche-20-nov",
+    "to": "/articles/recherche-20-nov/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/Recherche-23-nov",
+    "to": "/articles/recherche-23-nov/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/Tourtiere-de-Millet",
+    "to": "/articles/tourtiere-de-millet/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/anchir-les-legumes",
+    "to": "/articles/anchir-les-legumes/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-11-dec",
+    "to": "/articles/cherche-11-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-12-fev",
+    "to": "/articles/cherche-12-fev/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-12-mars",
+    "to": "/articles/cherche-12-mars/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-12-octobre",
+    "to": "/articles/cherche-12-octobre/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-16-dec",
+    "to": "/articles/cherche-16-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-17-avril",
+    "to": "/articles/cherche-17-avril/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/cherche-18-dec",
+    "to": "/articles/cherche-18-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/de-php",
+    "to": "/articles/de-php/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/dless-space",
+    "to": "/articles/dless-space/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/ecette-28-nov",
+    "to": "/articles/ecette-28-nov/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/echerche-14-dec",
+    "to": "/articles/echerche-14-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/gnon-farci-au-poulet",
+    "to": "/articles/gnon-farci-au-poulet/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/ndwich-de-spaghetti-a-la-viande",
+    "to": "/articles/ndwich-de-spaghetti-a-la-viande/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/ntra",
+    "to": "/articles/ntra/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/nux-commands-after-new-installed",
+    "to": "/articles/nux-commands-after-new-installed/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/uery-form-builder",
+    "to": "/articles/uery-form-builder/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/w-to-Create-Masonry-Layout",
+    "to": "/articles/w-to-create-masonry-layout/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/xo-npm-commands",
+    "to": "/articles/xo-npm-commands/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/27/zza-baguette",
+    "to": "/articles/zza-baguette/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/cherche-4-dec",
+    "to": "/articles/cherche-4-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/cherche-5-dec",
+    "to": "/articles/cherche-5-dec/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/de-moyenne",
+    "to": "/articles/de-moyenne/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/eation-3D",
+    "to": "/articles/eation-3d/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/ideo-editing-apps",
+    "to": "/articles/ideo-editing-apps/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/nux-commands-after-new-setup",
+    "to": "/articles/nux-commands-after-new-setup/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/s-Brick-a-la-viande",
+    "to": "/articles/s-brick-a-la-viande/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/sagnes",
+    "to": "/articles/sagnes/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/tuces-du-28-nov",
+    "to": "/articles/tuces-du-28-nov/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/uce-cesar",
+    "to": "/articles/uce-cesar/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/ulet-miel-balsamique",
+    "to": "/articles/ulet-miel-balsamique/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/zza-burger",
+    "to": "/articles/zza-burger/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/28/zza-version-pave",
+    "to": "/articles/zza-version-pave/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/30/echerche-30-avril",
+    "to": "/articles/echerche-30-avril/",
+    "type": "article"
+  },
+  {
+    "from": "2018/04/30/kiJS-slides",
+    "to": "/articles/kijs-slides/",
+    "type": "article"
+  },
+  {
+    "from": "2018/05/25/Recherche-1-mai-vuejs",
+    "to": "/articles/recherche-1-mai-vuejs/",
+    "type": "article"
+  },
+  {
+    "from": "2018/05/25/Recherche-2-mai-Vs-Code-Extension",
+    "to": "/articles/recherche-2-mai-vs-code-extension/",
+    "type": "article"
+  },
+  {
+    "from": "2018/05/25/Recherche-3-mai-Vuejs-vagrant",
+    "to": "/articles/recherche-3-mai-vuejs-vagrant/",
+    "type": "article"
+  },
+  {
+    "from": "categories/Contents",
+    "to": "/categories/contents/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Demo",
+    "to": "/categories/demo/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Docs",
+    "to": "/categories/docs/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Dynamics-NAV",
+    "to": "/categories/dynamics-nav/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Framework",
+    "to": "/categories/framework/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Games",
+    "to": "/categories/games/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Hexo",
+    "to": "/categories/hexo/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Humor",
+    "to": "/categories/humor/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Info-Tech",
+    "to": "/categories/tech-info/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Language",
+    "to": "/categories/language/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Learning",
+    "to": "/categories/learning/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Linux",
+    "to": "/categories/linux/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/NET",
+    "to": "/categories/net/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/NGINX",
+    "to": "/categories/nginx/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Nourritue",
+    "to": "/categories/nourriture/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Nourriture",
+    "to": "/categories/nourriture/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Programming",
+    "to": "/categories/programming/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Recette",
+    "to": "/categories/recette/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Recherche",
+    "to": "/categories/recherche/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/SSG",
+    "to": "/categories/ssg/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/StaticSiteGen",
+    "to": "/categories/ssg/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Tech-Info",
+    "to": "/categories/tech-info/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Test",
+    "to": "/categories/test/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Video",
+    "to": "/categories/video/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Web-Apps",
+    "to": "/categories/web-apps/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Web-Design",
+    "to": "/categories/web-design/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Web-Hosting",
+    "to": "/categories/web-hosting/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/WebSite",
+    "to": "/categories/website/",
+    "type": "categorie"
+  },
+  {
+    "from": "categories/Youtube",
+    "to": "/categories/youtube/",
+    "type": "categorie"
+  },
+  {
+    "from": "About",
+    "to": "/a-propos/",
+    "type": "page"
+  },
+  {
+    "from": "contact",
+    "to": "/a-propos/",
+    "type": "page"
+  },
+  {
+    "from": "login",
+    "to": "/",
+    "type": "page"
+  },
+  {
+    "from": "projects",
+    "to": "/",
+    "type": "page"
+  },
+  {
+    "from": "page/10",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/11",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/2",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/3",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/4",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/5",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/6",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/7",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/8",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "page/9",
+    "to": "/articles/",
+    "type": "pagination"
+  },
+  {
+    "from": "tags/3D",
+    "to": "/tags/3d/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/API",
+    "to": "/tags/api/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/AngularJS",
+    "to": "/tags/angularjs/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Animated",
+    "to": "/tags/animated/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/App",
+    "to": "/tags/app/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Astuces",
+    "to": "/tags/astuces/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Bash",
+    "to": "/tags/bash/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Beautify",
+    "to": "/tags/beautify/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Blanchir",
+    "to": "/tags/blanchir/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/BonAp",
+    "to": "/tags/bonap/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Bonbon",
+    "to": "/tags/bonbon/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Bootstrap",
+    "to": "/tags/bootstrap/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Bower",
+    "to": "/tags/bower/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/C",
+    "to": "/tags/c/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/CMS",
+    "to": "/tags/cms/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/CRUD",
+    "to": "/tags/crud/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/CSS",
+    "to": "/tags/css/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Chocolat",
+    "to": "/tags/chocolat/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Code",
+    "to": "/tags/code/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Commands",
+    "to": "/tags/commands/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Comments",
+    "to": "/tags/comments/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Converter",
+    "to": "/tags/converter/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Cuisine",
+    "to": "/tags/cuisine/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/D3js",
+    "to": "/tags/d3js/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Data",
+    "to": "/tags/data/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Database",
+    "to": "/tags/database/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Deploy",
+    "to": "/tags/deploy/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Design",
+    "to": "/tags/design/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Documentation",
+    "to": "/tags/documentation/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/EasyToBoot",
+    "to": "/tags/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Editing",
+    "to": "/tags/editing/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Editor",
+    "to": "/tags/editor/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Electron",
+    "to": "/tags/electron/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Embedded",
+    "to": "/tags/embedded/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Emmet",
+    "to": "/tags/emmet/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/English",
+    "to": "/tags/english/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Flexbox",
+    "to": "/tags/flexbox/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Folder",
+    "to": "/tags/folder/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/FontAwesome",
+    "to": "/tags/fontawesome/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Freemind",
+    "to": "/tags/freemind/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Games",
+    "to": "/tags/games/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Gif",
+    "to": "/tags/gif/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/GitHub",
+    "to": "/tags/github/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Graph",
+    "to": "/tags/graph/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Grunt",
+    "to": "/tags/grunt/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/HTML",
+    "to": "/tags/html/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/HTML5",
+    "to": "/tags/html5/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Heroku",
+    "to": "/tags/heroku/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Hexo",
+    "to": "/tags/hexo/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/HexoTags",
+    "to": "/tags/hexotags/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/How-To",
+    "to": "/tags/how-to/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Hyperliens",
+    "to": "/tags/hyperliens/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Image",
+    "to": "/tags/image/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Images",
+    "to": "/tags/images/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/JSON",
+    "to": "/tags/json/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Javascript",
+    "to": "/tags/javascript/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Kivy",
+    "to": "/tags/kivy/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Laravel",
+    "to": "/tags/laravel/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Lasagne",
+    "to": "/tags/lasagne/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Learning",
+    "to": "/tags/learning/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Linux",
+    "to": "/tags/linux/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Live-Server",
+    "to": "/tags/live-server/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/LiveCD",
+    "to": "/tags/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Logiciel",
+    "to": "/tags/logiciel/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/LokiJS",
+    "to": "/tags/lokijs/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/MSQLI",
+    "to": "/tags/msqli/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/MarkItUp",
+    "to": "/tags/markitup/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Markdown",
+    "to": "/tags/markdown/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/MongoDB",
+    "to": "/tags/mongodb/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Movie",
+    "to": "/tags/movie/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Moyenne",
+    "to": "/tags/moyenne/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/MustHave",
+    "to": "/tags/musthave/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/MySQL",
+    "to": "/tags/mysql/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/NAV",
+    "to": "/tags/nav/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Nicko",
+    "to": "/tags/nicko/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/NoSQL",
+    "to": "/tags/nosql/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/NodeJS",
+    "to": "/tags/nodejs/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Online",
+    "to": "/tags/online/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/PHP",
+    "to": "/tags/php/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Pense",
+    "to": "/tags/pense/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Pizza",
+    "to": "/tags/pizza/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Plugin",
+    "to": "/tags/plugin/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Postman",
+    "to": "/tags/postman/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Poulet",
+    "to": "/tags/poulet/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Presentation",
+    "to": "/tags/presentation/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Programming",
+    "to": "/tags/programming/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Python",
+    "to": "/tags/python/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Q-A",
+    "to": "/tags/q-a/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/QuickStart",
+    "to": "/tags/quickstart/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Readme",
+    "to": "/tags/readme/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Recette",
+    "to": "/tags/recette/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Recherche",
+    "to": "/tags/recherche/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Resources",
+    "to": "/tags/resources/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Restfull-API",
+    "to": "/tags/restfull-api/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Sante",
+    "to": "/tags/sante/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Sauce",
+    "to": "/tags/sauce/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Script",
+    "to": "/tags/script/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Shortcut",
+    "to": "/tags/shortcut/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Slide",
+    "to": "/tags/slide/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Slides",
+    "to": "/tags/slides/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Software",
+    "to": "/tags/software/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Strategie",
+    "to": "/tags/strategie/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Syntax",
+    "to": "/tags/syntax/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Tags",
+    "to": "/tags/tags/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Test",
+    "to": "/tags/test/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Theme",
+    "to": "/tags/theme/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Tools",
+    "to": "/tags/tools/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Tutorials",
+    "to": "/tags/tutorials/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/UI-Kit",
+    "to": "/tags/ui-kit/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/UTF8",
+    "to": "/tags/utf8/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Un-minify",
+    "to": "/tags/un-minify/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Usb-Boot",
+    "to": "/tags/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Utilities",
+    "to": "/tags/utilities/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Vagrant",
+    "to": "/tags/vagrant/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Viande",
+    "to": "/tags/viande/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Video",
+    "to": "/tags/video/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Visual-Studio",
+    "to": "/tags/visual-studio/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/VsCode",
+    "to": "/tags/vscode/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/VueJS",
+    "to": "/tags/vuejs/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Weather",
+    "to": "/tags/weather/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Web",
+    "to": "/tags/web/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Web-Design",
+    "to": "/tags/web-design/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Web-Development",
+    "to": "/tags/web-development/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Web-Scraping",
+    "to": "/tags/web-scraping/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/WebIX",
+    "to": "/tags/webix/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/WebScrapper",
+    "to": "/tags/webscrapper/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Welcome",
+    "to": "/tags/welcome/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Wiki",
+    "to": "/tags/wiki/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/Youtube",
+    "to": "/tags/youtube/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/iTransWarp",
+    "to": "/tags/itranswarp/",
+    "type": "tag"
+  },
+  {
+    "from": "tags/jQuery",
+    "to": "/tags/jquery/",
+    "type": "tag"
+  }
+]

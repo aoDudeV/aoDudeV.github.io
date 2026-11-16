@@ -1,0 +1,34 @@
+---
+const { blocs = [] } = Astro.props;
+---
+
+<div class="contenu-article">
+  {
+    blocs.map((bloc) => {
+      if (bloc.type === 'h2') {
+        return <h2>{bloc.texte}</h2>;
+      }
+      if (bloc.type === 'h3') {
+        return <h3>{bloc.texte}</h3>;
+      }
+      if (bloc.type === 'h4') {
+        return <h4>{bloc.texte}</h4>;
+      }
+      if (bloc.type === 'p') {
+        return <p>{bloc.texte}</p>;
+      }
+      if (bloc.type === 'code') {
+        return (
+          <pre><code class={bloc.lang ? `language-${bloc.lang}` : undefined}>{bloc.texte}</code></pre>
+        );
+      }
+      if (bloc.type === 'html' && bloc.html) {
+        return <Fragment set:html={bloc.html} />;
+      }
+      if (bloc.texte) {
+        return <p>{bloc.texte}</p>;
+      }
+      return null;
+    })
+  }
+</div>
